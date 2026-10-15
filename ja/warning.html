@@ -20,6 +20,11 @@
     <h1 data-i18n="warningHeading">文字の違いに注意してください</h1>
     <p class="domain-label" data-i18n="domainLabel">入力した接続先</p>
     <div id="hostname" class="hostname" dir="ltr" aria-label="注意する文字を含む接続先" data-i18n-aria="domainAria"></div>
+    <section id="comparison" hidden aria-labelledby="comparison-label">
+      <p id="comparison-label" class="domain-label" data-i18n="comparisonLabel">比較した正規ドメイン</p>
+      <div id="reference-hostname" class="hostname reference-hostname" dir="ltr"></div>
+      <p id="reference-name" class="domain-label"></p>
+    </section>
     <ul id="reasons" class="reasons"></ul>
     <p id="outcome" class="outcome"></p>
     <form id="decision" hidden>

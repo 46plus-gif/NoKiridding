@@ -1,9 +1,12 @@
 'use strict';
-importScripts('alphabet-blacklist.js', 'core.js', 'policy.js');
+importScripts('alphabet-blacklist.js', 'protected-domains.js', 'domain-protection.js', 'core.js', 'policy.js');
 
 const core = globalThis.URLCheckerCore;
 const messageText = (key, fallback) => chrome.i18n?.getMessage(key) || fallback;
 const policy = new globalThis.URLCheckerPolicy(chrome, () => crypto.randomUUID());
+const protection = new globalThis.NoKiriddingProtection.Store(chrome);
+const protectionReady = protection.load();
+protectionReady.catch(() => console.warn('NoKiridding: Protection settings could not be loaded.'));
 const latestNavigation = new Map();
 chrome.action.onClicked.addListener(() => {
   void chrome.runtime.openOptionsPage().catch(() => {
@@ -61,19 +64,27 @@ chrome.tabs.onRemoved.addListener(tabId => {
 
 chrome.webNavigation.onErrorOccurred.addListener(details => {
   if (details.frameId !== 0 || details.error !== 'net::ERR_BLOCKED_BY_CLIENT') return;
-  const analysis = core.parseURL(details.url);
-  if (!analysis?.international) return;
-  const operation = analysis.characters.length ?
-    showWarning(details.tabId, analysis, 'direct', details.url) :
-    passCheckedNavigation(details.tabId, analysis, details.url);
-  void operation.catch(reportWarningFailure);
+  void (async () => {
+    await protectionReady;
+    const analysis = core.inspectURL(details.url, false, protection.entries);
+    if (analysis) await showWarning(details.tabId, analysis, 'direct', details.url);
+    else {
+      // A stale/default block can briefly outlive an edited list; retry only once.
+      const parsed = core.parseURL(details.url);
+      const defaultBlock = globalThis.NoKiriddingProtection.rules(globalThis.NoKiriddingProtection.defaults)
+        .some(rule => new RegExp(rule.condition.regexFilter, 'i').test(details.url));
+      if (parsed && (parsed.international || defaultBlock)) await passCheckedNavigation(details.tabId, parsed, details.url);
+    }
+  })().catch(reportWarningFailure);
 }, httpFilter);
 
 function inspectGoogleNavigation(details) {
   if (details.frameId !== 0) return;
   latestNavigation.set(details.tabId, details.url);
-  const analysis = core.inspectSearch(details.url);
-  if (analysis) void showWarning(details.tabId, analysis, 'search', details.url).catch(reportWarningFailure);
+  void protectionReady.then(() => {
+    const analysis = core.inspectSearch(details.url, protection.entries);
+    if (analysis) return showWarning(details.tabId, analysis, 'search', details.url);
+  }).catch(reportWarningFailure);
 }
 chrome.webNavigation.onCommitted.addListener(inspectGoogleNavigation, searchFilter);
 chrome.webNavigation.onHistoryStateUpdated.addListener(inspectGoogleNavigation, searchFilter);
@@ -89,6 +100,17 @@ function warningSender(message, sender) {
 }
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (['urlchecker-list-protection', 'urlchecker-save-protection'].includes(message?.type)) {
+    if (sender.id !== chrome.runtime.id || sender.url !== chrome.runtime.getURL('settings.html') ||
+        (sender.frameId !== undefined && sender.frameId !== 0)) return;
+    policy.serial(async () => {
+      await protectionReady;
+      if (message.type === 'urlchecker-save-protection') await protection.save(message.entries);
+      return { ok: true, entries: protection.entries };
+    }).then(sendResponse).catch(error => sendResponse({ ok: false,
+      error: messageText(error.message, messageText('protectionSaveFailed', '保護するドメインを保存できませんでした。')) }));
+    return true;
+  }
   if (['urlchecker-list-permissions', 'urlchecker-remove-permission'].includes(message?.type)) {
     if (sender.id !== chrome.runtime.id || sender.url !== chrome.runtime.getURL('settings.html') ||
         (sender.frameId !== undefined && sender.frameId !== 0)) return;
@@ -103,14 +125,15 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   }
   if (message?.type === 'urlchecker-search-warning') {
     if (sender.id !== chrome.runtime.id || sender.frameId !== 0 || !Number.isInteger(sender.tab?.id)) return;
-    const analysis = core.inspectSearch(sender.url);
-    if (!analysis) return;
     (async () => {
+      await protectionReady;
+      const analysis = core.inspectSearch(sender.url, protection.entries);
+      if (!analysis) { sendResponse({ allowed: true }); return; }
       if (await policy.isAllowed(sender.tab.id, analysis.canonicalHostname)) {
         sendResponse({ allowed: true });
       } else {
+        sendResponse({ allowed: false, analysis });
         await showWarning(sender.tab.id, analysis, 'search', sender.url);
-        sendResponse({ allowed: false });
       }
     })().catch(() => sendResponse({ allowed: false }));
     return true;
@@ -121,7 +144,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     const pending = await policy.getPending(message.tabId, message.context);
     if (!pending) return { ok: false, error: messageText('pendingMissing', 'この警告の情報が見つかりません。元のURLを開き直してください。') };
     if (message.type === 'urlchecker-warning-context') {
-      return { ok: true, displayHostname: pending.displayHostname, source: pending.source };
+      return { ok: true, displayHostname: pending.displayHostname, source: pending.source,
+        ...(pending.similarity ? { similarity: pending.similarity } : {}) };
     }
     if (typeof message.remember !== 'boolean') return { ok: false, error: messageText('permissionInvalid', '許可の設定を確認できませんでした。') };
     const target = new URL(pending.targetURL);

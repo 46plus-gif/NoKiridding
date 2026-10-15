@@ -10,16 +10,19 @@
   const reasons = document.getElementById('reasons');
   const outcome = document.getElementById('outcome');
   const inExtension = location.protocol === 'chrome-extension:';
-  function render(displayHostname, source) {
+  function render(displayHostname, source, similarity) {
     const analysis = !/[/?#@]/u.test(displayHostname) ? core.inspectURL('https://' + displayHostname + '/') : null;
+    const parsed = !analysis && similarity ? core.parseURL('https://' + displayHostname + '/') : analysis;
+    const comparison = document.getElementById('comparison');
+    comparison.hidden = true;
     domain.replaceChildren();
     reasons.replaceChildren();
-    if (!analysis) {
+    if (!parsed) {
       domain.textContent = t('noHostname');
       outcome.textContent = t('noHostnameNote');
       return false;
     }
-    for (const character of Array.from(analysis.displayHostname).slice(0, 512)) {
+    for (const character of Array.from(parsed.displayHostname).slice(0, 512)) {
       const rawInfo = core.characterInfo(character);
       const info = rawInfo ? i18n.character(rawInfo) : null;
       const span = document.createElement(info ? 'mark' : 'span');
@@ -27,12 +30,32 @@
       if (info) span.title = t('characterTooltip', [info.label, info.codePoint]);
       domain.append(span);
     }
-    if (Array.from(analysis.displayHostname).length > 512) domain.append(document.createTextNode('…'));
-    const unique = new Map(analysis.characters.map(info => [info.character, info]));
+    if (Array.from(parsed.displayHostname).length > 512) domain.append(document.createTextNode('…'));
+    const unique = new Map(parsed.characters.map(info => [info.character, info]));
     for (const info of Array.from(unique.values()).slice(0, 12)) {
       const item = document.createElement('li');
       item.textContent = i18n.reason(info);
       reasons.append(item);
+    }
+    if (similarity) {
+      const reference = document.getElementById('reference-hostname');
+      domain.replaceChildren(); reference.replaceChildren();
+      for (const part of similarity.parts) {
+        for (const [parent, value] of [[domain, part.input], [reference, part.expected]]) {
+          const node = document.createElement(part.changed ? 'mark' : 'span');
+          node.textContent = value;
+          parent.append(node);
+        }
+      }
+      document.getElementById('reference-name').textContent = similarity.name;
+      comparison.hidden = false;
+      const explanation = document.createElement('li');
+      explanation.textContent = t('similarDomainReason', [similarity.name, similarity.domain]);
+      reasons.append(explanation);
+      const differences = new Set(similarity.parts.filter(part => part.changed).map(part => t('similarDifference', [part.input, part.expected])));
+      for (const difference of differences) {
+        const row = document.createElement('li'); row.textContent = difference; reasons.append(row);
+      }
     }
     outcome.textContent = !inExtension ? t('previewNote') : source === 'search' ?
       t('searchStopped') : t('accessStopped');
@@ -62,7 +85,7 @@
       return;
     }
     // The trusted background context owns both displayed host and actual destination.
-    if (!render(response.displayHostname, response.source)) return;
+    if (!render(response.displayHostname, response.source, response.similarity)) return;
     form.hidden = false;
   }
   close.addEventListener('click', async () => {

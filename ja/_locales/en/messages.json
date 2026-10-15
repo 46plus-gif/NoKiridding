@@ -1,9 +1,9 @@
 {
   "extensionDescription": {
-    "message": "Warns about Cyrillic and lookalike letters in hostnames, including URL-shaped Google searches."
+    "message": "Checks lookalike hostname characters and five visual spelling patterns against registered domains."
   },
   "actionTitle": {
-    "message": "NoKiridding — Open allowed sites"
+    "message": "NoKiridding — Settings"
   },
   "language": {
     "message": "en"
@@ -36,7 +36,7 @@
     "message": "Allowed sites"
   },
   "settingsTitle": {
-    "message": "Allowed sites — NoKiridding"
+    "message": "Settings — NoKiridding"
   },
   "settingsIntro": {
     "message": "Hostnames saved with “Always allow this hostname”. Remove one to check it again the next time you open it."
@@ -57,7 +57,7 @@
     "message": "Where your choices are stored"
   },
   "storageNote": {
-    "message": "Your allowed sites are stored in this Chrome profile on this device. They are not sent to an external service or synced to other devices."
+    "message": "Allowed sites and protected domains are stored in this Chrome profile on this device. They are not sent to an external service or synced to other devices."
   },
   "removalNote": {
     "message": "Removing a hostname also revokes its tab-only permissions. Pages that are already open will stay open."
@@ -175,5 +175,83 @@
   },
   "displaySpace": {
     "message": "[space]"
+  },
+  "comparisonLabel": {
+    "message": "Compared registered domain"
+  },
+  "similarDomainReason": {
+    "message": "This hostname resembles a registered domain for $1 ($2). Similarity alone does not mean it is a fake site."
+  },
+  "similarDifference": {
+    "message": "“$1” resembles “$2”."
+  },
+  "protectionTitle": {
+    "message": "Protected domains"
+  },
+  "protectionIntro": {
+    "message": "Compares registered domains using five lookalike patterns. Registered domains and their subdomains are excluded from this similarity check. Ordinary misspellings are not checked."
+  },
+  "protectionPatterns": {
+    "message": "Patterns: rn / m · 0 / o · 1 / l / i (I) · vv / w · cl / d. Chrome lowercases hostnames, so I is compared as i."
+  },
+  "companyName": {
+    "message": "Company or service name"
+  },
+  "companyDomains": {
+    "message": "Registered domains"
+  },
+  "protectionInputHelp": {
+    "message": "Enter ASCII domain names verified on the official site. Separate multiple domains with commas or new lines. Do not include a URL path or wildcard (*)."
+  },
+  "addProtection": {
+    "message": "Add"
+  },
+  "saveProtection": {
+    "message": "Save changes"
+  },
+  "cancelEdit": {
+    "message": "Cancel editing"
+  },
+  "protectedCompanies": {
+    "message": "Companies and services to compare"
+  },
+  "filterProtection": {
+    "message": "Filter by name or domain"
+  },
+  "protectionEmpty": {
+    "message": "No matching entries."
+  },
+  "protectionCount": {
+    "message": "$1 companies/services · $2 domains"
+  },
+  "editProtection": {
+    "message": "Edit"
+  },
+  "editProtectionAria": {
+    "message": "Edit $1"
+  },
+  "removeProtectionAria": {
+    "message": "Remove $1 from protected domains"
+  },
+  "protectionSaved": {
+    "message": "Protection list saved."
+  },
+  "protectionRemoved": {
+    "message": "Removed $1 from the comparison list."
+  },
+  "protectionSaveFailed": {
+    "message": "Could not save protected domains. Your previous settings have been kept. Try again."
+  },
+  "protectionInvalid": {
+    "message": "Enter a name and valid ASCII domain names, without a scheme, path, port, credentials or wildcard."
+  },
+  "protectionDuplicate": {
+    "message": "This domain is already registered. Edit its existing entry."
+  },
+  "protectionLimit": {
+    "message": "You can register up to 200 companies/services and 400 domains."
+  },
+  "protectionRuleFailed": {
+    "message": "Chrome could not create a blocking rule for these domains. Your previous settings have been kept."
   }
 }

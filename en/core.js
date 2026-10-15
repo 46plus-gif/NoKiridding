@@ -104,17 +104,20 @@
       international: parsed.hostname.split('.').some(label => label.startsWith('xn--')) };
   }
 
-  function inspectURL(input, allowBare = false) {
+  function inspectURL(input, allowBare = false, protectedEntries) {
     const analysis = parseURL(input, allowBare);
-    return analysis?.characters.length ? analysis : null;
+    if (!analysis) return null;
+    const similarity = globalThis.NoKiriddingProtection?.inspect(analysis.canonicalHostname, protectedEntries);
+    if (similarity) analysis.similarity = similarity;
+    return analysis.characters.length || similarity ? analysis : null;
   }
 
-  function inspectSearch(input) {
+  function inspectSearch(input, protectedEntries) {
     let url;
     try { url = new URL(input); } catch { return null; }
     if (!['http:', 'https:'].includes(url.protocol) || !googleHosts.has(url.hostname) || url.pathname !== '/search') return null;
     // Only a query that is itself a URL/domain is examined. Ordinary Japanese prose is untouched.
-    return inspectURL(url.searchParams.get('q'), true);
+    return inspectURL(url.searchParams.get('q'), true, protectedEntries);
   }
 
   function warningURL(base, analysis, source, context) {

@@ -2,7 +2,27 @@
 
 NoKiridding is a lookalike-character checker for desktop Chrome. It checks for Cyrillic characters and other listed non-ASCII lookalikes of ordinary Latin letters, stops navigation when a target character is detected, and highlights the character with an explanation.
 
-For example, it detects `аmazon`, where the first character is the Cyrillic `а` rather than the Latin `a` in `amazon`. It does not flag `amazen`, which uses only ordinary Latin letters. **It does not check spelling or compare hostnames against the correct spelling of a brand or domain.**
+For example, it detects `аmazon`, where the first character is the Cyrillic `а` rather than the Latin `a` in `amazon`. It does not flag `amazen`, which uses only ordinary Latin letters. **It does not perform general spell-checking. The protected-domain check below covers only five visual patterns.**
+
+## Protected-domain comparisons
+
+Version 0.7.0 adds a second check against an editable initial list of 100 companies/services and 141 domains. It compares five visual patterns: `rn/m`, `0/o`, `1/l/i` (including an entered capital `I`), `vv/w`, and `cl/d`. Chrome lowercases hostnames, so `I` is compared as `i`.
+
+This check applies only when the hostname matches a listed reference through these substitutions, including combinations. Registered domains and their subdomains are excluded from this similarity check. The existing Cyrillic/non-ASCII character check still applies independently. This does not check arbitrary spelling errors, added words, all regional domains, or every form of impersonation. A legitimate site may have a similar name.
+
+The warning compares the entered hostname and the reference on two rows and highlights the differing spans. **Continue** and **Always allow this hostname** remain available; neither verifies safety.
+
+Open the extension icon to view **Protected domains**. Add, edit, remove or filter companies and services. Enter a company/service name and domain names only, separated by commas or new lines. Verify the domains on the official site. Limits: 200 companies/services and 400 domains. Entries are saved only in this Chrome profile; changes do not sync or get sent to a server. Your saved list is retained across updates; new bundled defaults are not merged into a customized list automatically.
+
+[Initial domains and official reference URLs](PROTECTED-DOMAINS.csv). This is a manually selected starting list, not a ranking or a measured detection-coverage claim. Websites may host third-party content under otherwise legitimate domains; listing a domain does not prove that every page is safe.
+
+![Two-row comparison of rn and m](images/comparison.jpg)
+
+Display-only example using reserved `.invalid` domains and a fictional reference entry. No real site was opened.
+
+![Editable protected-domain settings](images/settings.jpg)
+
+These images verify local rendering with development fixtures. The new feature has automated tests, but installed-Chrome blocking, startup and redirects still need a browser check after reloading version 0.7.0.
 
 ## Warning screen example
 
@@ -12,23 +32,23 @@ Display example using the actual interface with the reserved hostname `аmazon.i
 
 **This does not block all phishing sites. No warning does not mean a site is safe.** Read the [disclaimer and limitations](DISCLAIMER.md) before use.
 
-[Download NoKiridding 0.6.0](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.6.0-en.zip)
+[Download NoKiridding 0.7.0](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.7.0-en.zip)
 
 This folder contains the English documentation and a complete copy of the extension. You do not need the Japanese folder.
 
-Version: 0.6.0. Requires desktop Chrome 120 or later. It does not run in mobile Chrome. The interface is Japanese when Chrome's UI language is Japanese, and English otherwise.
+Version: 0.7.0. Requires desktop Chrome 120 or later. It does not run in mobile Chrome. The interface is Japanese when Chrome's UI language is Japanese, and English otherwise.
 
 [English source files](https://github.com/46plus-gif/NoKiridding/tree/main/en)
 
 ## Install from a ZIP
 
-1. Download [NoKiridding-0.6.0-en.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.6.0-en.zip). Use this extension ZIP, rather than GitHub's automatically generated “Source code” archive.
+1. Download [NoKiridding-0.7.0-en.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.7.0-en.zip). Use this extension ZIP, rather than GitHub's automatically generated “Source code” archive.
 2. Extract the ZIP and place the extracted folder somewhere you will keep it.
 3. Enter `chrome://extensions` in Chrome's address bar.
 4. Turn on **Developer mode**.
 5. Select **Load unpacked**.
 6. Choose the extracted folder that directly contains `manifest.json`. Do not select only its `rules` or `icons` subfolder.
-7. Check that **NoKiridding** appears, its version is **0.6.0**, and its switch is on.
+7. Check that **NoKiridding** appears, its version is **0.7.0**, and its switch is on.
 
 Keep the extracted folder in place while using the extension. You may delete the downloaded ZIP. Organization-managed Chrome may prevent this installation method.
 
@@ -59,7 +79,7 @@ Japanese or Greek text is not blocked solely because of its script, but a charac
 
 If Chrome treats an entry as a Google search, the extension also checks it when the entire search query is shaped like a URL or hostname. This applies only to `/search` on `google.com`, `www.google.com`, `google.co.jp` and `www.google.co.jp`. It hides flagged search results but does **not** prevent the search query from being sent to Google.
 
-It does not inspect ASCII-only fake domains, page content, email messages or downloaded files. See the [full limitations](DISCLAIMER.md).
+ASCII-only domains are checked only through the five patterns and registered references described above. It does not inspect page content, email messages or downloaded files. See the [full limitations](DISCLAIMER.md).
 
 ## Your data
 
@@ -98,4 +118,4 @@ Unicode data and derived character mappings have separate terms. Retain [third-p
 - [Unicode confusables data](https://www.unicode.org/Public/security/latest/confusables.txt)
 - [Unicode confusable detection](https://www.unicode.org/reports/tr39/#Confusable_Detection)
 
-Version 0.6.0 bundles its character data. It does not query these sites or automatically update the data during use.
+Version 0.7.0 bundles its character data. It does not query these sites or automatically update the data during use.

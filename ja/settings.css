@@ -20,6 +20,20 @@
 .list-status.error { color: #9f201b; }
 .storage-note { margin-top: 44px; padding-top: 24px; border-top: 1px solid #d9dce1; }
 .storage-note p { margin: 12px 0 0; font-size: 13px; }
+#protection-form { display: grid; gap: 10px; margin: 24px 0; }
+#protection-form label, .filter-label { font-size: 14px; font-weight: 600; }
+.filter-label { display: block; margin: 20px 0 10px; }
+input[type="text"], input[type="search"], textarea { width: 100%; border: 1px solid #a4a9b0; border-radius: 6px; background: #fff; color: #202124; padding: 11px 12px; font: inherit; font-size: 16px; caret-color: #202124; }
+textarea { resize: vertical; min-height: 80px; }
+input:focus-visible, textarea:focus-visible { outline: 3px solid #1a73e8; outline-offset: 3px; }
+.field-help, .protection-patterns { margin: 2px 0 12px; font-size: 13px; line-height: 1.8; color: #5f6368; }
+.protected-list { max-height: 480px; overflow-y: auto; scrollbar-color: #8b929b #e5e7eb; scrollbar-width: thin; padding-right: 8px; }
+.protected-list .permission-host b { font-size: 16px; }
+.protected-list .canonical { font-size: 14px; line-height: 1.7; }
+.protected-list .row-actions { display: flex; flex-wrap: wrap; gap: 8px; flex: 0 0 auto; }
+.protected-list button { padding: 9px 12px; }
+.section-divider { border: 0; border-top: 1px solid #d9dce1; margin: 48px 0 32px; }
+::selection { background: #c8defa; color: #202124; }
 @media (max-width: 600px) {
   .settings { margin-top: 2vh; }
   .permission-row { gap: 12px; }

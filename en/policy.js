@@ -32,7 +32,8 @@
       const record = {
         tabId, token: this.makeToken(), targetURL: analysis.targetURL,
         canonicalHostname: normalizeHost(analysis.canonicalHostname),
-        displayHostname: analysis.displayHostname, source
+        displayHostname: analysis.displayHostname, source,
+        ...(analysis.similarity ? { similarity: analysis.similarity } : {})
       };
       await this.api.storage.session.set({ [key]: record });
       return record;

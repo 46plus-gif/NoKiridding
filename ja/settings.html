@@ -18,6 +18,28 @@
       <img src="icons/icon-48.png" width="40" height="40" alt="">
       <span>NoKiridding</span>
     </header>
+    <h1 data-i18n="protectionTitle">保護するドメイン</h1>
+    <p class="intro" data-i18n="protectionIntro">登録した正規ドメインと、5種類の似た文字の組み合わせを比較します。似ているだけで偽物とは断定しません。</p>
+    <p class="protection-patterns" data-i18n="protectionPatterns">rn / m · 0 / o · 1 / l / i（I） · vv / w · cl / d</p>
+    <form id="protection-form">
+      <label for="company-name" data-i18n="companyName">会社・サービス名</label>
+      <input id="company-name" name="company" type="text" required maxlength="80" autocomplete="off">
+      <label for="company-domains" data-i18n="companyDomains">正規ドメイン</label>
+      <textarea id="company-domains" name="domains" rows="2" required spellcheck="false" autocapitalize="off" aria-describedby="domain-input-help"></textarea>
+      <p id="domain-input-help" class="field-help" data-i18n="protectionInputHelp">公式サイトで確認した半角英数字のドメインを入力してください。複数ある場合は改行かカンマで区切ります。URLのパスや「*」は入力しません。</p>
+      <div class="actions">
+        <button id="save-protection" type="submit" disabled data-i18n="addProtection">追加</button>
+        <button id="cancel-protection" type="button" class="secondary" hidden data-i18n="cancelEdit">編集を取り消す</button>
+      </div>
+    </form>
+    <p id="protection-status" class="list-status" role="status" aria-live="polite"></p>
+    <div class="list-heading"><h2 data-i18n="protectedCompanies">比較する会社・サービス</h2><span id="protection-count"></span></div>
+    <label for="protection-filter" class="filter-label" data-i18n="filterProtection">名前・ドメインで絞り込む</label>
+    <input id="protection-filter" type="search" autocomplete="off">
+    <p id="protection-loading" role="status" data-i18n="loading">読み込んでいます。</p>
+    <p id="protection-empty" hidden data-i18n="protectionEmpty">該当する登録はありません。</p>
+    <ul id="protected-domains" class="permission-list protected-list" aria-label="保護するドメイン" data-i18n-aria="protectionTitle"></ul>
+    <hr class="section-divider">
     <h1 data-i18n="allowedSites">許可リスト</h1>
     <p class="intro" data-i18n="settingsIntro">「今後も許可する」で保存した接続先です。削除すると、次に開くときから再び判定します。</p>
     <div class="list-heading"><h2 data-i18n="savedHosts">保存した接続先</h2><span id="count"></span></div>

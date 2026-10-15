@@ -1,9 +1,14 @@
-(() => {
+(async () => {
   'use strict';
   const i18n = globalThis.NoKiriddingI18n;
   const { t } = i18n;
   const core = globalThis.URLCheckerCore;
-  const analysis = core.inspectSearch(location.href);
+  if (!core.parseURL(new URL(location.href).searchParams.get('q'), true)) return;
+  let response;
+  try { response = await chrome.runtime.sendMessage({ type: 'urlchecker-search-warning' }); }
+  catch { /* Preserve a visible warning for default matches if the worker is unavailable. */ }
+  if (response?.allowed) return;
+  const analysis = response?.analysis || core.inspectSearch(location.href);
   if (!analysis) return;
 
   // Hide search results immediately while the extension-owned explanation opens.
@@ -19,7 +24,12 @@
   const heading = document.createElement('h1');
   heading.textContent = t('searchHeading');
   const domain = document.createElement('div');
-  for (const character of Array.from(analysis.displayHostname).slice(0, 512)) {
+  if (analysis.similarity) {
+    for (const part of analysis.similarity.parts) {
+      const span = document.createElement(part.changed ? 'mark' : 'span');
+      span.textContent = part.input; domain.append(span);
+    }
+  } else for (const character of Array.from(analysis.displayHostname).slice(0, 512)) {
     const rawInfo = core.characterInfo(character);
       const info = rawInfo ? i18n.character(rawInfo) : null;
     const span = document.createElement(info ? 'mark' : 'span');
@@ -29,17 +39,16 @@
   }
   const explanation = document.createElement('p');
   const first = analysis.characters[0];
-  explanation.textContent = i18n.reason(first);
+  explanation.textContent = analysis.similarity ?
+    t('similarDomainReason', [analysis.similarity.name, analysis.similarity.domain]) : i18n.reason(first);
   main.append(heading, domain, explanation);
   root.append(style, main);
   const hide = document.createElement('style');
   hide.textContent = 'html{visibility:hidden!important}';
   document.documentElement.append(hide, cover);
-  chrome.runtime.sendMessage({ type: 'urlchecker-search-warning' }).then(response => {
-    if (response?.allowed) { cover.remove(); hide.remove(); }
-  }).catch(() => {
+  if (!response) {
     const note = document.createElement('p');
     note.textContent = t('checkCharacters');
     main.append(note);
-  });
+  }
 })();

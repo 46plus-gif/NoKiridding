@@ -1,7 +1,7 @@
 # NoKiridding disclaimer and limitations
 
-Date: October 15, 2026  
-Version: 0.6.0
+Date: October 16, 2026  
+Version: 0.7.0
 
 ## Purpose
 
@@ -11,7 +11,7 @@ NoKiridding helps users notice Cyrillic characters and other characters resembli
 
 ## Detection limits
 
-- ASCII-only fake domains and lookalike combinations of ASCII letters or digits are outside its scope. Examples include `rn` resembling `m`, or using `0` in place of `O`.
+- ASCII similarity detection is limited to five visual patterns compared against registered protected domains. Ordinary spelling errors and domains outside those references/patterns are outside scope. Similar legitimate domains can trigger warnings; reference entries may be incomplete or become outdated.
 - Only the hostname is checked. Characters in paths, query strings and other URL components are outside the character check.
 - It does not inspect page content, verify login pages, detect attacks inside a page or check downloaded files.
 - Legitimate hostnames containing target characters can trigger warnings. All Cyrillic characters are targeted.

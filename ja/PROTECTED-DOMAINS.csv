@@ -1,0 +1,142 @@
+company_or_service,domain,official_reference_url,review_date
+Microsoft,microsoft.com,https://microsoft.com/,2026-10-16
+Microsoft,microsoftonline.com,https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide,2026-10-16
+Microsoft,live.com,https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide,2026-10-16
+Microsoft,outlook.com,https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide,2026-10-16
+Microsoft,linkedin.com,https://linkedin.com/,2026-10-16
+Google,google.com,https://google.com/,2026-10-16
+Google,gmail.com,https://gmail.com/,2026-10-16
+Google,youtube.com,https://youtube.com/,2026-10-16
+Amazon,amazon.com,https://amazon.com/,2026-10-16
+Amazon,amazon.co.uk,https://amazon.co.uk/,2026-10-16
+Amazon,amazon.de,https://amazon.de/,2026-10-16
+Amazon,amazon.co.jp,https://amazon.co.jp/,2026-10-16
+Apple,apple.com,https://apple.com/,2026-10-16
+Apple,icloud.com,https://icloud.com/,2026-10-16
+Meta,facebook.com,https://facebook.com/,2026-10-16
+Meta,instagram.com,https://instagram.com/,2026-10-16
+Meta,whatsapp.com,https://whatsapp.com/,2026-10-16
+PayPal,paypal.com,https://paypal.com/,2026-10-16
+PayPal,venmo.com,https://venmo.com/,2026-10-16
+Adobe,adobe.com,https://www.adobe.com/,2026-10-16
+Netflix,netflix.com,https://netflix.com/,2026-10-16
+Booking Holdings,booking.com,https://booking.com/,2026-10-16
+Booking Holdings,agoda.com,https://agoda.com/,2026-10-16
+Booking Holdings,priceline.com,https://priceline.com/,2026-10-16
+Expedia,expedia.com,https://www.expediagroup.com/en-us,2026-10-16
+Expedia,hotels.com,https://www.expediagroup.com/en-us,2026-10-16
+Expedia,vrbo.com,https://www.expediagroup.com/en-us,2026-10-16
+Airbnb,airbnb.com,https://airbnb.com/,2026-10-16
+Uber,uber.com,https://uber.com/,2026-10-16
+Uber,ubereats.com,https://www.uber.com/,2026-10-16
+Lyft,lyft.com,https://lyft.com/,2026-10-16
+eBay,ebay.com,https://www.ebay.com/,2026-10-16
+Alibaba,alibaba.com,https://alibaba.com/,2026-10-16
+Alibaba,aliexpress.com,https://aliexpress.com/,2026-10-16
+Walmart,walmart.com,https://walmart.com/,2026-10-16
+Target,target.com,https://target.com/,2026-10-16
+Costco,costco.com,https://costco.com/,2026-10-16
+Best Buy,bestbuy.com,https://www.bestbuy.com/,2026-10-16
+Etsy,etsy.com,https://www.etsy.com/,2026-10-16
+Shopify,shopify.com,https://shopify.com/,2026-10-16
+Mercado Libre,mercadolibre.com,https://mercadolibre.com/,2026-10-16
+Rakuten,rakuten.com,https://rakuten.com/,2026-10-16
+Rakuten,rakuten.co.jp,https://rakuten.co.jp/,2026-10-16
+Samsung,samsung.com,https://samsung.com/,2026-10-16
+Sony,sony.com,https://www.sony.com/,2026-10-16
+Sony,playstation.com,https://playstation.com/,2026-10-16
+Nintendo,nintendo.com,https://nintendo.com/,2026-10-16
+Electronic Arts,ea.com,https://ea.com/,2026-10-16
+Valve,steampowered.com,https://steampowered.com/,2026-10-16
+Valve,steamcommunity.com,https://steamcommunity.com/,2026-10-16
+Epic Games,epicgames.com,https://www.epicgames.com/,2026-10-16
+Roblox,roblox.com,https://www.roblox.com/,2026-10-16
+Discord,discord.com,https://discord.com/,2026-10-16
+Zoom,zoom.us,https://zoom.us/,2026-10-16
+Salesforce,salesforce.com,https://salesforce.com/,2026-10-16
+Salesforce,slack.com,https://slack.com/,2026-10-16
+Dropbox,dropbox.com,https://dropbox.com/,2026-10-16
+Box,box.com,https://box.com/,2026-10-16
+Notion,notion.so,https://notion.so/,2026-10-16
+Notion,notion.com,https://notion.com/,2026-10-16
+Canva,canva.com,https://canva.com/,2026-10-16
+Figma,figma.com,https://figma.com/,2026-10-16
+Atlassian,atlassian.com,https://atlassian.com/,2026-10-16
+Atlassian,trello.com,https://trello.com/,2026-10-16
+Automattic,wordpress.com,https://wordpress.com/,2026-10-16
+Automattic,tumblr.com,https://tumblr.com/,2026-10-16
+GoDaddy,godaddy.com,https://www.godaddy.com/,2026-10-16
+Cloudflare,cloudflare.com,https://cloudflare.com/,2026-10-16
+DigitalOcean,digitalocean.com,https://digitalocean.com/,2026-10-16
+Oracle,oracle.com,https://www.oracle.com/,2026-10-16
+IBM,ibm.com,https://ibm.com/,2026-10-16
+Cisco,cisco.com,https://www.cisco.com/,2026-10-16
+Cisco,webex.com,https://www.webex.com/,2026-10-16
+Dell,dell.com,https://dell.com/,2026-10-16
+HP,hp.com,https://hp.com/,2026-10-16
+Lenovo,lenovo.com,https://lenovo.com/,2026-10-16
+Intel,intel.com,https://www.intel.com/,2026-10-16
+AMD,amd.com,https://amd.com/,2026-10-16
+NVIDIA,nvidia.com,https://nvidia.com/,2026-10-16
+OpenAI,openai.com,https://openai.com/,2026-10-16
+OpenAI,chatgpt.com,https://help.openai.com/en/articles/12677804-what-is-chatgpt-faq,2026-10-16
+Anthropic,anthropic.com,https://anthropic.com/,2026-10-16
+Anthropic,claude.ai,https://www.anthropic.com/,2026-10-16
+Spotify,spotify.com,https://spotify.com/,2026-10-16
+Reddit,reddit.com,https://reddit.com/,2026-10-16
+Pinterest,pinterest.com,https://help.pinterest.com/en/guide/all-about-pinterest,2026-10-16
+Snap,snap.com,https://snap.com/,2026-10-16
+Snap,snapchat.com,https://snapchat.com/,2026-10-16
+ByteDance,bytedance.com,https://bytedance.com/,2026-10-16
+ByteDance,tiktok.com,https://tiktok.com/,2026-10-16
+X,x.com,https://x.com/,2026-10-16
+X,twitter.com,https://twitter.com/,2026-10-16
+Quora,quora.com,https://help.quora.com/hc/en-us/articles/115004249026-How-do-I-deactivate-my-Quora-account-Can-it-be-reactivated-later,2026-10-16
+Yahoo,yahoo.com,https://yahoo.com/,2026-10-16
+Proton,proton.me,https://proton.me/,2026-10-16
+Proton,protonmail.com,https://protonmail.com/,2026-10-16
+Fastmail,fastmail.com,https://fastmail.com/,2026-10-16
+1Password,1password.com,https://1password.com/,2026-10-16
+Bitwarden,bitwarden.com,https://bitwarden.com/,2026-10-16
+Nord Security,nordsecurity.com,https://nordsecurity.com/,2026-10-16
+Nord Security,nordvpn.com,https://nordvpn.com/,2026-10-16
+Surfshark,surfshark.com,https://surfshark.com/,2026-10-16
+Intuit,intuit.com,https://intuit.com/,2026-10-16
+Intuit,mailchimp.com,https://mailchimp.com/,2026-10-16
+DocuSign,docusign.com,https://docusign.com/,2026-10-16
+ServiceNow,servicenow.com,https://www.servicenow.com/,2026-10-16
+SAP,sap.com,https://help.sap.com/doc/9d27aa5deea4415a841e7937da865e38/latest/en-US/topic111.html,2026-10-16
+Workday,workday.com,https://workday.com/,2026-10-16
+Okta,okta.com,https://okta.com/,2026-10-16
+Okta,auth0.com,https://auth0.com/,2026-10-16
+Twilio,twilio.com,https://twilio.com/,2026-10-16
+Twilio,sendgrid.com,https://sendgrid.com/,2026-10-16
+HubSpot,hubspot.com,https://hubspot.com/,2026-10-16
+Zendesk,zendesk.com,https://zendesk.com/,2026-10-16
+Stripe,stripe.com,https://stripe.com/,2026-10-16
+Block,block.xyz,https://block.xyz/,2026-10-16
+Block,squareup.com,https://squareup.com/,2026-10-16
+Block,cash.app,https://cash.app/,2026-10-16
+Wise,wise.com,https://wise.com/,2026-10-16
+Revolut,revolut.com,https://www.revolut.com/,2026-10-16
+Coinbase,coinbase.com,https://www.coinbase.com/,2026-10-16
+Binance,binance.com,https://binance.com/,2026-10-16
+Kraken,kraken.com,https://kraken.com/,2026-10-16
+Robinhood,robinhood.com,https://robinhood.com/,2026-10-16
+JPMorgan Chase,jpmorganchase.com,https://jpmorganchase.com/,2026-10-16
+JPMorgan Chase,chase.com,https://chase.com/,2026-10-16
+Bank of America,bankofamerica.com,https://bankofamerica.com/,2026-10-16
+Wells Fargo,wellsfargo.com,https://wellsfargo.com/,2026-10-16
+Citigroup,citigroup.com,https://www.citigroup.com/,2026-10-16
+Citigroup,citi.com,https://citi.com/,2026-10-16
+American Express,americanexpress.com,https://americanexpress.com/,2026-10-16
+Capital One,capitalone.com,https://capitalone.com/,2026-10-16
+HSBC,hsbc.com,https://www.hsbc.com/,2026-10-16
+Barclays,barclays.com,https://barclays.com/,2026-10-16
+Santander,santander.com,https://santander.com/,2026-10-16
+ING,ing.com,https://ing.com/,2026-10-16
+DHL,dhl.com,https://www.dhl.com/,2026-10-16
+UPS,ups.com,https://ups.com/,2026-10-16
+FedEx,fedex.com,https://fedex.com/,2026-10-16
+Maersk,maersk.com,https://maersk.com/,2026-10-16
+Delta Air Lines,delta.com,https://www.delta.com/,2026-10-16

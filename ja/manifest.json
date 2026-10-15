@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "NoKiridding",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "__MSG_extensionDescription__",
   "minimum_chrome_version": "120",
   "permissions": [
@@ -36,6 +36,8 @@
       "js": [
         "i18n.js",
         "alphabet-blacklist.js",
+        "protected-domains.js",
+        "domain-protection.js",
         "core.js",
         "search-guard.js"
       ],
@@ -48,6 +50,11 @@
         "id": "block_idn",
         "enabled": true,
         "path": "rules/block-idn.json"
+      },
+      {
+        "id": "protect_domains",
+        "enabled": true,
+        "path": "rules/protect-domains.json"
       }
     ]
   },
