@@ -1,0 +1,53 @@
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #202124;
+  background: #f7f8fa;
+}
+:root.warning-page {
+  --warning-background: #f7f8fa;
+  background-color: var(--warning-background);
+  background-image: radial-gradient(circle, rgb(32 33 36 / .035) .65px, transparent .85px);
+  background-size: 18px 18px;
+}
+.warning-page .product-name { color: #5f6368; }
+@media (prefers-color-scheme: dark) {
+  :root.warning-page { --warning-background: #e5e7eb; }
+  .warning-page button.secondary { background: #d0d4da; }
+  .warning-page button.secondary:hover { background: #c5cad1; }
+  .warning-page button.secondary:active { background: #bac1ca; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { width: min(100%, 808px); margin: 12vh auto 0; padding: 32px 44px 56px; }
+.warning-icon { color: #b3261e; margin-bottom: 22px; }
+h1 { margin: 0 0 36px; font-size: 26px; line-height: 1.5; font-weight: 650; letter-spacing: -.02em; }
+.domain-label { color: #5f6368; font-size: 14px; margin: 0 0 10px; }
+.hostname { font-size: 36px; line-height: 1.85; letter-spacing: .015em; overflow-wrap: anywhere; unicode-bidi: isolate; }
+mark { color: #9f201b; background: #fff0ed; padding: 1px 3px; border-bottom: 2px solid #b3261e; border-radius: 3px 3px 0 0; }
+.reasons { list-style: none; padding: 0; margin: 28px 0 12px; font-size: 18px; line-height: 1.85; }
+.reasons li + li { margin-top: 6px; }
+.outcome { color: #5f6368; font-size: 15px; line-height: 1.8; margin: 12px 0 32px; }
+button { appearance: none; border: 0; border-radius: 7px; background: #202124; color: #fff; padding: 12px 20px; font: inherit; font-size: 14px; line-height: 1.5; cursor: pointer; }
+button:hover { background: #3c4043; }
+button:active { background: #111; }
+button:focus-visible { outline: 3px solid #1a73e8; outline-offset: 4px; }
+button:disabled { opacity: .55; cursor: wait; }
+.remember { display: inline-flex; gap: 9px; align-items: center; font-size: 15px; line-height: 1.6; cursor: pointer; }
+.remember input { width: 18px; height: 18px; margin: 0; accent-color: #202124; }
+.remember input:focus-visible { outline: 3px solid #1a73e8; outline-offset: 3px; }
+.permission-note { font-size: 13px; color: #5f6368; margin: 8px 0 22px; line-height: 1.8; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+button.secondary { color: #202124; background: #e5e7eb; }
+button.secondary:hover { background: #d9dce1; }
+button.secondary:active { background: #cdd1d7; }
+.action-error { color: #9f201b; font-size: 14px; line-height: 1.8; }
+.product-name { color: #777d85; font-size: 12px; margin: 48px 0 0; }
+.product-name a { color: #5f6368; text-underline-offset: 3px; }
+.product-name a:focus-visible { outline: 3px solid #1a73e8; outline-offset: 4px; }
+@media (max-width: 600px) {
+  main { margin-top: 6vh; padding: 28px 24px 40px; }
+  h1 { font-size: 23px; margin-bottom: 28px; }
+  .hostname { font-size: 28px; }
+  .reasons { font-size: 16px; }
+}

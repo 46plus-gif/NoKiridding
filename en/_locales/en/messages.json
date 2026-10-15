@@ -1,0 +1,179 @@
+{
+  "extensionDescription": {
+    "message": "Warns about Cyrillic and lookalike letters in hostnames, including URL-shaped Google searches."
+  },
+  "actionTitle": {
+    "message": "NoKiridding — Open allowed sites"
+  },
+  "language": {
+    "message": "en"
+  },
+  "warningTitle": {
+    "message": "Check the characters — NoKiridding"
+  },
+  "warningHeading": {
+    "message": "Check these lookalike characters"
+  },
+  "domainLabel": {
+    "message": "Entered hostname"
+  },
+  "domainAria": {
+    "message": "Hostname containing characters to check"
+  },
+  "remember": {
+    "message": "Always allow this hostname"
+  },
+  "permissionNote": {
+    "message": "Leave unchecked to allow it only in this tab."
+  },
+  "closeTab": {
+    "message": "Close this tab"
+  },
+  "continueButton": {
+    "message": "Continue"
+  },
+  "allowedSites": {
+    "message": "Allowed sites"
+  },
+  "settingsTitle": {
+    "message": "Allowed sites — NoKiridding"
+  },
+  "settingsIntro": {
+    "message": "Hostnames saved with “Always allow this hostname”. Remove one to check it again the next time you open it."
+  },
+  "savedHosts": {
+    "message": "Saved hostnames"
+  },
+  "loading": {
+    "message": "Loading…"
+  },
+  "emptyList": {
+    "message": "No saved hostnames. To add one, select “Always allow this hostname” on the warning page and continue."
+  },
+  "refreshList": {
+    "message": "Refresh list"
+  },
+  "storageTitle": {
+    "message": "Where your choices are stored"
+  },
+  "storageNote": {
+    "message": "Your allowed sites are stored in this Chrome profile on this device. They are not sent to an external service or synced to other devices."
+  },
+  "removalNote": {
+    "message": "Removing a hostname also revokes its tab-only permissions. Pages that are already open will stay open."
+  },
+  "noHostname": {
+    "message": "No hostname to check."
+  },
+  "noHostnameNote": {
+    "message": "Character differences appear here when a hostname needs your attention."
+  },
+  "characterReason": {
+    "message": "“$1” is $2."
+  },
+  "characterResembles": {
+    "message": " It resembles the Latin letter(s) “$1”."
+  },
+  "characterTooltip": {
+    "message": "$1 ($2)"
+  },
+  "previewNote": {
+    "message": "This is a display preview."
+  },
+  "searchStopped": {
+    "message": "The search results have been hidden."
+  },
+  "accessStopped": {
+    "message": "Navigation to this hostname was blocked."
+  },
+  "reopenURL": {
+    "message": "Open the original URL again before choosing whether to continue."
+  },
+  "warningUnavailable": {
+    "message": "Could not verify this warning. Open the original URL again."
+  },
+  "closeFailed": {
+    "message": "Could not close this tab."
+  },
+  "continueFailed": {
+    "message": "Could not continue."
+  },
+  "hostCount": {
+    "message": "$1 saved"
+  },
+  "remove": {
+    "message": "Remove"
+  },
+  "removeAria": {
+    "message": "Remove $1 from allowed sites"
+  },
+  "listLoadFailed": {
+    "message": "Could not load the list."
+  },
+  "permissionRemoved": {
+    "message": "Removed permission for “$1”. It will be checked the next time you open it."
+  },
+  "listUpdateFailed": {
+    "message": "Could not update the list."
+  },
+  "retryList": {
+    "message": " Select “Refresh list” to try again."
+  },
+  "searchHeading": {
+    "message": "Check the URL you entered"
+  },
+  "checkCharacters": {
+    "message": "Check the character differences before continuing."
+  },
+  "listBackgroundFailed": {
+    "message": "Could not update allowed sites. Please try again."
+  },
+  "pendingMissing": {
+    "message": "This warning has expired. Open the original URL again."
+  },
+  "permissionInvalid": {
+    "message": "Could not verify the permission setting."
+  },
+  "destinationInvalid": {
+    "message": "Could not verify the destination."
+  },
+  "continueRetry": {
+    "message": "Could not continue. Please try again."
+  },
+  "labelOther": {
+    "message": "a non-ASCII character"
+  },
+  "labelInvisible": {
+    "message": "an invisible character"
+  },
+  "labelCyrillic": {
+    "message": "a Cyrillic character"
+  },
+  "labelGreek": {
+    "message": "a Greek character"
+  },
+  "labelHiragana": {
+    "message": "a Hiragana character"
+  },
+  "labelKatakana": {
+    "message": "a Katakana character"
+  },
+  "labelHan": {
+    "message": "a Han character"
+  },
+  "labelLatin": {
+    "message": "a non-ASCII Latin character"
+  },
+  "labelMark": {
+    "message": "a combining mark"
+  },
+  "labelSpace": {
+    "message": "a whitespace character"
+  },
+  "displayInvisible": {
+    "message": "[invisible]"
+  },
+  "displaySpace": {
+    "message": "[space]"
+  }
+}

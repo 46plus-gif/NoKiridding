@@ -1,0 +1,179 @@
+{
+  "extensionDescription": {
+    "message": "接続先に含まれるキリル文字と、英字に似た別の文字を検出して警告します。Google検索に含まれるURLも確認します。"
+  },
+  "actionTitle": {
+    "message": "NoKiridding — 許可リストを開く"
+  },
+  "language": {
+    "message": "ja"
+  },
+  "warningTitle": {
+    "message": "文字の違いに注意 — NoKiridding"
+  },
+  "warningHeading": {
+    "message": "文字の違いに注意してください"
+  },
+  "domainLabel": {
+    "message": "入力した接続先"
+  },
+  "domainAria": {
+    "message": "注意する文字を含む接続先"
+  },
+  "remember": {
+    "message": "この接続先を今後も許可する"
+  },
+  "permissionNote": {
+    "message": "チェックしない場合は、このタブだけで許可します。"
+  },
+  "closeTab": {
+    "message": "このタブを閉じる"
+  },
+  "continueButton": {
+    "message": "続行"
+  },
+  "allowedSites": {
+    "message": "許可リスト"
+  },
+  "settingsTitle": {
+    "message": "許可リスト — NoKiridding"
+  },
+  "settingsIntro": {
+    "message": "「今後も許可する」で保存した接続先です。削除すると、次に開くときから再び判定します。"
+  },
+  "savedHosts": {
+    "message": "保存した接続先"
+  },
+  "loading": {
+    "message": "読み込んでいます。"
+  },
+  "emptyList": {
+    "message": "保存した接続先はありません。警告画面で「この接続先を今後も許可する」にチェックを付けて続行すると、ここに追加されます。"
+  },
+  "refreshList": {
+    "message": "一覧を更新"
+  },
+  "storageTitle": {
+    "message": "保存される場所"
+  },
+  "storageNote": {
+    "message": "許可リストは、この端末のChromeプロフィール内に保存されます。外部への送信や、ほかの端末への同期はしません。"
+  },
+  "removalNote": {
+    "message": "削除すると、同じ接続先のタブ内だけの許可も解除します。すでに開いているページを閉じる操作ではありません。"
+  },
+  "noHostname": {
+    "message": "確認する接続先がありません。"
+  },
+  "noHostnameNote": {
+    "message": "注意が必要な接続先を検出したとき、この画面に文字の違いを表示します。"
+  },
+  "characterReason": {
+    "message": "「$1」は$2です。"
+  },
+  "characterResembles": {
+    "message": " 英字の「$1」に似ています。"
+  },
+  "characterTooltip": {
+    "message": "$1（$2）"
+  },
+  "previewNote": {
+    "message": "表示確認用の画面です。"
+  },
+  "searchStopped": {
+    "message": "検索結果の表示を中断しました。"
+  },
+  "accessStopped": {
+    "message": "この接続先へのアクセスを止めました。"
+  },
+  "reopenURL": {
+    "message": "元のURLを開き直してから、続行するか選んでください。"
+  },
+  "warningUnavailable": {
+    "message": "警告の情報を確認できませんでした。元のURLを開き直してください。"
+  },
+  "closeFailed": {
+    "message": "タブを閉じられませんでした。"
+  },
+  "continueFailed": {
+    "message": "続行できませんでした。"
+  },
+  "hostCount": {
+    "message": "$1件"
+  },
+  "remove": {
+    "message": "削除"
+  },
+  "removeAria": {
+    "message": "$1 を許可リストから削除"
+  },
+  "listLoadFailed": {
+    "message": "一覧を読み込めませんでした。"
+  },
+  "permissionRemoved": {
+    "message": "「$1」の許可を削除しました。次に開くときから再び判定します。"
+  },
+  "listUpdateFailed": {
+    "message": "一覧を更新できませんでした。"
+  },
+  "retryList": {
+    "message": "「一覧を更新」で再度お試しください。"
+  },
+  "searchHeading": {
+    "message": "入力したURLに注意してください"
+  },
+  "checkCharacters": {
+    "message": "文字の違いを確認してください。"
+  },
+  "listBackgroundFailed": {
+    "message": "許可リストを更新できませんでした。もう一度お試しください。"
+  },
+  "pendingMissing": {
+    "message": "この警告の情報が見つかりません。元のURLを開き直してください。"
+  },
+  "permissionInvalid": {
+    "message": "許可の設定を確認できませんでした。"
+  },
+  "destinationInvalid": {
+    "message": "接続先を確認できませんでした。"
+  },
+  "continueRetry": {
+    "message": "続行できませんでした。もう一度お試しください。"
+  },
+  "labelOther": {
+    "message": "英数字以外の文字"
+  },
+  "labelInvisible": {
+    "message": "見えない文字"
+  },
+  "labelCyrillic": {
+    "message": "キリル文字"
+  },
+  "labelGreek": {
+    "message": "ギリシャ文字"
+  },
+  "labelHiragana": {
+    "message": "ひらがな"
+  },
+  "labelKatakana": {
+    "message": "カタカナ"
+  },
+  "labelHan": {
+    "message": "漢字"
+  },
+  "labelLatin": {
+    "message": "英数字以外のラテン文字"
+  },
+  "labelMark": {
+    "message": "結合文字"
+  },
+  "labelSpace": {
+    "message": "空白文字"
+  },
+  "displayInvisible": {
+    "message": "不可視"
+  },
+  "displaySpace": {
+    "message": "空白"
+  }
+}
