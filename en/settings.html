@@ -34,11 +34,16 @@
     </form>
     <p id="protection-status" class="list-status" role="status" aria-live="polite"></p>
     <div class="list-heading"><h2 data-i18n="protectedCompanies">比較する会社・サービス</h2><span id="protection-count"></span></div>
+    <div class="protection-list-help">
+      <p id="protection-list-purpose" class="field-help" data-i18n="protectionListPurpose">このリストは、通常の英数字を組み合わせて正規ドメインに似せた名前を調べるための比較先です。登録した正規ドメインと接続先を照らし合わせ、rn/m・0/o・1/l/i（I）・vv/w・cl/dの5種類の見間違いを追加で確認します。</p>
+      <p id="protection-list-scope" class="field-help" data-i18n="protectionListScope">キリル文字や英字に似た別の文字の検査は、このリストに載っていない接続先でも行います。続行して許可した接続先は、許可が有効な間は検査の対象外です。</p>
+      <p id="protection-list-edit" class="field-help" data-i18n="protectionListEdit">上の入力欄から、普段使う会社やサービスを自分で追加できます。登録済みの項目も編集・削除できます。追加するドメインは、公式サイトで確認してください。</p>
+    </div>
     <label for="protection-filter" class="filter-label" data-i18n="filterProtection">名前・ドメインで絞り込む</label>
     <input id="protection-filter" type="search" autocomplete="off">
     <p id="protection-loading" role="status" data-i18n="loading">読み込んでいます。</p>
     <p id="protection-empty" hidden data-i18n="protectionEmpty">該当する登録はありません。</p>
-    <ul id="protected-domains" class="permission-list protected-list" aria-label="保護するドメイン" data-i18n-aria="protectionTitle"></ul>
+    <ul id="protected-domains" aria-describedby="protection-list-purpose protection-list-scope protection-list-edit" class="permission-list protected-list" aria-label="保護するドメイン" data-i18n-aria="protectionTitle"></ul>
     <hr class="section-divider">
     <h1 data-i18n="allowedSites">許可リスト</h1>
     <p class="intro" data-i18n="settingsIntro">「今後も許可する」で保存した接続先です。削除すると、次に開くときから再び判定します。</p>

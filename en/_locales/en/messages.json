@@ -253,5 +253,14 @@
   },
   "protectionRuleFailed": {
     "message": "Chrome could not create a blocking rule for these domains. Your previous settings have been kept."
+  },
+  "protectionListPurpose": {
+    "message": "This list supplies reference domains for an additional check of lookalike combinations made from ordinary letters and digits. Destinations are compared with the registered domains using five patterns: rn/m, 0/o, 1/l/i (I), vv/w and cl/d."
+  },
+  "protectionListScope": {
+    "message": "Cyrillic characters and listed non-ASCII lookalike letters are checked even when a destination is not on this list. Hostnames you have allowed bypass checks while that permission is active."
+  },
+  "protectionListEdit": {
+    "message": "You can add your own companies and services using the fields above, and edit or remove existing entries. Verify each domain on the official website before registering it."
   }
 }
