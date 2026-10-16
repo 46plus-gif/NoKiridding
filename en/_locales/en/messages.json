@@ -39,7 +39,7 @@
     "message": "Settings — NoKiridding"
   },
   "settingsIntro": {
-    "message": "Hostnames saved with “Always allow this hostname”. Remove one to check it again the next time you open it."
+    "message": "These hostnames bypass warnings. They are saved when you select “Always allow this hostname” on a warning and continue. Both the basic character check and the additional similarity check are bypassed while permission is active. Remove an entry to check it again on the next visit. Tab-only permissions do not appear here."
   },
   "savedHosts": {
     "message": "Saved hostnames"
@@ -189,7 +189,7 @@
     "message": "Protected domains"
   },
   "protectionIntro": {
-    "message": "Compares registered domains using five lookalike patterns. Registered domains and their subdomains are excluded from this similarity check. Ordinary misspellings are not checked."
+    "message": "These are reference domains used to raise an additional warning. Register a legitimate domain to check for lookalike spellings made from ordinary letters and digits. This list does not limit the basic character check."
   },
   "protectionPatterns": {
     "message": "Patterns: rn / m · 0 / o · 1 / l / i (I) · vv / w · cl / d. Chrome lowercases hostnames, so I is compared as i."
@@ -262,5 +262,26 @@
   },
   "protectionListEdit": {
     "message": "You can add your own companies and services using the fields above, and edit or remove existing entries. Verify each domain on the official website before registering it."
+  },
+  "mainFunctionTitle": {
+    "message": "Main feature: spot lookalike characters"
+  },
+  "mainFunctionIntro": {
+    "message": "NoKiridding checks destination domain names for Cyrillic characters and listed non-ASCII letters that resemble ordinary Latin letters. When it finds a target character, it blocks navigation and highlights the character with an explanation."
+  },
+  "mainFunctionScope": {
+    "message": "This basic check works without registering sites in a list. It checks the domain name, including subdomains and endings such as .com. URL paths and query strings are outside the check."
+  },
+  "optionalSettingsTitle": {
+    "message": "Optional settings"
+  },
+  "optionalSettingsIntro": {
+    "message": "Use the settings below to also check lookalike spellings, or to allow a hostname without warnings."
+  },
+  "protectionSectionTitle": {
+    "message": "Also check similar names (Protected domains)"
+  },
+  "allowedSectionTitle": {
+    "message": "Open without warnings (Allowed sites)"
   }
 }

@@ -18,8 +18,15 @@
       <img src="icons/icon-48.png" width="40" height="40" alt="">
       <span>NoKiridding</span>
     </header>
-    <h1 data-i18n="protectionTitle">保護するドメイン</h1>
-    <p class="intro" data-i18n="protectionIntro">登録した正規ドメインと、5種類の似た文字の組み合わせを比較します。似ているだけで偽物とは断定しません。</p>
+    <section class="main-function" aria-labelledby="main-function-title">
+      <h1 id="main-function-title" data-i18n="mainFunctionTitle">基本の機能：偽文字を見つける</h1>
+      <p class="intro" data-i18n="mainFunctionIntro">接続先のドメイン名に、キリル文字や英字にそっくりな別の文字がないかを調べます。対象の文字を見つけると接続を止め、警告画面でその文字と理由を示します。</p>
+      <p class="intro" data-i18n="mainFunctionScope">この基本の検査は、サイトをリストに登録しなくても働きます。対象は、サブドメインから末尾の .com などまでのドメイン名です。URLのパスや検索条件は調べません。</p>
+    </section>
+    <h2 class="options-title" data-i18n="optionalSettingsTitle">必要に応じて使う追加設定</h2>
+    <p class="intro" data-i18n="optionalSettingsIntro">さらに似た綴りも調べたい場合や、警告を出さずに開きたい接続先がある場合に使います。</p>
+    <h3 class="option-heading" data-i18n="protectionSectionTitle">似た名前も確認する（保護するドメイン）</h3>
+    <p class="intro" data-i18n="protectionIntro">追加の警告を出すための比較先です。正規ドメインを登録すると、通常の英数字だけでその名前に似せた接続先も確認します。このリストは、基本の偽文字検査の対象を限定するものではありません。</p>
     <p class="protection-patterns" data-i18n="protectionPatterns">rn / m · 0 / o · 1 / l / i（I） · vv / w · cl / d</p>
     <form id="protection-form">
       <label for="company-name" data-i18n="companyName">会社・サービス名</label>
@@ -33,21 +40,19 @@
       </div>
     </form>
     <p id="protection-status" class="list-status" role="status" aria-live="polite"></p>
-    <div class="list-heading"><h2 data-i18n="protectedCompanies">比較する会社・サービス</h2><span id="protection-count"></span></div>
+    <div class="list-heading"><h4 data-i18n="protectedCompanies">比較する会社・サービス</h4><span id="protection-count"></span></div>
     <div class="protection-list-help">
-      <p id="protection-list-purpose" class="field-help" data-i18n="protectionListPurpose">このリストは、通常の英数字を組み合わせて正規ドメインに似せた名前を調べるための比較先です。登録した正規ドメインと接続先を照らし合わせ、rn/m・0/o・1/l/i（I）・vv/w・cl/dの5種類の見間違いを追加で確認します。</p>
-      <p id="protection-list-scope" class="field-help" data-i18n="protectionListScope">キリル文字や英字に似た別の文字の検査は、このリストに載っていない接続先でも行います。続行して許可した接続先は、許可が有効な間は検査の対象外です。</p>
       <p id="protection-list-edit" class="field-help" data-i18n="protectionListEdit">上の入力欄から、普段使う会社やサービスを自分で追加できます。登録済みの項目も編集・削除できます。追加するドメインは、公式サイトで確認してください。</p>
     </div>
     <label for="protection-filter" class="filter-label" data-i18n="filterProtection">名前・ドメインで絞り込む</label>
     <input id="protection-filter" type="search" autocomplete="off">
     <p id="protection-loading" role="status" data-i18n="loading">読み込んでいます。</p>
     <p id="protection-empty" hidden data-i18n="protectionEmpty">該当する登録はありません。</p>
-    <ul id="protected-domains" aria-describedby="protection-list-purpose protection-list-scope protection-list-edit" class="permission-list protected-list" aria-label="保護するドメイン" data-i18n-aria="protectionTitle"></ul>
+    <ul id="protected-domains" aria-describedby="protection-list-edit" class="permission-list protected-list" aria-label="保護するドメイン" data-i18n-aria="protectionTitle"></ul>
     <hr class="section-divider">
-    <h1 data-i18n="allowedSites">許可リスト</h1>
-    <p class="intro" data-i18n="settingsIntro">「今後も許可する」で保存した接続先です。削除すると、次に開くときから再び判定します。</p>
-    <div class="list-heading"><h2 data-i18n="savedHosts">保存した接続先</h2><span id="count"></span></div>
+    <h3 class="option-heading" data-i18n="allowedSectionTitle">警告せずに開く（許可リスト）</h3>
+    <p class="intro" data-i18n="settingsIntro">警告を省略する接続先です。警告画面で「この接続先を今後も許可する」にチェックして続行すると保存されます。許可中は、基本の偽文字検査と追加の類似判定の両方を省略します。削除すると次に開くときから再び検査します。タブ内だけの一時許可は、この一覧には表示しません。</p>
+    <div class="list-heading"><h4 data-i18n="savedHosts">保存した接続先</h4><span id="count"></span></div>
     <p id="loading" role="status" data-i18n="loading">読み込んでいます。</p>
     <p id="empty" hidden data-i18n="emptyList">保存した接続先はありません。警告画面で「この接続先を今後も許可する」にチェックを付けて続行すると、ここに追加されます。</p>
     <ul id="permissions" class="permission-list" aria-label="保存した接続先" data-i18n-aria="savedHosts"></ul>
