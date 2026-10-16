@@ -42,3 +42,15 @@ input:focus-visible, textarea:focus-visible { outline: 3px solid #1a73e8; outlin
   .permission-row { gap: 12px; }
   .permission-host b { font-size: 17px; }
 }
+
+.main-example { margin: 24px 0; }
+.main-example dl { display: grid; grid-template-columns: auto 1fr; gap: 12px 20px; margin: 16px 0; align-items: baseline; }
+.main-example dt { font-size: 14px; }
+.main-example dd { margin: 0; overflow-wrap: anywhere; }
+.main-example code { font-family: ui-monospace, monospace; font-size: 18px; }
+@media (max-width: 600px) {
+  .main-example dl { grid-template-columns: 1fr; gap: 6px; }
+  .main-example dd { margin-bottom: 10px; }
+}
+.pattern-examples { margin: 12px 0 16px; padding-left: 24px; font-size: 14px; line-height: 1.85; }
+.pattern-examples li + li { margin-top: 8px; }

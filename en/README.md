@@ -12,7 +12,7 @@ This check applies only when the hostname matches a listed reference through the
 
 The warning compares the entered hostname and the reference on two rows and highlights the differing spans. **Continue** and **Always allow this hostname** remain available; neither verifies safety.
 
-Open the extension icon to view **Protected domains**. Add, edit, remove or filter companies and services. Enter a company/service name and domain names only, separated by commas or new lines. Verify the domains on the official site. Limits: 200 companies/services and 400 domains. Entries are saved only in this Chrome profile; changes do not sync or get sent to a server. Your saved list is retained across updates; new bundled defaults are not merged into a customized list automatically.
+Open settings through the extension icon, then find **Domains targeted by phishing impersonation**. Add, edit, remove or filter companies and services. Enter a company/service name and domain names only, separated by commas or new lines. Verify the domains on the official site. Limits: 200 companies/services and 400 domains. Entries are saved only in this Chrome profile; changes do not sync or get sent to a server. Your saved list is retained across updates; new bundled defaults are not merged into a customized list automatically.
 
 [Initial domains and official reference URLs](PROTECTED-DOMAINS.csv). This is a manually selected starting list, not a ranking or a measured detection-coverage claim. Websites may host third-party content under otherwise legitimate domains; listing a domain does not prove that every page is safe.
 

@@ -57,7 +57,7 @@
     "message": "保存される場所"
   },
   "storageNote": {
-    "message": "許可リストと保護するドメインは、この端末のChromeプロフィール内に保存されます。外部への送信や、ほかの端末への同期はしません。"
+    "message": "許可リストと、追加・編集したドメイン一覧は、この端末のChromeプロフィール内に保存されます。外部への送信や、ほかの端末への同期はしません。"
   },
   "removalNote": {
     "message": "削除すると、同じ接続先のタブ内だけの許可も解除します。すでに開いているページを閉じる操作ではありません。"
@@ -186,22 +186,22 @@
     "message": "「$1」が「$2」に似ています。"
   },
   "protectionTitle": {
-    "message": "保護するドメイン"
+    "message": "フィッシング詐欺に使われやすいドメイン"
   },
   "protectionIntro": {
-    "message": "追加の警告を出すための比較先です。正規ドメインを登録すると、通常の英数字だけでその名前に似せた接続先も確認します。このリストは、基本の偽文字検査の対象を限定するものではありません。"
+    "message": "ここには、なりすましを見つけたい会社やサービスの本物のドメインを登録します。登録済みの141ドメインは、設定しなくても自動で確認します。"
   },
   "protectionPatterns": {
-    "message": "対象：rn / m・0 / o・1 / l / i（I）・vv / w・cl / d。Chromeはドメインを小文字にそろえるため、大文字のIはiとして比較します。"
+    "message": "例えば、次のような置き換えを調べます。以下は文字の見間違いを説明するための作例です。登録した本物のドメインに似ている接続先を見つけると警告します。"
   },
   "companyName": {
     "message": "会社・サービス名"
   },
   "companyDomains": {
-    "message": "正規ドメイン"
+    "message": "追加する本物のドメイン"
   },
   "protectionInputHelp": {
-    "message": "公式サイトで確認した半角英数字のドメインを入力してください。複数ある場合は改行かカンマで区切ります。URLのパスや「*」は入力しません。"
+    "message": "例：amazon.com。公式サイトで確認した本物のドメインを、半角英数字で入力してください。偽サイトのドメインは登録しません。複数ある場合は改行かカンマで区切ります。https://・URLのパス・「*」は入力しません。"
   },
   "addProtection": {
     "message": "追加"
@@ -213,7 +213,7 @@
     "message": "編集を取り消す"
   },
   "protectedCompanies": {
-    "message": "比較する会社・サービス"
+    "message": "登録済みのドメイン"
   },
   "filterProtection": {
     "message": "名前・ドメインで絞り込む"
@@ -231,16 +231,16 @@
     "message": "「$1」を編集"
   },
   "removeProtectionAria": {
-    "message": "「$1」を保護するドメインから削除"
+    "message": "「$1」をドメイン一覧から削除"
   },
   "protectionSaved": {
-    "message": "保護するドメインを保存しました。"
+    "message": "ドメイン一覧を保存しました。"
   },
   "protectionRemoved": {
     "message": "「$1」を比較対象から削除しました。"
   },
   "protectionSaveFailed": {
-    "message": "保護するドメインを保存できませんでした。以前の設定を維持しています。もう一度お試しください。"
+    "message": "ドメイン一覧を保存できませんでした。以前の設定を維持しています。もう一度お試しください。"
   },
   "protectionInvalid": {
     "message": "名前と正しい半角英数字のドメインを入力してください。https://・パス・ポート番号・認証情報・「*」は含めません。"
@@ -261,7 +261,7 @@
     "message": "キリル文字や英字に似た別の文字の検査は、このリストに載っていない接続先でも行います。続行して許可した接続先は、許可が有効な間は検査の対象外です。"
   },
   "protectionListEdit": {
-    "message": "上の入力欄から、普段使う会社やサービスを自分で追加できます。登録済みの項目も編集・削除できます。追加するドメインは、公式サイトで確認してください。"
+    "message": "普段使う会社やサービスも、上の入力欄から追加できます。登録済みの項目は、下の一覧で編集・削除できます。警告を省略して接続を許可する場合は、別の「許可リスト」を使います。"
   },
   "mainFunctionTitle": {
     "message": "基本の機能：偽文字を見つける"
@@ -273,15 +273,42 @@
     "message": "この基本の検査は、サイトをリストに登録しなくても働きます。対象は、サブドメインから末尾の .com などまでのドメイン名です。URLのパスや検索条件は調べません。"
   },
   "optionalSettingsTitle": {
-    "message": "必要に応じて使う追加設定"
+    "message": "オプション機能"
   },
   "optionalSettingsIntro": {
-    "message": "さらに似た綴りも調べたい場合や、警告を出さずに開きたい接続先がある場合に使います。"
+    "message": "上記の基本機能に加えて、文字の組み合わせで騙してくるパターンにも対応する機能です。対象が無限にあるため、フィッシング詐欺に狙われやすい100社を登録してあります。追加したい場合は、以下から追加してください。"
   },
   "protectionSectionTitle": {
-    "message": "似た名前も確認する（保護するドメイン）"
+    "message": "フィッシング詐欺に使われやすいドメイン"
   },
   "allowedSectionTitle": {
     "message": "警告せずに開く（許可リスト）"
+  },
+  "mainExampleGenuine": {
+    "message": "本物のドメイン"
+  },
+  "mainExampleLookalike": {
+    "message": "遮断する文字の例"
+  },
+  "mainFunctionExample": {
+    "message": "下の例は、先頭の英字「a」を、見た目がそっくりなキリル文字「а」に置き換えています。赤く示した文字は英字ではないため、接続を止めて警告します。"
+  },
+  "patternRnExample": {
+    "message": "rn / m：amazon → arnazon。「r」と「n」を並べて「m」に見せます。"
+  },
+  "patternZeroExample": {
+    "message": "0 / o：google → g00gle。英字の「o」を数字の「0」に置き換えます。"
+  },
+  "patternOneExample": {
+    "message": "1 / l / i（I）：paypal → paypa1。小文字の「l」に数字の「1」や大文字の「I」を似せます。小文字の「i」も比較の対象です。"
+  },
+  "patternVvExample": {
+    "message": "vv / w：windows → vvindovvs。「v」を2つ並べて「w」に見せます。"
+  },
+  "patternClExample": {
+    "message": "cl / d：adobe → aclobe。「c」と「l」を並べて「d」に見せます。"
+  },
+  "patternCaseNote": {
+    "message": "大文字の「I」について：Chromeはドメイン名を小文字にそろえるため、入力された「I」は「i」として、数字の「1」や小文字の「l」と比較します。見え方はフォントによって異なります。"
   }
 }

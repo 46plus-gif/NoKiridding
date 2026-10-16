@@ -57,7 +57,7 @@
     "message": "Where your choices are stored"
   },
   "storageNote": {
-    "message": "Allowed sites and protected domains are stored in this Chrome profile on this device. They are not sent to an external service or synced to other devices."
+    "message": "Allowed sites and your domain list changes are stored in this Chrome profile on this device. They are not sent elsewhere or synced to other devices."
   },
   "removalNote": {
     "message": "Removing a hostname also revokes its tab-only permissions. Pages that are already open will stay open."
@@ -186,22 +186,22 @@
     "message": "“$1” resembles “$2”."
   },
   "protectionTitle": {
-    "message": "Protected domains"
+    "message": "Domains targeted by phishing impersonation"
   },
   "protectionIntro": {
-    "message": "These are reference domains used to raise an additional warning. Register a legitimate domain to check for lookalike spellings made from ordinary letters and digits. This list does not limit the basic character check."
+    "message": "Register genuine domains of companies and services whose impersonators you want to detect here. The 141 included domains are checked automatically without setup."
   },
   "protectionPatterns": {
-    "message": "Patterns: rn / m · 0 / o · 1 / l / i (I) · vv / w · cl / d. Chrome lowercases hostnames, so I is compared as i."
+    "message": "The following substitutions are checked. These are illustrative examples of visual confusion, not reports of actual incidents. A warning appears when a destination resembles a registered genuine domain."
   },
   "companyName": {
     "message": "Company or service name"
   },
   "companyDomains": {
-    "message": "Registered domains"
+    "message": "Genuine domains to add"
   },
   "protectionInputHelp": {
-    "message": "Enter ASCII domain names verified on the official site. Separate multiple domains with commas or new lines. Do not include a URL path or wildcard (*)."
+    "message": "Example: amazon.com. Enter genuine ASCII domains verified on the official website, not fake domains. Separate multiple domains with commas or new lines. Do not include https://, a URL path or wildcard (*)."
   },
   "addProtection": {
     "message": "Add"
@@ -213,7 +213,7 @@
     "message": "Cancel editing"
   },
   "protectedCompanies": {
-    "message": "Companies and services to compare"
+    "message": "Registered domains"
   },
   "filterProtection": {
     "message": "Filter by name or domain"
@@ -231,16 +231,16 @@
     "message": "Edit $1"
   },
   "removeProtectionAria": {
-    "message": "Remove $1 from protected domains"
+    "message": "Remove $1 from the domain list"
   },
   "protectionSaved": {
-    "message": "Protection list saved."
+    "message": "Domain list saved."
   },
   "protectionRemoved": {
     "message": "Removed $1 from the comparison list."
   },
   "protectionSaveFailed": {
-    "message": "Could not save protected domains. Your previous settings have been kept. Try again."
+    "message": "Could not save the domain list. Your previous settings have been kept. Try again."
   },
   "protectionInvalid": {
     "message": "Enter a name and valid ASCII domain names, without a scheme, path, port, credentials or wildcard."
@@ -261,7 +261,7 @@
     "message": "Cyrillic characters and listed non-ASCII lookalike letters are checked even when a destination is not on this list. Hostnames you have allowed bypass checks while that permission is active."
   },
   "protectionListEdit": {
-    "message": "You can add your own companies and services using the fields above, and edit or remove existing entries. Verify each domain on the official website before registering it."
+    "message": "Add companies and services you use in the fields above. Edit or remove existing entries in the list below. To skip warnings and permit a destination, use the separate Allowed sites list."
   },
   "mainFunctionTitle": {
     "message": "Main feature: spot lookalike characters"
@@ -273,15 +273,42 @@
     "message": "This basic check works without registering sites in a list. It checks the domain name, including subdomains and endings such as .com. URL paths and query strings are outside the check."
   },
   "optionalSettingsTitle": {
-    "message": "Optional settings"
+    "message": "Optional features"
   },
   "optionalSettingsIntro": {
-    "message": "Use the settings below to also check lookalike spellings, or to allow a hostname without warnings."
+    "message": "In addition to the basic feature above, this feature checks deceptive combinations of letters and digits. Because there are countless possible targets, 100 companies whose names may be impersonated in phishing are included. Add more using the fields below."
   },
   "protectionSectionTitle": {
-    "message": "Also check similar names (Protected domains)"
+    "message": "Domains targeted by phishing impersonation"
   },
   "allowedSectionTitle": {
     "message": "Open without warnings (Allowed sites)"
+  },
+  "mainExampleGenuine": {
+    "message": "Genuine domain"
+  },
+  "mainExampleLookalike": {
+    "message": "Example of a blocked character"
+  },
+  "mainFunctionExample": {
+    "message": "The lower example replaces the first Latin letter “a” with the similar-looking Cyrillic letter “а”. The highlighted character is not a Latin letter, so NoKiridding stops navigation and shows a warning."
+  },
+  "patternRnExample": {
+    "message": "rn / m: amazon → arnazon. Adjacent r and n can resemble m."
+  },
+  "patternZeroExample": {
+    "message": "0 / o: google → g00gle. The digit 0 replaces the letter o."
+  },
+  "patternOneExample": {
+    "message": "1 / l / i (I): paypal → paypa1. The digit 1 or uppercase I can resemble lowercase l. Lowercase i is also compared."
+  },
+  "patternVvExample": {
+    "message": "vv / w: windows → vvindovvs. Two adjacent v letters can resemble w."
+  },
+  "patternClExample": {
+    "message": "cl / d: adobe → aclobe. Adjacent c and l can resemble d."
+  },
+  "patternCaseNote": {
+    "message": "About uppercase I: Chrome lowercases domain names, so an entered I is compared as i with the digit 1 and lowercase l. The visual resemblance depends on the font."
   }
 }

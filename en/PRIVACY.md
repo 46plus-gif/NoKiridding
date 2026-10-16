@@ -13,7 +13,7 @@ Selecting **Always allow this hostname** and continuing stores the hostname and 
 
 You can remove saved entries individually through the extension icon's **Allowed sites** page. Removal also revokes tab-only permissions for the same hostname; already open pages remain open. Uninstalling the extension deletes its stored information.
 
-## Protected domains
+## Domains targeted by phishing impersonation
 
 Company/service names and registered domain names that you add, edit or remove are stored as a list in this Chrome profile. The list is used only for lookalike comparisons, is not synced or transmitted externally, and is removed when the extension is uninstalled. Blocking rules are generated locally from it. Do not enter private contact details or secrets in these fields.
 

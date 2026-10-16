@@ -16,7 +16,7 @@ This check applies only when the hostname matches a listed reference through the
 
 The warning compares the entered hostname and the reference on two rows and highlights the differing spans. **Continue** and **Always allow this hostname** remain available; neither verifies safety.
 
-Open the extension icon to view **Protected domains**. Add, edit, remove or filter companies and services. Enter a company/service name and domain names only, separated by commas or new lines. Verify the domains on the official site. Limits: 200 companies/services and 400 domains. Entries are saved only in this Chrome profile; changes do not sync or get sent to a server. Your saved list is retained across updates; new bundled defaults are not merged into a customized list automatically.
+Open the extension icon to view **Domains targeted by phishing impersonation**. Add, edit, remove or filter companies and services. Enter a company/service name and domain names only, separated by commas or new lines. Verify the domains on the official site. Limits: 200 companies/services and 400 domains. Entries are saved only in this Chrome profile; changes do not sync or get sent to a server. Your saved list is retained across updates; new bundled defaults are not merged into a customized list automatically.
 
 [Initial domains and official reference URLs](en/PROTECTED-DOMAINS.csv). This is a manually selected starting list, not a ranking or a measured detection-coverage claim. Websites may host third-party content under otherwise legitimate domains; listing a domain does not prove that every page is safe.
 
@@ -131,7 +131,7 @@ NoKiriddingは、英字にそっくりな別の文字を見つける、パソコ
 
 例えば、`amazon` の先頭の英字 `a` をキリル文字 `а` に置き換えた `аmazon` は検出します。一方、`amazen` のように通常の英字だけで綴りを変えた名前には反応しません。**一般的なスペルミスは判定しません。下記の比較機能では、登録ドメインに対する5種類の見間違いだけを調べます。**
 
-### 保護するドメインとの比較
+### フィッシング詐欺に使われやすいドメインとの比較
 
 0.7.0では、編集可能な初期リスト100社・サービス、141ドメインとの比較を追加しました。対象は `rn/m`・`0/o`・`1/l/i`（入力時の大文字 `I` を含む）・`vv/w`・`cl/d` の5種類です。Chromeはドメイン名を小文字にそろえるため、`I` は `i` として比較します。
 
@@ -139,7 +139,7 @@ NoKiriddingは、英字にそっくりな別の文字を見つける、パソコ
 
 警告画面では入力先と比較先を2行で並べ、違う部分を強調します。「続行」と「この接続先を今後も許可する」も使えます。いずれも安全性を確認する操作ではありません。
 
-拡張機能のアイコンから「保護するドメイン」を開くと、追加・編集・削除・絞り込みができます。会社・サービス名と、公式サイトで確認したドメインを入力してください。複数のドメインは改行かカンマで区切ります。上限は200件・合計400ドメインです。この端末のChromeプロフィール内だけに保存し、外部へ送信・同期しません。編集したリストは更新後も保持し、新しい初期リストを自動で混ぜることはありません。
+拡張機能のアイコンから「フィッシング詐欺に使われやすいドメイン」を開くと、追加・編集・削除・絞り込みができます。会社・サービス名と、公式サイトで確認したドメインを入力してください。複数のドメインは改行かカンマで区切ります。上限は200件・合計400ドメインです。この端末のChromeプロフィール内だけに保存し、外部へ送信・同期しません。編集したリストは更新後も保持し、新しい初期リストを自動で混ぜることはありません。
 
 [初期ドメインと公式参照先の一覧](ja/PROTECTED-DOMAINS.csv)。手動で選定した開始用のリストで、順位や検出率を示すものではありません。正規ドメインの配下に第三者のコンテンツがある場合もあり、登録されていることは全ページの安全性を保証しません。
 
@@ -147,7 +147,7 @@ NoKiriddingは、英字にそっくりな別の文字を見つける、パソコ
 
 予約された `.invalid` ドメインと架空の登録情報を使った表示例です。実在サイトには接続していません。
 
-![保護するドメインを編集できる設定画面](ja/images/settings.jpg)
+![フィッシング詐欺に使われやすいドメインを編集できる設定画面](ja/images/settings.jpg)
 
 画像は開発用の情報を使ってローカル表示を確認したものです。自動検証は実施済みですが、導入したChromeでの遮断・起動直後・転送時の動作は、0.7.0を再読み込みしてから確認する必要があります。
 

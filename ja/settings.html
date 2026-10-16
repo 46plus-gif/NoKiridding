@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title data-i18n="settingsTitle">許可リスト — NoKiridding</title>
+  <title data-i18n="settingsTitle">設定 — NoKiridding</title>
   <link rel="stylesheet" href="warning.css">
   <link rel="stylesheet" href="settings.css">
   <script src="i18n.js" defer></script>
@@ -21,34 +21,51 @@
     <section class="main-function" aria-labelledby="main-function-title">
       <h1 id="main-function-title" data-i18n="mainFunctionTitle">基本の機能：偽文字を見つける</h1>
       <p class="intro" data-i18n="mainFunctionIntro">接続先のドメイン名に、キリル文字や英字にそっくりな別の文字がないかを調べます。対象の文字を見つけると接続を止め、警告画面でその文字と理由を示します。</p>
+      <div class="main-example">
+        <p class="intro" data-i18n="mainFunctionExample">下の例は、先頭の英字「a」を、見た目がそっくりなキリル文字「а」に置き換えています。赤く示した文字は英字ではないため、接続を止めて警告します。</p>
+        <dl>
+          <dt data-i18n="mainExampleGenuine">本物のドメイン</dt>
+          <dd><code>amazon.com</code></dd>
+          <dt data-i18n="mainExampleLookalike">遮断する文字の例</dt>
+          <dd><code><mark>а</mark>mazon.com</code></dd>
+        </dl>
+      </div>
       <p class="intro" data-i18n="mainFunctionScope">この基本の検査は、サイトをリストに登録しなくても働きます。対象は、サブドメインから末尾の .com などまでのドメイン名です。URLのパスや検索条件は調べません。</p>
     </section>
-    <h2 class="options-title" data-i18n="optionalSettingsTitle">必要に応じて使う追加設定</h2>
-    <p class="intro" data-i18n="optionalSettingsIntro">さらに似た綴りも調べたい場合や、警告を出さずに開きたい接続先がある場合に使います。</p>
-    <h3 class="option-heading" data-i18n="protectionSectionTitle">似た名前も確認する（保護するドメイン）</h3>
-    <p class="intro" data-i18n="protectionIntro">追加の警告を出すための比較先です。正規ドメインを登録すると、通常の英数字だけでその名前に似せた接続先も確認します。このリストは、基本の偽文字検査の対象を限定するものではありません。</p>
-    <p class="protection-patterns" data-i18n="protectionPatterns">rn / m · 0 / o · 1 / l / i（I） · vv / w · cl / d</p>
+    <h2 class="options-title" data-i18n="optionalSettingsTitle">オプション機能</h2>
+    <p class="intro" data-i18n="optionalSettingsIntro">上記の基本機能に加えて、文字の組み合わせで騙してくるパターンにも対応する機能です。対象が無限にあるため、フィッシング詐欺に狙われやすい100社を登録してあります。追加したい場合は、以下から追加してください。</p>
+    <h3 class="option-heading" data-i18n="protectionSectionTitle">フィッシング詐欺に使われやすいドメイン</h3>
+    <p class="intro" data-i18n="protectionIntro">ここには、なりすましを見つけたい会社やサービスの本物のドメインを登録します。登録済みの141ドメインは、設定しなくても自動で確認します。</p>
+    <p class="protection-patterns" data-i18n="protectionPatterns">例えば、次のような置き換えを調べます。以下は文字の見間違いを説明するための作例です。登録した本物のドメインに似ている接続先を見つけると警告します。</p>
+    <ul class="pattern-examples">
+      <li data-i18n="patternRnExample">rn / m：amazon → arnazon。「r」と「n」を並べて「m」に見せます。</li>
+      <li data-i18n="patternZeroExample">0 / o：google → g00gle。英字の「o」を数字の「0」に置き換えます。</li>
+      <li data-i18n="patternOneExample">1 / l / i（I）：paypal → paypa1。小文字の「l」に数字の「1」や大文字の「I」を似せます。小文字の「i」も比較の対象です。</li>
+      <li data-i18n="patternVvExample">vv / w：windows → vvindovvs。「v」を2つ並べて「w」に見せます。</li>
+      <li data-i18n="patternClExample">cl / d：adobe → aclobe。「c」と「l」を並べて「d」に見せます。</li>
+    </ul>
+    <p class="field-help" data-i18n="patternCaseNote">大文字の「I」について：Chromeはドメイン名を小文字にそろえるため、入力された「I」は「i」として、数字の「1」や小文字の「l」と比較します。見え方はフォントによって異なります。</p>
     <form id="protection-form">
       <label for="company-name" data-i18n="companyName">会社・サービス名</label>
       <input id="company-name" name="company" type="text" required maxlength="80" autocomplete="off">
-      <label for="company-domains" data-i18n="companyDomains">正規ドメイン</label>
+      <label for="company-domains" data-i18n="companyDomains">追加する本物のドメイン</label>
       <textarea id="company-domains" name="domains" rows="2" required spellcheck="false" autocapitalize="off" aria-describedby="domain-input-help"></textarea>
-      <p id="domain-input-help" class="field-help" data-i18n="protectionInputHelp">公式サイトで確認した半角英数字のドメインを入力してください。複数ある場合は改行かカンマで区切ります。URLのパスや「*」は入力しません。</p>
+      <p id="domain-input-help" class="field-help" data-i18n="protectionInputHelp">例：amazon.com。公式サイトで確認した本物のドメインを、半角英数字で入力してください。偽サイトのドメインは登録しません。複数ある場合は改行かカンマで区切ります。https://・URLのパス・「*」は入力しません。</p>
       <div class="actions">
         <button id="save-protection" type="submit" disabled data-i18n="addProtection">追加</button>
         <button id="cancel-protection" type="button" class="secondary" hidden data-i18n="cancelEdit">編集を取り消す</button>
       </div>
     </form>
     <p id="protection-status" class="list-status" role="status" aria-live="polite"></p>
-    <div class="list-heading"><h4 data-i18n="protectedCompanies">比較する会社・サービス</h4><span id="protection-count"></span></div>
+    <div class="list-heading"><h4 data-i18n="protectedCompanies">登録済みのドメイン</h4><span id="protection-count"></span></div>
     <div class="protection-list-help">
-      <p id="protection-list-edit" class="field-help" data-i18n="protectionListEdit">上の入力欄から、普段使う会社やサービスを自分で追加できます。登録済みの項目も編集・削除できます。追加するドメインは、公式サイトで確認してください。</p>
+      <p id="protection-list-edit" class="field-help" data-i18n="protectionListEdit">普段使う会社やサービスも、上の入力欄から追加できます。登録済みの項目は、下の一覧で編集・削除できます。警告を省略して接続を許可する場合は、別の「許可リスト」を使います。</p>
     </div>
     <label for="protection-filter" class="filter-label" data-i18n="filterProtection">名前・ドメインで絞り込む</label>
     <input id="protection-filter" type="search" autocomplete="off">
     <p id="protection-loading" role="status" data-i18n="loading">読み込んでいます。</p>
     <p id="protection-empty" hidden data-i18n="protectionEmpty">該当する登録はありません。</p>
-    <ul id="protected-domains" aria-describedby="protection-list-edit" class="permission-list protected-list" aria-label="保護するドメイン" data-i18n-aria="protectionTitle"></ul>
+    <ul id="protected-domains" aria-describedby="protection-list-edit" class="permission-list protected-list" aria-label="フィッシング詐欺に使われやすいドメイン" data-i18n-aria="protectionTitle"></ul>
     <hr class="section-divider">
     <h3 class="option-heading" data-i18n="allowedSectionTitle">警告せずに開く（許可リスト）</h3>
     <p class="intro" data-i18n="settingsIntro">警告を省略する接続先です。警告画面で「この接続先を今後も許可する」にチェックして続行すると保存されます。許可中は、基本の偽文字検査と追加の類似判定の両方を省略します。削除すると次に開くときから再び検査します。タブ内だけの一時許可は、この一覧には表示しません。</p>
@@ -60,7 +77,7 @@
     <button id="reload" type="button" class="secondary" data-i18n="refreshList">一覧を更新</button>
     <section class="storage-note" aria-labelledby="storage-title">
       <h2 id="storage-title" data-i18n="storageTitle">保存される場所</h2>
-      <p data-i18n="storageNote">許可リストは、この端末のChromeプロフィール内に保存されます。外部への送信や、ほかの端末への同期はしません。</p>
+      <p data-i18n="storageNote">許可リストと、追加・編集したドメイン一覧は、この端末のChromeプロフィール内に保存されます。外部への送信や、ほかの端末への同期はしません。</p>
       <p data-i18n="removalNote">削除すると、同じ接続先のタブ内だけの許可も解除します。すでに開いているページを閉じる操作ではありません。</p>
     </section>
   </main>
