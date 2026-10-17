@@ -21,7 +21,7 @@
     ['HP','hp.com'], ['Lenovo','lenovo.com'], ['Intel','intel.com'], ['AMD','amd.com'], ['NVIDIA','nvidia.com'],
     ['OpenAI','openai.com chatgpt.com'], ['Anthropic','anthropic.com claude.ai'], ['Spotify','spotify.com'],
     ['Reddit','reddit.com'], ['Pinterest','pinterest.com'], ['Snap','snap.com snapchat.com'],
-    ['ByteDance','bytedance.com tiktok.com'], ['X','x.com twitter.com'], ['Quora','quora.com'],
+    ['ByteDance','bytedance.com tiktok.com'], ['X','x.com twitter.com x.ai'], ['Quora','quora.com'],
     ['Yahoo','yahoo.com'], ['Proton','proton.me protonmail.com'], ['Fastmail','fastmail.com'],
     ['1Password','1password.com'], ['Bitwarden','bitwarden.com'], ['Nord Security','nordsecurity.com nordvpn.com'],
     ['Surfshark','surfshark.com'], ['Intuit','intuit.com mailchimp.com'], ['DocuSign','docusign.com'],

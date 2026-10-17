@@ -4,9 +4,17 @@ NoKiridding is a lookalike-character checker for desktop Chrome. It checks for C
 
 For example, it detects `аmazon`, where the first character is the Cyrillic `а` rather than the Latin `a` in `amazon`. It does not flag `amazen`, which uses only ordinary Latin letters. **It does not perform general spell-checking. The comparisons below cover five visual patterns and certain hyphen-separated name additions or suffix differences.**
 
+## Changes in 0.8.1
+
+- Fixed a case where a blocked redirect destination could fail to open the warning screen.
+- After selecting Continue, the button shows Connecting…; a failed request restores Continue.
+- Added x.ai to the bundled official-domain references. Its subdomains, including auth.x.ai, are excluded from the additional comparison checks. Customized lists are preserved and are not automatically updated; add x.ai manually if needed.
+
+The user confirmed in Chrome that Continue worked after a redirect warning and that the updated extension no longer blocked the x.ai authentication destination. This does not verify every site or redirect path.
+
 ## Registered-domain comparisons
 
-Version 0.8.0 includes an editable initial list of 101 companies/services and 143 domains. These additional checks do not perform general spell-checking:
+Version 0.8.1 includes an editable initial list of 101 companies/services and 144 domains. These additional checks do not perform general spell-checking:
 
 - Five visual substitutions: `rn/m`, `0/o`, `1/l/i` (including an entered capital `I`), `vv/w`, and `cl/d`. Chrome lowercases hostnames, so `I` is compared as `i`.
 - Hyphen-separated additions around registered names, such as `support-mercari.com` and `amazon-support.com`. The same name with a different suffix is also compared. A name occurring only inside an unrelated word does not trigger this check.
@@ -37,23 +45,23 @@ Display example using the actual interface with the reserved hostname `аmazon.i
 
 **This does not block all phishing sites. No warning does not mean a site is safe.** Read the [disclaimer and limitations](DISCLAIMER.md) before use.
 
-[Download NoKiridding 0.8.0](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.0-en.zip)
+[Download NoKiridding 0.8.1](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.1-en.zip)
 
 This folder contains the English documentation and a complete copy of the extension. You do not need the Japanese folder.
 
-Version: 0.8.0. Requires desktop Chrome 120 or later. It does not run in mobile Chrome. The interface is Japanese when Chrome's UI language is Japanese, and English otherwise.
+Version: 0.8.1. Requires desktop Chrome 120 or later. It does not run in mobile Chrome. The interface is Japanese when Chrome's UI language is Japanese, and English otherwise.
 
 [English source files](https://github.com/46plus-gif/NoKiridding/tree/main/en)
 
 ## Install from a ZIP
 
-1. Download [NoKiridding-0.8.0-en.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.0-en.zip). Use this extension ZIP, rather than GitHub's automatically generated “Source code” archive.
+1. Download [NoKiridding-0.8.1-en.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.1-en.zip). Use this extension ZIP, rather than GitHub's automatically generated “Source code” archive.
 2. Extract the ZIP and place the extracted folder somewhere you will keep it.
 3. Enter `chrome://extensions` in Chrome's address bar.
 4. Turn on **Developer mode**.
 5. Select **Load unpacked**.
 6. Choose the extracted folder that directly contains `manifest.json`. Do not select only its `rules` or `icons` subfolder.
-7. Check that **NoKiridding** appears, its version is **0.8.0**, and its switch is on.
+7. Check that **NoKiridding** appears, its version is **0.8.1**, and its switch is on.
 
 Keep the extracted folder in place while using the extension. You may delete the downloaded ZIP. Organization-managed Chrome may prevent this installation method.
 
@@ -123,4 +131,4 @@ Unicode character data and Public Suffix List data have separate terms from the 
 - [Unicode confusables data](https://www.unicode.org/Public/security/latest/confusables.txt)
 - [Unicode confusable detection](https://www.unicode.org/reports/tr39/#Confusable_Detection)
 
-Version 0.8.0 bundles its character data. It does not query these sites or automatically update the data during use.
+Version 0.8.1 bundles its character data. It does not query these sites or automatically update the data during use.

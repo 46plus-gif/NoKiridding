@@ -32,6 +32,9 @@
   "continueButton": {
     "message": "続行"
   },
+  "connectingButton": {
+    "message": "接続しています…"
+  },
   "allowedSites": {
     "message": "許可リスト"
   },

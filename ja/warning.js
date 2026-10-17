@@ -102,6 +102,7 @@
     event.preventDefault();
     if (proceed.disabled || !Number.isInteger(currentTab?.id)) return;
     proceed.disabled = true;
+    proceed.textContent = t('connectingButton');
     remember.disabled = true;
     error.textContent = '';
     try {
@@ -112,6 +113,7 @@
     } catch (failure) {
       error.textContent = failure.message || t('continueFailed');
       proceed.disabled = false;
+      proceed.textContent = t('continueButton');
       remember.disabled = false;
     }
   });

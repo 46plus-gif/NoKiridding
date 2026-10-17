@@ -8,9 +8,17 @@ NoKiridding is a lookalike-character checker for desktop Chrome. It checks for C
 
 For example, it detects `аmazon`, where the first character is the Cyrillic `а` rather than the Latin `a` in `amazon`. It does not flag `amazen`, which uses only ordinary Latin letters. **It does not perform general spell-checking. The comparisons below cover five visual patterns and certain hyphen-separated name additions or suffix differences.**
 
+### Changes in 0.8.1
+
+- Fixed a case where a blocked redirect destination could fail to open the warning screen.
+- After selecting Continue, the button shows Connecting…; a failed request restores Continue.
+- Added x.ai to the bundled official-domain references. Its subdomains, including auth.x.ai, are excluded from the additional comparison checks. Customized lists are preserved and are not automatically updated; add x.ai manually if needed.
+
+The user confirmed in Chrome that Continue worked after a redirect warning and that the updated extension no longer blocked the x.ai authentication destination. This does not verify every site or redirect path.
+
 ### Registered-domain comparisons
 
-Version 0.8.0 includes an editable initial list of 101 companies/services and 143 domains. These additional checks do not perform general spell-checking:
+Version 0.8.1 includes an editable initial list of 101 companies/services and 144 domains. These additional checks do not perform general spell-checking:
 
 - Five visual substitutions: `rn/m`, `0/o`, `1/l/i` (including an entered capital `I`), `vv/w`, and `cl/d`. Chrome lowercases hostnames, so `I` is compared as `i`.
 - Hyphen-separated additions around registered names, such as `support-mercari.com` and `amazon-support.com`. The same name with a different suffix is also compared. A name occurring only inside an unrelated word does not trigger this check.
@@ -41,23 +49,23 @@ Display example using the actual interface with the reserved hostname `аmazon.i
 
 **This does not block all phishing sites. No warning does not mean a site is safe.** Read the [disclaimer and limitations](en/DISCLAIMER.md) before use.
 
-[Download NoKiridding 0.8.0](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.0-en.zip)
+[Download NoKiridding 0.8.1](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.1-en.zip)
 
 This folder contains the English documentation and a complete copy of the extension. You do not need the Japanese folder.
 
-Version: 0.8.0. Requires desktop Chrome 120 or later. It does not run in mobile Chrome. The interface is Japanese when Chrome's UI language is Japanese, and English otherwise.
+Version: 0.8.1. Requires desktop Chrome 120 or later. It does not run in mobile Chrome. The interface is Japanese when Chrome's UI language is Japanese, and English otherwise.
 
 [English source files](https://github.com/46plus-gif/NoKiridding/tree/main/en)
 
 ### Install from a ZIP
 
-1. Download [NoKiridding-0.8.0-en.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.0-en.zip). Use this extension ZIP, rather than GitHub's automatically generated “Source code” archive.
+1. Download [NoKiridding-0.8.1-en.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.1-en.zip). Use this extension ZIP, rather than GitHub's automatically generated “Source code” archive.
 2. Extract the ZIP and place the extracted folder somewhere you will keep it.
 3. Enter `chrome://extensions` in Chrome's address bar.
 4. Turn on **Developer mode**.
 5. Select **Load unpacked**.
 6. Choose the extracted folder that directly contains `manifest.json`. Do not select only its `rules` or `icons` subfolder.
-7. Check that **NoKiridding** appears, its version is **0.8.0**, and its switch is on.
+7. Check that **NoKiridding** appears, its version is **0.8.1**, and its switch is on.
 
 Keep the extracted folder in place while using the extension. You may delete the downloaded ZIP. Organization-managed Chrome may prevent this installation method.
 
@@ -127,7 +135,7 @@ Unicode character data and Public Suffix List data have separate terms from the 
 - [Unicode confusables data](https://www.unicode.org/Public/security/latest/confusables.txt)
 - [Unicode confusable detection](https://www.unicode.org/reports/tr39/#Confusable_Detection)
 
-Version 0.8.0 bundles its character data. It does not query these sites or automatically update the data during use.
+Version 0.8.1 bundles its character data. It does not query these sites or automatically update the data during use.
 
 ## 日本語
 
@@ -135,9 +143,17 @@ NoKiriddingは、英字にそっくりな別の文字を見つける、パソコ
 
 例えば、`amazon` の先頭の英字 `a` をキリル文字 `а` に置き換えた `аmazon` は検出します。一方、`amazen` のように通常の英字だけで綴りを変えた名前には反応しません。**一般的なスペルミスは判定しません。下記の追加機能では、登録ドメインに対する5種類の見間違いと、ハイフンで名前を付け足すパターンなどを調べます。**
 
+### 0.8.1の修正
+
+- 転送先で接続が遮断された場合に、警告画面が出ないことがある不具合を修正しました。
+- 「続行」を押すと「接続しています…」と表示し、失敗した場合は元の表示に戻します。
+- x.aiを正規ドメインの初期リストに追加しました。auth.x.aiなど、その配下も追加比較の対象外になります。編集・保存した一覧には自動追加されないため、必要に応じてx.aiを追加してください。
+
+ユーザーから、Chromeで転送後の警告から続行できることと、更新後はx.aiの認証先で遮断されなくなったことを確認いただいています。すべてのサイトや転送経路での動作を確認したものではありません。
+
 ### フィッシング詐欺に使われやすいドメインとの比較
 
-0.8.0には、編集可能な初期リスト101社・サービス、143ドメインを登録しています。一般的なスペルミスの判定ではなく、次の2種類の追加チェックを行います。
+0.8.1には、編集可能な初期リスト101社・サービス、144ドメインを登録しています。一般的なスペルミスの判定ではなく、次の2種類の追加チェックを行います。
 
 - `rn/m`・`0/o`・`1/l/i`（入力時の大文字 `I` を含む）・`vv/w`・`cl/d` の5種類の見間違い。Chromeはドメイン名を小文字にそろえるため、`I` は `i` として比較します。
 - `support-mercari.com` や `amazon-support.com` のように、登録した本物の名前の前後へハイフンで単語を付け足した名前。同じ名前で末尾だけが違う場合も比較します。名前が別の単語の一部として含まれるだけの場合は対象外です。
@@ -172,9 +188,9 @@ NoKiriddingは、英字にそっくりな別の文字を見つける、パソコ
 
 Chromeの表示言語が日本語の場合は日本語、それ以外では英語で表示します。
 
-[NoKiridding 0.8.0をダウンロード](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/ja/NoKiridding-0.8.0-ja.zip)
+[NoKiridding 0.8.1をダウンロード](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/ja/NoKiridding-0.8.1-ja.zip)
 
-対象バージョン：0.8.0。Chrome 120以降が必要です。スマートフォン版Chromeでは動作しません。
+対象バージョン：0.8.1。Chrome 120以降が必要です。スマートフォン版Chromeでは動作しません。
 
 [日本語側のソース一式](https://github.com/46plus-gif/NoKiridding/tree/main/ja)
 
@@ -182,13 +198,13 @@ Chromeの表示言語が日本語の場合は日本語、それ以外では英�
 
 Chromeウェブストアを使わず、ZIPを展開して手動で導入します。
 
-1. [NoKiridding-0.8.0-ja.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/ja/NoKiridding-0.8.0-ja.zip)をダウンロードします。GitHubが自動で用意する「Source code」のZIPとは別です。
+1. [NoKiridding-0.8.1-ja.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/ja/NoKiridding-0.8.1-ja.zip)をダウンロードします。GitHubが自動で用意する「Source code」のZIPとは別です。
 2. ZIPを展開し、展開したフォルダを、今後も保管する場所に置きます。
 3. Chromeのアドレス欄に `chrome://extensions` と入力して開きます。
 4. 右上の「デベロッパー モード」をオンにします。
 5. 「パッケージ化されていない拡張機能を読み込む」を押します。
 6. 展開したフォルダを選びます。`manifest.json` が直接入っているフォルダです。`rules` や `icons` だけを選ばないでください。
-7. 一覧に「NoKiridding」が表示され、バージョンが `0.8.0`、スイッチがオンになっていることを確認します。
+7. 一覧に「NoKiridding」が表示され、バージョンが `0.8.1`、スイッチがオンになっていることを確認します。
 
 導入後も、このフォルダは移動・削除しないでください。ダウンロード用のZIPは削除して構いません。
 
@@ -250,7 +266,7 @@ Chromeが入力をGoogle検索として扱った場合も、検索内容全体�
 - [Unicode公式の見間違えやすい文字の対応表](https://www.unicode.org/Public/security/latest/confusables.txt)
 - [Unicodeの文字比較の仕組み](https://www.unicode.org/reports/tr39/#Confusable_Detection)
 
-0.8.0の判定用データは拡張機能に同梱されています。利用中にこれらのサイトへ照会したり、判定用データを自動更新したりすることはありません。
+0.8.1の判定用データは拡張機能に同梱されています。利用中にこれらのサイトへ照会したり、判定用データを自動更新したりすることはありません。
 
 ### ライセンス
 

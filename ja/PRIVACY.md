@@ -1,7 +1,7 @@
 # NoKiridding プライバシーポリシー案
 
 作成日：2026年10月17日
-対象：NoKiridding 0.8.0
+対象：NoKiridding 0.8.1
 
 ## 使用する情報と目的
 

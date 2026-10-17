@@ -8,6 +8,28 @@ const protection = new globalThis.NoKiriddingProtection.Store(chrome);
 const protectionReady = protection.load();
 protectionReady.catch(() => console.warn('NoKiridding: Protection settings could not be loaded.'));
 const latestNavigation = new Map();
+function rememberNavigation(details, phase = 'pending') {
+  const current = latestNavigation.get(details.tabId);
+  if (Number.isFinite(current?.timeStamp) && Number.isFinite(details.timeStamp) &&
+      details.timeStamp < current.timeStamp) return null;
+  const navigation = { url: details.url, timeStamp: details.timeStamp, phase };
+  latestNavigation.set(details.tabId, navigation);
+  return navigation;
+}
+
+function acceptBlockedNavigation(details) {
+  const current = latestNavigation.get(details.tabId);
+  if (current) {
+    const comparableTimes = Number.isFinite(current.timeStamp) && Number.isFinite(details.timeStamp);
+    if (comparableTimes && details.timeStamp < current.timeStamp) return false;
+    if (current.url !== details.url) {
+      // A redirect can fail at a URL different from onBeforeNavigate's URL.
+      // A different page that has already committed must never be replaced.
+      if (current.phase === 'committed' || !comparableTimes) return false;
+    }
+  }
+  return rememberNavigation(details, 'blocked') !== null;
+}
 chrome.action.onClicked.addListener(() => {
   void chrome.runtime.openOptionsPage().catch(() => {
     console.warn('URLchecker: 許可リストを開けませんでした。');
@@ -25,8 +47,10 @@ const searchFilter = { url: [
 ] };
 
 function showWarning(tabId, analysis, source, observedURL) {
+  const observedNavigation = latestNavigation.get(tabId);
   return policy.serial(async () => {
-    const isCurrent = () => !latestNavigation.has(tabId) || latestNavigation.get(tabId) === observedURL;
+    const isCurrent = () => latestNavigation.get(tabId) === observedNavigation &&
+      (!observedNavigation || observedNavigation.url === observedURL);
     if (!isCurrent() || await policy.isAllowed(tabId, analysis.canonicalHostname)) return;
     const pending = await policy.prepare(tabId, analysis, source);
     if (!isCurrent()) return;
@@ -42,8 +66,10 @@ function reportWarningFailure() {
 }
 
 function passCheckedNavigation(tabId, analysis, observedURL) {
+  const observedNavigation = latestNavigation.get(tabId);
   return policy.serial(async () => {
-    const isCurrent = () => !latestNavigation.has(tabId) || latestNavigation.get(tabId) === observedURL;
+    const isCurrent = () => latestNavigation.get(tabId) === observedNavigation &&
+      (!observedNavigation || observedNavigation.url === observedURL);
     // Already allowed means the error came from elsewhere. Do not retry indefinitely.
     if (!isCurrent() || await policy.isAllowed(tabId, analysis.canonicalHostname)) return;
     await policy.grant(tabId, analysis.canonicalHostname, false);
@@ -52,7 +78,7 @@ function passCheckedNavigation(tabId, analysis, observedURL) {
 }
 
 chrome.webNavigation.onBeforeNavigate.addListener(details => {
-  if (details.frameId === 0) latestNavigation.set(details.tabId, details.url);
+  if (details.frameId === 0) rememberNavigation(details);
 }, httpFilter);
 
 chrome.tabs.onRemoved.addListener(tabId => {
@@ -64,8 +90,11 @@ chrome.tabs.onRemoved.addListener(tabId => {
 
 chrome.webNavigation.onErrorOccurred.addListener(details => {
   if (details.frameId !== 0 || details.error !== 'net::ERR_BLOCKED_BY_CLIENT') return;
+  if (!acceptBlockedNavigation(details)) return;
+  const observedNavigation = latestNavigation.get(details.tabId);
   void (async () => {
     await protectionReady;
+    if (latestNavigation.get(details.tabId) !== observedNavigation) return;
     const analysis = core.inspectURL(details.url, false, protection.entries);
     if (analysis) await showWarning(details.tabId, analysis, 'direct', details.url);
     else {
@@ -81,13 +110,15 @@ chrome.webNavigation.onErrorOccurred.addListener(details => {
 
 function inspectGoogleNavigation(details) {
   if (details.frameId !== 0) return;
-  latestNavigation.set(details.tabId, details.url);
+  const observedNavigation = rememberNavigation(details, 'committed');
+  if (!observedNavigation) return;
   void protectionReady.then(() => {
+    if (latestNavigation.get(details.tabId) !== observedNavigation) return;
     const analysis = core.inspectSearch(details.url, protection.entries);
     if (analysis) return showWarning(details.tabId, analysis, 'search', details.url);
   }).catch(reportWarningFailure);
 }
-chrome.webNavigation.onCommitted.addListener(inspectGoogleNavigation, searchFilter);
+chrome.webNavigation.onCommitted.addListener(inspectGoogleNavigation, httpFilter);
 chrome.webNavigation.onHistoryStateUpdated.addListener(inspectGoogleNavigation, searchFilter);
 
 function warningSender(message, sender) {

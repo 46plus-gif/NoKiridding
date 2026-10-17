@@ -32,6 +32,9 @@
   "continueButton": {
     "message": "Continue"
   },
+  "connectingButton": {
+    "message": "Connecting…"
+  },
   "allowedSites": {
     "message": "Allowed sites"
   },
