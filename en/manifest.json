@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "NoKiridding",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "__MSG_extensionDescription__",
   "minimum_chrome_version": "120",
   "permissions": [
@@ -37,6 +37,7 @@
         "i18n.js",
         "alphabet-blacklist.js",
         "protected-domains.js",
+        "public-suffixes.js",
         "domain-protection.js",
         "core.js",
         "search-guard.js"

@@ -33,9 +33,9 @@
       <p class="intro" data-i18n="mainFunctionScope">この基本の検査は、サイトをリストに登録しなくても働きます。対象は、サブドメインから末尾の .com などまでのドメイン名です。URLのパスや検索条件は調べません。</p>
     </section>
     <h2 class="options-title" data-i18n="optionalSettingsTitle">オプション機能</h2>
-    <p class="intro" data-i18n="optionalSettingsIntro">上記の基本機能に加えて、文字の組み合わせで騙してくるパターンにも対応する機能です。対象が無限にあるため、フィッシング詐欺に狙われやすい100社を登録してあります。追加したい場合は、以下から追加してください。</p>
+    <p class="intro" data-i18n="optionalSettingsIntro">上記の基本機能に加えて、文字の組み合わせや、本物の名前に単語を付け足すパターンにも対応する機能です。対象が無限にあるため、フィッシング詐欺に狙われやすい101社を登録してあります。追加したい場合は、以下から追加してください。</p>
     <h3 class="option-heading" data-i18n="protectionSectionTitle">フィッシング詐欺に使われやすいドメイン</h3>
-    <p class="intro" data-i18n="protectionIntro">ここには、なりすましを見つけたい会社やサービスの本物のドメインを登録します。登録済みの141ドメインは、設定しなくても自動で確認します。</p>
+    <p class="intro" data-i18n="protectionIntro">ここには、なりすましを見つけたい会社やサービスの本物のドメインを登録します。登録済みの143ドメインは、設定しなくても自動で確認します。</p>
     <p class="protection-patterns" data-i18n="protectionPatterns">例えば、次のような置き換えを調べます。以下は文字の見間違いを説明するための作例です。登録した本物のドメインに似ている接続先を見つけると警告します。</p>
     <ul class="pattern-examples">
       <li data-i18n="patternRnExample">rn / m：amazon → arnazon。「r」と「n」を並べて「m」に見せます。</li>
@@ -45,6 +45,7 @@
       <li data-i18n="patternClExample">cl / d：adobe → aclobe。「c」と「l」を並べて「d」に見せます。</li>
     </ul>
     <p class="field-help" data-i18n="patternCaseNote">大文字の「I」について：Chromeはドメイン名を小文字にそろえるため、入力された「I」は「i」として、数字の「1」や小文字の「l」と比較します。見え方はフォントによって異なります。</p>
+    <p class="intro" data-i18n="brandCheckHelp">例えば、登録済みの mercari.com に対して、support-mercari.com や mercari-support.com のような名前を見つけると警告します。名前と .com などの末尾を比較し、jp. など先頭に付く部分はこの追加検査の対象にしません。未登録の正規ドメインや紹介サイトでも警告する場合があるため、詐欺とは断定せず、「続行」も選べます。</p>
     <form id="protection-form">
       <label for="company-name" data-i18n="companyName">会社・サービス名</label>
       <input id="company-name" name="company" type="text" required maxlength="80" autocomplete="off">

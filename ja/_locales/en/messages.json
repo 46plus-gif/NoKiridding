@@ -189,7 +189,7 @@
     "message": "Domains targeted by phishing impersonation"
   },
   "protectionIntro": {
-    "message": "Register genuine domains of companies and services whose impersonators you want to detect here. The 141 included domains are checked automatically without setup."
+    "message": "Register genuine domains of companies and services whose impersonators you want to detect here. The 143 included domains are checked automatically without setup."
   },
   "protectionPatterns": {
     "message": "The following substitutions are checked. These are illustrative examples of visual confusion, not reports of actual incidents. A warning appears when a destination resembles a registered genuine domain."
@@ -276,7 +276,7 @@
     "message": "Optional features"
   },
   "optionalSettingsIntro": {
-    "message": "In addition to the basic feature above, this feature checks deceptive combinations of letters and digits. Because there are countless possible targets, 100 companies whose names may be impersonated in phishing are included. Add more using the fields below."
+    "message": "In addition to the basic feature above, this feature checks deceptive combinations of letters and digits, and names added around registered domain names. Because there are countless possible targets, 101 companies whose names may be impersonated in phishing are included. Add more using the fields below."
   },
   "protectionSectionTitle": {
     "message": "Domains targeted by phishing impersonation"
@@ -310,5 +310,17 @@
   },
   "patternCaseNote": {
     "message": "About uppercase I: Chrome lowercases domain names, so an entered I is compared as i with the digit 1 and lowercase l. The visual resemblance depends on the font."
+  },
+  "brandDomainReason": {
+    "message": "This differs from a registered official domain for $1 ($2). This does not prove it is a phishing site."
+  },
+  "brandDifference": {
+    "message": "Added or different parts of the main name and its suffix are highlighted in red."
+  },
+  "brandCheckHelp": {
+    "message": "For example, support-mercari.com or mercari-support.com can trigger a warning against the registered mercari.com. The main name and its suffix, such as .com, are compared. Prefixes such as jp. are outside this additional check. Unregistered official domains and commentary sites can also trigger warnings, so this does not prove phishing. You can still Continue."
+  },
+  "fullHostname": {
+    "message": "Full hostname: $1"
   }
 }

@@ -6,27 +6,32 @@
 
 NoKiridding is a lookalike-character checker for desktop Chrome. It checks for Cyrillic characters and other listed non-ASCII lookalikes of ordinary Latin letters, stops navigation when a target character is detected, and highlights the character with an explanation.
 
-For example, it detects `аmazon`, where the first character is the Cyrillic `а` rather than the Latin `a` in `amazon`. It does not flag `amazen`, which uses only ordinary Latin letters. **It does not perform general spell-checking. The protected-domain check below covers only five visual patterns.**
+For example, it detects `аmazon`, where the first character is the Cyrillic `а` rather than the Latin `a` in `amazon`. It does not flag `amazen`, which uses only ordinary Latin letters. **It does not perform general spell-checking. The comparisons below cover five visual patterns and certain hyphen-separated name additions or suffix differences.**
 
-### Protected-domain comparisons
+### Registered-domain comparisons
 
-Version 0.7.0 adds a second check against an editable initial list of 100 companies/services and 141 domains. It compares five visual patterns: `rn/m`, `0/o`, `1/l/i` (including an entered capital `I`), `vv/w`, and `cl/d`. Chrome lowercases hostnames, so `I` is compared as `i`.
+Version 0.8.0 includes an editable initial list of 101 companies/services and 143 domains. These additional checks do not perform general spell-checking:
 
-This check applies only when the hostname matches a listed reference through these substitutions, including combinations. Registered domains and their subdomains are excluded from this similarity check. The existing Cyrillic/non-ASCII character check still applies independently. This does not check arbitrary spelling errors, added words, all regional domains, or every form of impersonation. A legitimate site may have a similar name.
+- Five visual substitutions: `rn/m`, `0/o`, `1/l/i` (including an entered capital `I`), `vv/w`, and `cl/d`. Chrome lowercases hostnames, so `I` is compared as `i`.
+- Hyphen-separated additions around registered names, such as `support-mercari.com` and `amazon-support.com`. The same name with a different suffix is also compared. A name occurring only inside an unrelated word does not trigger this check.
 
-The warning compares the entered hostname and the reference on two rows and highlights the differing spans. **Continue** and **Always allow this hostname** remain available; neither verifies safety.
+The additional checks compare the main domain name and its suffix, such as `.com` or `.co.jp`. A name occurring only in subdomains, such as `jp.`, does not trigger this additional warning. The independent Cyrillic/non-ASCII lookalike check still examines subdomains.
 
-Open the extension icon to view **Domains targeted by phishing impersonation**. Add, edit, remove or filter companies and services. Enter a company/service name and domain names only, separated by commas or new lines. Verify the domains on the official site. Limits: 200 companies/services and 400 domains. Entries are saved only in this Chrome profile; changes do not sync or get sent to a server. Your saved list is retained across updates; new bundled defaults are not merged into a customized list automatically.
+The warning preserves the full entered hostname and highlights only differences in the main name or suffix. For `jp.support-mercari.com`, `jp.` stays in normal text and only `support-` is red. The reference `mercari.com` is plain text without highlighting or empty colored marks. The explanation says the destination differs from a registered official domain; it does not declare phishing. **Continue** and **Always allow this hostname** remain available, but neither verifies safety.
 
-[Initial domains and official reference URLs](en/PROTECTED-DOMAINS.csv). This is a manually selected starting list, not a ranking or a measured detection-coverage claim. Websites may host third-party content under otherwise legitimate domains; listing a domain does not prove that every page is safe.
+Registered official domains and their subdomains are excluded from these additional comparisons. The list does not cover every regional or service domain, so unregistered official domains and legitimate commentary sites can also trigger warnings. General spelling errors and all forms of impersonation are not covered.
 
-![Two-row comparison of rn and m](en/images/comparison.jpg)
+Open settings through the extension icon, then find **Domains targeted by phishing impersonation** to add, edit, remove or filter entries. Enter names and genuine domains verified on the official website, not fake domains. Separate multiple domains with commas or new lines. Limits: 200 companies/services and 400 domains. The list is stored only in this Chrome profile, without external transmission or synchronization. Custom lists survive updates; new bundled defaults are not automatically merged into them. If you customized an earlier list, add new entries such as Mercari manually when needed.
 
-Display-only example using reserved `.invalid` domains and a fictional reference entry. No real site was opened.
+[Initial domains and official reference URLs](en/PROTECTED-DOMAINS.csv). This is a manually selected starting list, not a ranking or a measured coverage claim. Listing a domain does not establish the safety of every page below it.
 
-![Editable protected-domain settings](en/images/settings.jpg)
+![Added-name warning with neutral subdomains](en/images/comparison.jpg)
 
-These images verify local rendering with development fixtures. The new feature has automated tests, but installed-Chrome blocking, startup and redirects still need a browser check after reloading version 0.7.0.
+Local display preview; no connection was made to the hostname shown. The user confirmed that Chrome's rule-loading errors disappeared, verified an added-name warning, and approved the final display. Startup and all redirect paths remain unverified.
+
+![Editable settings](en/images/settings.jpg)
+
+Domain boundaries use bundled Public Suffix List data derived from an existing local snapshot. Its currency is unverified. There are no runtime lookups or automatic data updates.
 
 ### Warning screen example
 
@@ -36,23 +41,23 @@ Display example using the actual interface with the reserved hostname `аmazon.i
 
 **This does not block all phishing sites. No warning does not mean a site is safe.** Read the [disclaimer and limitations](en/DISCLAIMER.md) before use.
 
-[Download NoKiridding 0.7.0](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.7.0-en.zip)
+[Download NoKiridding 0.8.0](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.0-en.zip)
 
 This folder contains the English documentation and a complete copy of the extension. You do not need the Japanese folder.
 
-Version: 0.7.0. Requires desktop Chrome 120 or later. It does not run in mobile Chrome. The interface is Japanese when Chrome's UI language is Japanese, and English otherwise.
+Version: 0.8.0. Requires desktop Chrome 120 or later. It does not run in mobile Chrome. The interface is Japanese when Chrome's UI language is Japanese, and English otherwise.
 
 [English source files](https://github.com/46plus-gif/NoKiridding/tree/main/en)
 
 ### Install from a ZIP
 
-1. Download [NoKiridding-0.7.0-en.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.7.0-en.zip). Use this extension ZIP, rather than GitHub's automatically generated “Source code” archive.
+1. Download [NoKiridding-0.8.0-en.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.0-en.zip). Use this extension ZIP, rather than GitHub's automatically generated “Source code” archive.
 2. Extract the ZIP and place the extracted folder somewhere you will keep it.
 3. Enter `chrome://extensions` in Chrome's address bar.
 4. Turn on **Developer mode**.
 5. Select **Load unpacked**.
 6. Choose the extracted folder that directly contains `manifest.json`. Do not select only its `rules` or `icons` subfolder.
-7. Check that **NoKiridding** appears, its version is **0.7.0**, and its switch is on.
+7. Check that **NoKiridding** appears, its version is **0.8.0**, and its switch is on.
 
 Keep the extracted folder in place while using the extension. You may delete the downloaded ZIP. Organization-managed Chrome may prevent this installation method.
 
@@ -115,41 +120,45 @@ Copyright (c) 2026 Akapluko.com
 
 Use, modification, commercial use and redistribution are permitted under its terms. Retain the copyright and license notices when redistributing.
 
-Unicode data and derived character mappings have separate terms. Retain [third-party notices](en/THIRD_PARTY_NOTICES.md) and `data/UNICODE-LICENSE.txt`, included in the ZIP.
+Unicode character data and Public Suffix List data have separate terms from the MIT-licensed project code. Retain [third-party notices](en/THIRD_PARTY_NOTICES.md) and `data/UNICODE-LICENSE.txt`, included in the ZIP.
 
 ### Character-data sources
 
 - [Unicode confusables data](https://www.unicode.org/Public/security/latest/confusables.txt)
 - [Unicode confusable detection](https://www.unicode.org/reports/tr39/#Confusable_Detection)
 
-Version 0.7.0 bundles its character data. It does not query these sites or automatically update the data during use.
-
+Version 0.8.0 bundles its character data. It does not query these sites or automatically update the data during use.
 
 ## 日本語
 
 NoKiriddingは、英字にそっくりな別の文字を見つける、パソコン版Chrome用の「偽文字チェッカー」です。対象の文字を見つけると接続を止め、警告画面でその文字と理由を示します。
 
-例えば、`amazon` の先頭の英字 `a` をキリル文字 `а` に置き換えた `аmazon` は検出します。一方、`amazen` のように通常の英字だけで綴りを変えた名前には反応しません。**一般的なスペルミスは判定しません。下記の比較機能では、登録ドメインに対する5種類の見間違いだけを調べます。**
+例えば、`amazon` の先頭の英字 `a` をキリル文字 `а` に置き換えた `аmazon` は検出します。一方、`amazen` のように通常の英字だけで綴りを変えた名前には反応しません。**一般的なスペルミスは判定しません。下記の追加機能では、登録ドメインに対する5種類の見間違いと、ハイフンで名前を付け足すパターンなどを調べます。**
 
 ### フィッシング詐欺に使われやすいドメインとの比較
 
-0.7.0では、編集可能な初期リスト100社・サービス、141ドメインとの比較を追加しました。対象は `rn/m`・`0/o`・`1/l/i`（入力時の大文字 `I` を含む）・`vv/w`・`cl/d` の5種類です。Chromeはドメイン名を小文字にそろえるため、`I` は `i` として比較します。
+0.8.0には、編集可能な初期リスト101社・サービス、143ドメインを登録しています。一般的なスペルミスの判定ではなく、次の2種類の追加チェックを行います。
 
-登録した正規ドメインを、この5種類の置き換えや組み合わせで再現できる場合に警告します。登録先そのものと配下のサイトは、この類似判定から除外します。従来のキリル文字・偽文字の検査は独立して働きます。通常のスペルミス、単語の追加、各社の全地域ドメイン、すべてのなりすましを検出するものではありません。正当なサイト同士でも名前が似る場合があります。
+- `rn/m`・`0/o`・`1/l/i`（入力時の大文字 `I` を含む）・`vv/w`・`cl/d` の5種類の見間違い。Chromeはドメイン名を小文字にそろえるため、`I` は `i` として比較します。
+- `support-mercari.com` や `amazon-support.com` のように、登録した本物の名前の前後へハイフンで単語を付け足した名前。同じ名前で末尾だけが違う場合も比較します。名前が別の単語の一部として含まれるだけの場合は対象外です。
 
-警告画面では入力先と比較先を2行で並べ、違う部分を強調します。「続行」と「この接続先を今後も許可する」も使えます。いずれも安全性を確認する操作ではありません。
+この追加チェックは、ドメイン本体の名前と `.com`・`.co.jp` などの末尾を比較します。`jp.` などのサブドメインだけに会社名が含まれていても、この追加警告は出しません。従来のキリル文字・偽文字の検査は独立して働き、サブドメインも引き続き調べます。
 
-拡張機能のアイコンから「フィッシング詐欺に使われやすいドメイン」を開くと、追加・編集・削除・絞り込みができます。会社・サービス名と、公式サイトで確認したドメインを入力してください。複数のドメインは改行かカンマで区切ります。上限は200件・合計400ドメインです。この端末のChromeプロフィール内だけに保存し、外部へ送信・同期しません。編集したリストは更新後も保持し、新しい初期リストを自動で混ぜることはありません。
+警告画面では、入力した接続先を省略せず表示し、本体や末尾の違いだけを赤くします。例えば `jp.support-mercari.com` は `jp.` を通常の文字色で残し、`support-` だけを赤くします。比較先の `mercari.com` には強調や空の色枠を付けません。「登録済みの公式ドメインとは異なります」と説明し、詐欺とは断定しません。「続行」と「この接続先を今後も許可する」も使えますが、安全性を確認する操作ではありません。
 
-[初期ドメインと公式参照先の一覧](ja/PROTECTED-DOMAINS.csv)。手動で選定した開始用のリストで、順位や検出率を示すものではありません。正規ドメインの配下に第三者のコンテンツがある場合もあり、登録されていることは全ページの安全性を保証しません。
+登録済みの公式ドメインとその配下は、この追加比較から除外します。全地域・全サービスのドメインを網羅した一覧ではないため、未登録の正規ドメインや紹介サイトでも警告する場合があります。一般的な綴り間違いや、すべてのなりすましを検出するものではありません。
 
-![rnとmを2行で比較した警告画面](ja/images/comparison.jpg)
+拡張機能のアイコンから設定画面の「フィッシング詐欺に使われやすいドメイン」を開くと、追加・編集・削除・絞り込みができます。会社・サービス名と、公式サイトで確認した本物のドメインを入力してください。偽サイトのドメインを登録する一覧ではありません。複数のドメインは改行かカンマで区切ります。上限は200件・合計400ドメインです。この端末のChromeプロフィール内だけに保存し、外部へ送信・同期しません。編集したリストは更新後も保持し、新しい初期リストを自動で混ぜることはありません。以前のリストを編集済みの場合、メルカリなど新しい項目は必要に応じて自分で追加してください。
 
-予約された `.invalid` ドメインと架空の登録情報を使った表示例です。実在サイトには接続していません。
+[初期ドメインと公式参照先の一覧](ja/PROTECTED-DOMAINS.csv)。手動で選定した開始用のリストで、順位や検出率を示すものではありません。登録されていることは、配下の全ページの安全性を保証しません。
 
-![フィッシング詐欺に使われやすいドメインを編集できる設定画面](ja/images/settings.jpg)
+![付け足された名前だけを赤く示す警告画面](ja/images/comparison.jpg)
 
-画像は開発用の情報を使ってローカル表示を確認したものです。自動検証は実施済みですが、導入したChromeでの遮断・起動直後・転送時の動作は、0.7.0を再読み込みしてから確認する必要があります。
+ローカルの表示確認用画面です。画像にある接続先への通信は行っていません。ユーザーからはChromeでの読み込みエラー解消、追加警告の表示、および最終表示の承認を受けています。起動直後・すべての転送経路での動作は未確認です。
+
+![追加・編集できる設定画面](ja/images/settings.jpg)
+
+ドメインの区切りには、端末内の既存資料から生成したPublic Suffix Listの同梱データを使います。最新版かどうかは未確認で、利用中の外部問い合わせ・自動更新は行いません。
 
 ### 遮断画面の表示例
 
@@ -163,9 +172,9 @@ NoKiriddingは、英字にそっくりな別の文字を見つける、パソコ
 
 Chromeの表示言語が日本語の場合は日本語、それ以外では英語で表示します。
 
-[NoKiridding 0.7.0をダウンロード](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/ja/NoKiridding-0.7.0-ja.zip)
+[NoKiridding 0.8.0をダウンロード](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/ja/NoKiridding-0.8.0-ja.zip)
 
-対象バージョン：0.7.0。Chrome 120以降が必要です。スマートフォン版Chromeでは動作しません。
+対象バージョン：0.8.0。Chrome 120以降が必要です。スマートフォン版Chromeでは動作しません。
 
 [日本語側のソース一式](https://github.com/46plus-gif/NoKiridding/tree/main/ja)
 
@@ -173,13 +182,13 @@ Chromeの表示言語が日本語の場合は日本語、それ以外では英�
 
 Chromeウェブストアを使わず、ZIPを展開して手動で導入します。
 
-1. [NoKiridding-0.7.0-ja.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/ja/NoKiridding-0.7.0-ja.zip)をダウンロードします。GitHubが自動で用意する「Source code」のZIPとは別です。
+1. [NoKiridding-0.8.0-ja.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/ja/NoKiridding-0.8.0-ja.zip)をダウンロードします。GitHubが自動で用意する「Source code」のZIPとは別です。
 2. ZIPを展開し、展開したフォルダを、今後も保管する場所に置きます。
 3. Chromeのアドレス欄に `chrome://extensions` と入力して開きます。
 4. 右上の「デベロッパー モード」をオンにします。
 5. 「パッケージ化されていない拡張機能を読み込む」を押します。
 6. 展開したフォルダを選びます。`manifest.json` が直接入っているフォルダです。`rules` や `icons` だけを選ばないでください。
-7. 一覧に「NoKiridding」が表示され、バージョンが `0.7.0`、スイッチがオンになっていることを確認します。
+7. 一覧に「NoKiridding」が表示され、バージョンが `0.8.0`、スイッチがオンになっていることを確認します。
 
 導入後も、このフォルダは移動・削除しないでください。ダウンロード用のZIPは削除して構いません。
 
@@ -241,10 +250,10 @@ Chromeが入力をGoogle検索として扱った場合も、検索内容全体�
 - [Unicode公式の見間違えやすい文字の対応表](https://www.unicode.org/Public/security/latest/confusables.txt)
 - [Unicodeの文字比較の仕組み](https://www.unicode.org/reports/tr39/#Confusable_Detection)
 
-0.7.0の判定用データは拡張機能に同梱されています。利用中にこれらのサイトへ照会したり、判定用データを自動更新したりすることはありません。
+0.8.0の判定用データは拡張機能に同梱されています。利用中にこれらのサイトへ照会したり、判定用データを自動更新したりすることはありません。
 
 ### ライセンス
 
 NoKiriddingの独自のコードと文書は[MITライセンス](ja/LICENSE)で提供します。著作権表示は `Copyright (c) 2026 Akapluko.com` です。利用・改造・商用利用・再配布が可能です。再配布するときは著作権表示とライセンス本文を残してください。
 
-Unicode由来の文字データには別の利用条件が適用されます。[第三者資料の表示](ja/THIRD_PARTY_NOTICES.md)と、ZIP内の `data/UNICODE-LICENSE.txt` を残してください。
+Unicode由来の文字データとPublic Suffix List由来の区分データには、それぞれ別の利用条件が適用されます。[第三者資料の表示](ja/THIRD_PARTY_NOTICES.md)と、ZIP内の `data/UNICODE-LICENSE.txt` を残してください。

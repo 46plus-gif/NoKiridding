@@ -1,13 +1,28 @@
-# 第三者資料の利用条件
+# Third-party notices
 
-## Unicodeの文字データ
+## Unicode character data
 
 Copyright © 1991-2026 Unicode, Inc.
 
-Unicodeの見間違えやすい文字の資料と、それを基にした対応データには、NoKiridding独自のMITライセンスではなく、UNICODE LICENSE V3が適用されます。
+The Unicode confusables data and derived character mappings are covered by
+UNICODE LICENSE V3, not by the project's MIT license. The full Unicode license
+is included in `data/UNICODE-LICENSE.txt` and must be retained when redistributing
+these data or derived mappings.
 
-利用条件の全文は `data/UNICODE-LICENSE.txt` に同梱しています。これらのデータや対応表を再配布するときも、この著作権表示と利用条件を残してください。
+Covered files include `data/unicode-confusables.txt`,
+`data/alphabet-blacklist.json`, and the mapping data in `alphabet-blacklist.js`.
+The first two files are source material and need not be present in the runtime ZIP.
 
-対象には `alphabet-blacklist.js` に含まれる文字の対応データが含まれます。作成元の `data/unicode-confusables.txt` と `data/alphabet-blacklist.json` は、動作用の配布ZIPには含めていません。
+Source: https://www.unicode.org/Public/security/latest/confusables.txt
 
-作成元：https://www.unicode.org/Public/security/latest/confusables.txt
+## Public Suffix List data
+
+The rule data in `public-suffixes.js` is derived from an existing local snapshot
+of the Public Suffix List and is covered by the Mozilla Public License 2.0,
+not the project's MIT license. The license is available at
+https://mozilla.org/MPL/2.0/. Retain the license notice when redistributing.
+
+Source: https://publicsuffix.org/list/public_suffix_list.dat
+Snapshot hash and provenance: `data/public-suffixes-metadata.json`.
+This is a bundled snapshot, not a live or automatically updated list.
+The extraction/normalization script is `work/build-public-suffixes.mjs`.

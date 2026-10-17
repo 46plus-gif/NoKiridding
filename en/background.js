@@ -1,5 +1,5 @@
 'use strict';
-importScripts('alphabet-blacklist.js', 'protected-domains.js', 'domain-protection.js', 'core.js', 'policy.js');
+importScripts('alphabet-blacklist.js', 'protected-domains.js', 'public-suffixes.js', 'domain-protection.js', 'core.js', 'policy.js');
 
 const core = globalThis.URLCheckerCore;
 const messageText = (key, fallback) => chrome.i18n?.getMessage(key) || fallback;
@@ -69,9 +69,10 @@ chrome.webNavigation.onErrorOccurred.addListener(details => {
     const analysis = core.inspectURL(details.url, false, protection.entries);
     if (analysis) await showWarning(details.tabId, analysis, 'direct', details.url);
     else {
-      // A stale/default block can briefly outlive an edited list; retry only once.
+      // Candidate rules can also match an ignored subdomain. Retry once after
+      // the main-domain check, including custom-list candidates and stale defaults.
       const parsed = core.parseURL(details.url);
-      const defaultBlock = globalThis.NoKiriddingProtection.rules(globalThis.NoKiriddingProtection.defaults)
+      const defaultBlock = globalThis.NoKiriddingProtection.rules([...globalThis.NoKiriddingProtection.defaults, ...protection.entries])
         .some(rule => new RegExp(rule.condition.regexFilter, 'i').test(details.url));
       if (parsed && (parsed.international || defaultBlock)) await passCheckedNavigation(details.tabId, parsed, details.url);
     }

@@ -1,0 +1,8 @@
+{
+  "source": "https://publicsuffix.org/list/public_suffix_list.dat",
+  "provenance": "Existing local Tcl cookiejar snapshot; not verified as the latest list",
+  "sourceSHA256": "6d5a41890175e65826f2a3532369925067d840e324631eb8b8008dc5f9ffebad",
+  "ruleCount": 8787,
+  "license": "MPL-2.0",
+  "includesPrivateSuffixes": true
+}

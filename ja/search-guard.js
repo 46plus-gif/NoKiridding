@@ -26,7 +26,8 @@
   const domain = document.createElement('div');
   if (analysis.similarity) {
     for (const part of analysis.similarity.parts) {
-      const span = document.createElement(part.changed ? 'mark' : 'span');
+      if (!part.input) continue;
+      const span = document.createElement(part.changed && !part.subdomain ? 'mark' : 'span');
       span.textContent = part.input; domain.append(span);
     }
   } else for (const character of Array.from(analysis.displayHostname).slice(0, 512)) {
@@ -40,7 +41,7 @@
   const explanation = document.createElement('p');
   const first = analysis.characters[0];
   explanation.textContent = analysis.similarity ?
-    t('similarDomainReason', [analysis.similarity.name, analysis.similarity.domain]) : i18n.reason(first);
+    t(analysis.similarity.kind === 'brand' ? 'brandDomainReason' : 'similarDomainReason', [analysis.similarity.name, analysis.similarity.domain]) : i18n.reason(first);
   main.append(heading, domain, explanation);
   root.append(style, main);
   const hide = document.createElement('style');

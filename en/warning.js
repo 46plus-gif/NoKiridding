@@ -15,6 +15,9 @@
     const parsed = !analysis && similarity ? core.parseURL('https://' + displayHostname + '/') : analysis;
     const comparison = document.getElementById('comparison');
     comparison.hidden = true;
+    const fullHostname = document.getElementById('full-hostname');
+    fullHostname.hidden = true;
+    fullHostname.textContent = '';
     domain.replaceChildren();
     reasons.replaceChildren();
     if (!parsed) {
@@ -39,20 +42,21 @@
     }
     if (similarity) {
       const reference = document.getElementById('reference-hostname');
-      domain.replaceChildren(); reference.replaceChildren();
+      domain.replaceChildren();
+      reference.textContent = similarity.domain;
       for (const part of similarity.parts) {
-        for (const [parent, value] of [[domain, part.input], [reference, part.expected]]) {
-          const node = document.createElement(part.changed ? 'mark' : 'span');
-          node.textContent = value;
-          parent.append(node);
-        }
+        if (!part.input) continue;
+        const node = document.createElement(part.changed && !part.subdomain ? 'mark' : 'span');
+        node.textContent = part.input;
+        domain.append(node);
       }
       document.getElementById('reference-name').textContent = similarity.name;
       comparison.hidden = false;
       const explanation = document.createElement('li');
-      explanation.textContent = t('similarDomainReason', [similarity.name, similarity.domain]);
+      explanation.textContent = t(similarity.kind === 'brand' ? 'brandDomainReason' : 'similarDomainReason', [similarity.name, similarity.domain]);
       reasons.append(explanation);
-      const differences = new Set(similarity.parts.filter(part => part.changed).map(part => t('similarDifference', [part.input, part.expected])));
+      const differences = similarity.kind === 'brand' ? new Set([t('brandDifference')]) :
+        new Set(similarity.parts.filter(part => part.changed).map(part => t('similarDifference', [part.input, part.expected])));
       for (const difference of differences) {
         const row = document.createElement('li'); row.textContent = difference; reasons.append(row);
       }

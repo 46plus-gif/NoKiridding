@@ -5,7 +5,7 @@
     ['Microsoft','microsoft.com microsoftonline.com live.com outlook.com linkedin.com'],
     ['Google','google.com gmail.com youtube.com'], ['Amazon','amazon.com amazon.co.uk amazon.de amazon.co.jp'],
     ['Apple','apple.com icloud.com'], ['Meta','facebook.com instagram.com whatsapp.com'],
-    ['PayPal','paypal.com venmo.com'], ['Adobe','adobe.com'], ['Netflix','netflix.com'],
+    ['Mercari','mercari.com mercari.jp'], ['PayPal','paypal.com venmo.com'], ['Adobe','adobe.com'], ['Netflix','netflix.com'],
     ['Booking Holdings','booking.com agoda.com priceline.com'], ['Expedia','expedia.com hotels.com vrbo.com'],
     ['Airbnb','airbnb.com'], ['Uber','uber.com ubereats.com'], ['Lyft','lyft.com'],
     ['eBay','ebay.com'], ['Alibaba','alibaba.com aliexpress.com'], ['Walmart','walmart.com'],
