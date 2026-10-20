@@ -3,7 +3,7 @@
   // These are comparison references, not a claim that similar domains are malicious.
   const rows = [
     ['Microsoft','microsoft.com microsoftonline.com live.com outlook.com linkedin.com'],
-    ['Google','google.com gmail.com youtube.com'], ['Amazon','amazon.com amazon.co.uk amazon.de amazon.co.jp'],
+    ['Google','google.com gmail.com youtube.com'], ['Amazon','amazon.com amazon.co.uk amazon.de amazon.co.jp amazon.ca amazon.fr'],
     ['Apple','apple.com icloud.com'], ['Meta','facebook.com instagram.com whatsapp.com'],
     ['Mercari','mercari.com mercari.jp'], ['PayPal','paypal.com venmo.com'], ['Adobe','adobe.com'], ['Netflix','netflix.com'],
     ['Booking Holdings','booking.com agoda.com priceline.com'], ['Expedia','expedia.com hotels.com vrbo.com'],

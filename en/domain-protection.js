@@ -43,11 +43,10 @@
     return base(reference) || { domain: reference, label: reference.split('.')[0], suffix: reference.split('.').slice(1).join('.') };
   }
   function brandParts(host, target, reference) {
-    const brand = reference.label;
-    const position = ('-' + target.label + '-').indexOf('-' + brand + '-');
-    if (position < 0) return null;
-    const begin = target.offset + position;
-    const end = begin + brand.length;
+    const tokens = units(reference.label);
+    const match = target.label.match(new RegExp('(^|-)' + tokens.map(unit => '(' + unit.pattern + ')').join('') + '(?=-|$)'));
+    if (!match) return null;
+    const begin = target.offset + match.index + match[1].length;
     const suffix = '.' + reference.suffix;
     const suffixStart = host.endsWith(suffix) ? host.length - suffix.length : host.length;
     const parts = [];
@@ -56,19 +55,31 @@
       if (input || expected) parts.push({ input, expected, changed: !subdomain && input !== expected, subdomain, start: from, end: to });
     };
     add(0, target.offset, '', true);
-    add(target.offset, begin, ''); add(begin, end, brand);
+    add(target.offset, begin, '');
+    let end = begin;
+    tokens.forEach((unit, index) => {
+      const next = end + match[index + 2].length;
+      add(end, next, unit.text); end = next;
+    });
     if (suffixStart >= end && suffixStart < host.length) {
       add(end, suffixStart, ''); add(suffixStart, host.length, suffix);
     } else add(end, host.length, suffix);
     return parts;
   }
-  function inspect(hostname, entries = defaults) {
-    const host = hostname.toLowerCase().replace(/\.$/, '');
-    if (!/^[a-z0-9.-]+$/.test(host) || host.split('.').some(label => label.startsWith('xn--'))) return null;
-    const target = base(host);
-    if (!target) return null;
+  function inspect(hostname, entries = defaults, decodeLabel = value => value) {
+    const canonicalHost = hostname.toLowerCase().replace(/\.$/, '');
+    if (!/^[a-z0-9.-]+$/.test(canonicalHost)) return null;
+    const canonicalTarget = base(canonicalHost);
+    if (!canonicalTarget) return null;
     const domains = entries.flatMap(entry => entry.domains);
-    if (domains.some(domain => exactOrChild(host, domain))) return null;
+    if (domains.some(domain => exactOrChild(canonicalHost, domain))) return null;
+    // Find boundaries in the canonical hostname, then compare decoded text.
+    // Japanese subdomains or added words must not exempt the main name.
+    const host = canonicalHost.split('.').map(decodeLabel).join('.');
+    const domain = canonicalTarget.domain.split('.').map(decodeLabel).join('.');
+    const offset = host.length - domain.length;
+    const target = { domain, offset, label: decodeLabel(canonicalTarget.label),
+      suffix: canonicalTarget.suffix.split('.').map(decodeLabel).join('.'), subdomain: host.slice(0, offset) };
     const references = entries.flatMap(entry => entry.domains.map(domain => ({ name: entry.name, ...referenceBase(domain) })));
     for (const reference of references) {
       const tokens = units(reference.domain);
@@ -100,7 +111,7 @@
     // even for the maximum user list of 400 domains.
     return domains.flatMap((domain, index) => {
       const visual = '([a-z0-9-]+\\.)*' + units(referenceBase(domain).domain).map(unit => unit.pattern).join('');
-      const brand = escape(referenceBase(domain).label);
+      const brand = units(referenceBase(domain).label).map(unit => unit.pattern).join('');
       const named = '([a-z0-9-]+\\.)*([a-z0-9-]*-)?' + brand + '(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+';
       return [visual, named].map((pattern, part) => ({
         id: firstId + index * 2 + part, priority: 1, action: { type: 'block' },

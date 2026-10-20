@@ -128,6 +128,21 @@
   "checkCharacters": {
     "message": "文字の違いを確認してください。"
   },
+  "searchRetryButton": {
+    "message": "警告画面を開き直す"
+  },
+  "searchRetryHelp": {
+    "message": "警告画面が開かない場合は、下のボタンで開き直せます。接続先を確認し、警告画面の「続行」で進めます。"
+  },
+  "searchRetryOpening": {
+    "message": "警告画面を開き直しています…"
+  },
+  "searchRetryFailed": {
+    "message": "警告画面を開けませんでした。もう一度お試しください。改善しない場合は、拡張機能を再読み込みしてください。"
+  },
+  "searchRetryChanged": {
+    "message": "検索ページが変わりました。ページを再読み込みして、現在の入力内容を確認してください。"
+  },
   "listBackgroundFailed": {
     "message": "許可リストを更新できませんでした。もう一度お試しください。"
   },

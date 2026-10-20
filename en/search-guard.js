@@ -3,10 +3,12 @@
   const i18n = globalThis.NoKiriddingI18n;
   const { t } = i18n;
   const core = globalThis.URLCheckerCore;
-  if (!core.parseURL(new URL(location.href).searchParams.get('q'), true)) return;
+  const observedURL = location.href;
+  if (!core.parseURL(new URL(observedURL).searchParams.get('q'), true)) return;
   let response;
   try { response = await chrome.runtime.sendMessage({ type: 'urlchecker-search-warning' }); }
   catch { /* Preserve a visible warning for default matches if the worker is unavailable. */ }
+  if (location.href !== observedURL) return;
   if (response?.allowed) return;
   const analysis = response?.analysis || core.inspectSearch(location.href);
   if (!analysis) return;
@@ -19,7 +21,7 @@
   cover.style.cssText = 'position:fixed!important;inset:0!important;z-index:2147483647!important;visibility:visible!important;background-color:var(--urlchecker-warning-background,#f7f8fa)!important;background-image:radial-gradient(circle,rgba(32,33,36,.035) .65px,transparent .85px)!important;background-size:18px 18px!important;color:#202124!important;';
   const root = cover.attachShadow({ mode: 'closed' });
   const style = document.createElement('style');
-  style.textContent = ':host{font-family:system-ui,sans-serif;--urlchecker-warning-background:#f7f8fa}@media(prefers-color-scheme:dark){:host{--urlchecker-warning-background:#e5e7eb}}main{max-width:720px;margin:12vh auto;padding:32px}h1{font-size:26px}p{font-size:18px;line-height:1.8}div{font-size:32px;overflow-wrap:anywhere;direction:ltr;unicode-bidi:isolate}mark{background:#fff0ed;color:#9f201b;border-bottom:2px solid #b3261e;padding:0 2px}';
+  style.textContent = ':host{font-family:system-ui,sans-serif;--urlchecker-warning-background:#f7f8fa}@media(prefers-color-scheme:dark){:host{--urlchecker-warning-background:#e5e7eb}}main{max-width:720px;margin:12vh auto;padding:32px}h1{font-size:26px}p{font-size:18px;line-height:1.8}div{font-size:32px;overflow-wrap:anywhere;direction:ltr;unicode-bidi:isolate}mark{background:#fff0ed;color:#9f201b;border-bottom:2px solid #b3261e;padding:0 2px}button{font:inherit;font-size:16px;padding:12px 18px;border:0;border-radius:8px;background:#202124;color:#fff;cursor:pointer}button:disabled{opacity:.55;cursor:wait}button:focus-visible{outline:3px solid #1a73e8;outline-offset:4px}';
   const main = document.createElement('main');
   const heading = document.createElement('h1');
   heading.textContent = t('searchHeading');
@@ -47,9 +49,25 @@
   const hide = document.createElement('style');
   hide.textContent = 'html{visibility:hidden!important}';
   document.documentElement.append(hide, cover);
-  if (!response) {
-    const note = document.createElement('p');
-    note.textContent = t('checkCharacters');
-    main.append(note);
-  }
+  const retry = document.createElement('button');
+  retry.type = 'button';
+  retry.textContent = t('searchRetryButton');
+  const note = document.createElement('p');
+  note.setAttribute('role', 'status');
+  note.textContent = t(!response ? 'checkCharacters' : 'searchRetryHelp');
+  retry.addEventListener('click', async () => {
+    if (retry.disabled) return;
+    if (location.href !== observedURL) { note.textContent = t('searchRetryChanged'); return; }
+    retry.disabled = true;
+    retry.textContent = t('searchRetryOpening');
+    note.textContent = '';
+    try {
+      const result = await chrome.runtime.sendMessage({ type: 'urlchecker-search-warning', retry: true });
+      if (location.href !== observedURL) { note.textContent = t('searchRetryChanged'); return; }
+      if (result?.allowed === true) { hide.remove(); cover.remove(); return; }
+      note.textContent = t(result?.warningOpened === true ? 'searchRetryOpening' : 'searchRetryFailed');
+    } catch { note.textContent = t('searchRetryFailed'); }
+    finally { retry.disabled = false; retry.textContent = t('searchRetryButton'); }
+  });
+  main.append(note, retry);
 })();

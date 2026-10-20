@@ -1,7 +1,7 @@
 # NoKiridding disclaimer and limitations
 
-Date: October 17, 2026  
-Version: 0.8.1
+Date: October 20, 2026  
+Version: 0.8.2
 
 ## Purpose
 
@@ -24,6 +24,8 @@ NoKiridding helps users notice Cyrillic characters and other characters resembli
 Selecting **Continue** allows navigation at the user's discretion. It does not verify safety. While permission is active, that hostname bypasses NoKiridding's character blocking and warnings.
 
 A saved **Always allow this hostname** choice remains until removed from allowed sites. The extension does not continuously verify the safety of previously allowed sites.
+
+Form contents are not saved or resent. Reopening a URL after blocking does not necessarily reproduce the original form submission.
 
 ## Warranty and liability
 

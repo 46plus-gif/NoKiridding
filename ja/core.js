@@ -107,8 +107,21 @@
   function inspectURL(input, allowBare = false, protectedEntries) {
     const analysis = parseURL(input, allowBare);
     if (!analysis) return null;
-    const similarity = globalThis.NoKiriddingProtection?.inspect(analysis.canonicalHostname, protectedEntries);
-    if (similarity) analysis.similarity = similarity;
+    // A basic-character warning takes precedence so targeted subdomain characters
+    // stay highlighted instead of becoming neutral comparison-prefix text.
+    const similarity = !analysis.characters.length &&
+      globalThis.NoKiriddingProtection?.inspect(analysis.canonicalHostname, protectedEntries, decodeLabel);
+    if (similarity) {
+      let offset = 0;
+      const parts = similarity.parts.map(part => {
+        const input = part.subdomain ? part.input.split('.').map(decodeLabel).join('.') : part.input;
+        const displayed = { ...part, input, start: offset, end: offset + input.length };
+        offset = displayed.end;
+        return displayed;
+      });
+      analysis.similarity = { ...similarity, parts,
+        subdomain: parts.filter(part => part.subdomain).map(part => part.input).join('') };
+    }
     return analysis.characters.length || similarity ? analysis : null;
   }
 

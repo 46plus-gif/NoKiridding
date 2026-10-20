@@ -51,12 +51,13 @@ function showWarning(tabId, analysis, source, observedURL) {
   return policy.serial(async () => {
     const isCurrent = () => latestNavigation.get(tabId) === observedNavigation &&
       (!observedNavigation || observedNavigation.url === observedURL);
-    if (!isCurrent() || await policy.isAllowed(tabId, analysis.canonicalHostname)) return;
+    if (!isCurrent() || await policy.isAllowed(tabId, analysis.canonicalHostname)) return false;
     const pending = await policy.prepare(tabId, analysis, source);
-    if (!isCurrent()) return;
+    if (!isCurrent()) return false;
     await chrome.tabs.update(tabId, {
       url: core.warningURL(chrome.runtime.getURL('/'), analysis, source, pending.token)
     });
+    return true;
   });
 }
 
@@ -163,6 +164,13 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       if (!analysis) { sendResponse({ allowed: true }); return; }
       if (await policy.isAllowed(sender.tab.id, analysis.canonicalHostname)) {
         sendResponse({ allowed: true });
+      } else if (message.retry === true) {
+        try {
+          const warningOpened = await showWarning(sender.tab.id, analysis, 'search', sender.url);
+          sendResponse({ allowed: false, warningOpened: warningOpened === true });
+        } catch {
+          sendResponse({ allowed: false, warningOpened: false });
+        }
       } else {
         sendResponse({ allowed: false, analysis });
         await showWarning(sender.tab.id, analysis, 'search', sender.url);

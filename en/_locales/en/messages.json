@@ -128,6 +128,21 @@
   "checkCharacters": {
     "message": "Check the character differences before continuing."
   },
+  "searchRetryButton": {
+    "message": "Reopen warning"
+  },
+  "searchRetryHelp": {
+    "message": "If the warning does not open, use the button below to reopen it. Check the destination, then select Continue on the warning screen."
+  },
+  "searchRetryOpening": {
+    "message": "Reopening warning…"
+  },
+  "searchRetryFailed": {
+    "message": "Could not open the warning. Try again. If the problem persists, reload the extension."
+  },
+  "searchRetryChanged": {
+    "message": "The search page has changed. Reload the page to check the current input."
+  },
   "listBackgroundFailed": {
     "message": "Could not update allowed sites. Please try again."
   },

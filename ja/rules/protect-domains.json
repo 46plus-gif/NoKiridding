@@ -24,6 +24,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -166,7 +168,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?microsoft(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:m|rn)[1li]cr[o0]s[o0]ft(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -184,6 +186,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -344,6 +348,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -486,7 +492,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?microsoftonline(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:m|rn)[1li]cr[o0]s[o0]ft[o0]n[1li][1li]ne(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -504,6 +510,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -664,6 +672,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -806,7 +816,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?live(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?[1li][1li]ve(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -824,6 +834,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -984,6 +996,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -1126,7 +1140,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?outlook(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?[o0]ut[1li][o0][o0]k(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -1144,6 +1158,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -1304,6 +1320,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -1446,7 +1464,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?linkedin(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?[1li][1li]nke(?:d|cl)[1li]n(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -1464,6 +1482,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -1624,6 +1644,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -1766,7 +1788,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?google(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?g[o0][o0]g[1li]e(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -1784,6 +1806,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -1944,6 +1968,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -2086,7 +2112,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?gmail(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?g(?:m|rn)a[1li][1li](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -2104,6 +2130,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -2264,6 +2292,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -2406,7 +2436,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?youtube(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?y[o0]utube(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -2424,6 +2454,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -2584,6 +2616,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -2726,7 +2760,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?amazon(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?a(?:m|rn)az[o0]n(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -2744,6 +2778,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -2904,6 +2940,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -3046,7 +3084,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?amazon(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?a(?:m|rn)az[o0]n(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -3064,6 +3102,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -3224,6 +3264,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -3366,7 +3408,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?amazon(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?a(?:m|rn)az[o0]n(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -3384,6 +3426,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -3544,6 +3588,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -3686,7 +3732,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?amazon(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?a(?:m|rn)az[o0]n(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -3704,6 +3750,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -3846,7 +3894,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*app[1li]e\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*a(?:m|rn)az[o0]n\\.ca\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -3864,6 +3912,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -4006,7 +4056,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?apple(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?a(?:m|rn)az[o0]n(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -4024,6 +4074,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -4166,7 +4218,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li](?:d|cl)[o0]u(?:d|cl)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*a(?:m|rn)az[o0]n\\.fr\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -4184,6 +4236,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -4326,7 +4380,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?icloud(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?a(?:m|rn)az[o0]n(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -4344,6 +4398,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -4486,7 +4542,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*faceb[o0][o0]k\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*app[1li]e\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -4504,6 +4560,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -4646,7 +4704,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?facebook(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?app[1li]e(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -4664,6 +4722,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -4806,7 +4866,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]nstagra(?:m|rn)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li](?:d|cl)[o0]u(?:d|cl)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -4824,6 +4884,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -4966,7 +5028,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?instagram(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?[1li](?:d|cl)[o0]u(?:d|cl)(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -4984,6 +5046,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -5126,7 +5190,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:w|vv)hatsapp\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*faceb[o0][o0]k\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -5144,6 +5208,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -5286,7 +5352,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?whatsapp(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?faceb[o0][o0]k(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -5304,6 +5370,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -5446,7 +5514,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:m|rn)ercar[1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]nstagra(?:m|rn)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -5464,6 +5532,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -5606,7 +5676,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?mercari(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?[1li]nstagra(?:m|rn)(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -5624,6 +5694,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -5766,7 +5838,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:m|rn)ercar[1li]\\.jp\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:w|vv)hatsapp\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -5784,6 +5856,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -5926,7 +6000,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?mercari(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:w|vv)hatsapp(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -5944,6 +6018,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -6086,7 +6162,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*paypa[1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:m|rn)ercar[1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -6104,6 +6180,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -6246,7 +6324,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?paypal(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:m|rn)ercar[1li](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -6264,6 +6342,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -6406,7 +6486,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*ven(?:m|rn)[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:m|rn)ercar[1li]\\.jp\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -6424,6 +6504,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -6566,7 +6648,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?venmo(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:m|rn)ercar[1li](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -6584,6 +6666,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -6726,7 +6810,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*a(?:d|cl)[o0]be\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*paypa[1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -6744,6 +6828,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -6886,7 +6972,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?adobe(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?paypa[1li](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -6904,6 +6990,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -7046,7 +7134,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*netf[1li][1li]x\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*ven(?:m|rn)[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -7064,6 +7152,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -7206,7 +7296,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?netflix(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?ven(?:m|rn)[o0](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -7224,6 +7314,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -7366,7 +7458,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*b[o0][o0]k[1li]ng\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*a(?:d|cl)[o0]be\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -7384,6 +7476,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -7526,7 +7620,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?booking(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?a(?:d|cl)[o0]be(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -7544,6 +7638,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -7686,7 +7782,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*ag[o0](?:d|cl)a\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*netf[1li][1li]x\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -7704,6 +7800,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -7846,7 +7944,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?agoda(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?netf[1li][1li]x(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -7864,6 +7962,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -8006,7 +8106,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*pr[1li]ce[1li][1li]ne\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*b[o0][o0]k[1li]ng\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -8024,6 +8124,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -8166,7 +8268,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?priceline(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?b[o0][o0]k[1li]ng(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -8184,6 +8286,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -8326,7 +8430,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*expe(?:d|cl)[1li]a\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*ag[o0](?:d|cl)a\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -8344,6 +8448,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -8486,7 +8592,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?expedia(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?ag[o0](?:d|cl)a(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -8504,6 +8610,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -8646,7 +8754,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*h[o0]te[1li]s\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*pr[1li]ce[1li][1li]ne\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -8664,6 +8772,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -8806,7 +8916,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?hotels(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?pr[1li]ce[1li][1li]ne(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -8824,6 +8934,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -8966,7 +9078,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*vrb[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*expe(?:d|cl)[1li]a\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -8984,6 +9096,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -9126,7 +9240,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?vrbo(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?expe(?:d|cl)[1li]a(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -9144,6 +9258,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -9286,7 +9402,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*a[1li]rbnb\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*h[o0]te[1li]s\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -9304,6 +9420,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -9446,7 +9564,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?airbnb(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?h[o0]te[1li]s(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -9464,6 +9582,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -9606,7 +9726,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*uber\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*vrb[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -9624,6 +9744,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -9766,7 +9888,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?uber(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?vrb[o0](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -9784,6 +9906,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -9926,7 +10050,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*ubereats\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*a[1li]rbnb\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -9944,6 +10068,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -10086,7 +10212,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?ubereats(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?a[1li]rbnb(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -10104,6 +10230,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -10246,7 +10374,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]yft\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*uber\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -10264,6 +10392,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -10406,7 +10536,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?lyft(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?uber(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -10424,6 +10554,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -10566,7 +10698,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*ebay\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*ubereats\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -10584,6 +10716,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -10726,7 +10860,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?ebay(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?ubereats(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -10744,6 +10878,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -10886,7 +11022,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*a[1li][1li]baba\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]yft\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -10904,6 +11040,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -11046,7 +11184,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?alibaba(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?[1li]yft(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -11064,6 +11202,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -11206,7 +11346,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*a[1li][1li]express\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*ebay\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -11224,6 +11364,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -11366,7 +11508,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?aliexpress(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?ebay(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -11384,6 +11526,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -11526,7 +11670,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:w|vv)a[1li](?:m|rn)art\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*a[1li][1li]baba\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -11544,6 +11688,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -11686,7 +11832,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?walmart(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?a[1li][1li]baba(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -11704,6 +11850,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -11846,7 +11994,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*target\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*a[1li][1li]express\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -11864,6 +12012,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -12006,7 +12156,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?target(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?a[1li][1li]express(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -12024,6 +12174,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -12166,7 +12318,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*c[o0]stc[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:w|vv)a[1li](?:m|rn)art\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -12184,6 +12336,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -12326,7 +12480,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?costco(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:w|vv)a[1li](?:m|rn)art(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -12344,6 +12498,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -12486,7 +12642,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*bestbuy\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*target\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -12504,6 +12660,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -12646,7 +12804,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?bestbuy(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?target(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -12664,6 +12822,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -12806,7 +12966,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*etsy\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*c[o0]stc[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -12824,6 +12984,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -12966,7 +13128,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?etsy(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?c[o0]stc[o0](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -12984,6 +13146,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -13126,7 +13290,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*sh[o0]p[1li]fy\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*bestbuy\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -13144,6 +13308,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -13286,7 +13452,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?shopify(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?bestbuy(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -13304,6 +13470,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -13446,7 +13614,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:m|rn)erca(?:d|cl)[o0][1li][1li]bre\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*etsy\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -13464,6 +13632,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -13606,7 +13776,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?mercadolibre(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?etsy(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -13624,6 +13794,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -13766,7 +13938,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*rakuten\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*sh[o0]p[1li]fy\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -13784,6 +13956,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -13926,7 +14100,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?rakuten(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?sh[o0]p[1li]fy(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -13944,6 +14118,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -14086,7 +14262,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*rakuten\\.c[o0]\\.jp\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:m|rn)erca(?:d|cl)[o0][1li][1li]bre\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -14104,6 +14280,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -14246,7 +14424,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?rakuten(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:m|rn)erca(?:d|cl)[o0][1li][1li]bre(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -14264,6 +14442,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -14406,7 +14586,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*sa(?:m|rn)sung\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*rakuten\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -14424,6 +14604,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -14566,7 +14748,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?samsung(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?rakuten(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -14584,6 +14766,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -14726,7 +14910,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*s[o0]ny\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*rakuten\\.c[o0]\\.jp\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -14744,6 +14928,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -14886,7 +15072,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?sony(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?rakuten(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -14904,6 +15090,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -15046,7 +15234,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*p[1li]aystat[1li][o0]n\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*sa(?:m|rn)sung\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -15064,6 +15252,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -15206,7 +15396,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?playstation(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?sa(?:m|rn)sung(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -15224,6 +15414,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -15366,7 +15558,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*n[1li]nten(?:d|cl)[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*s[o0]ny\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -15384,6 +15576,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -15526,7 +15720,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?nintendo(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?s[o0]ny(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -15544,6 +15738,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -15686,7 +15882,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*ea\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*p[1li]aystat[1li][o0]n\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -15704,6 +15900,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -15846,7 +16044,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?ea(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?p[1li]aystat[1li][o0]n(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -15864,6 +16062,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -16006,7 +16206,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*stea(?:m|rn)p[o0](?:w|vv)ere(?:d|cl)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*n[1li]nten(?:d|cl)[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -16024,6 +16224,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -16166,7 +16368,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?steampowered(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?n[1li]nten(?:d|cl)[o0](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -16184,6 +16386,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -16326,7 +16530,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*stea(?:m|rn)c[o0](?:m|rn)(?:m|rn)un[1li]ty\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*ea\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -16344,6 +16548,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -16486,7 +16692,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?steamcommunity(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?ea(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -16504,6 +16710,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -16646,7 +16854,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*ep[1li]cga(?:m|rn)es\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*stea(?:m|rn)p[o0](?:w|vv)ere(?:d|cl)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -16664,6 +16872,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -16806,7 +17016,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?epicgames(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?stea(?:m|rn)p[o0](?:w|vv)ere(?:d|cl)(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -16824,6 +17034,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -16966,7 +17178,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*r[o0]b[1li][o0]x\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*stea(?:m|rn)c[o0](?:m|rn)(?:m|rn)un[1li]ty\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -16984,6 +17196,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -17126,7 +17340,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?roblox(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?stea(?:m|rn)c[o0](?:m|rn)(?:m|rn)un[1li]ty(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -17144,6 +17358,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -17286,7 +17502,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)[1li]sc[o0]r(?:d|cl)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*ep[1li]cga(?:m|rn)es\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -17304,6 +17520,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -17446,7 +17664,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?discord(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?ep[1li]cga(?:m|rn)es(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -17464,6 +17682,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -17606,7 +17826,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*z[o0][o0](?:m|rn)\\.us\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*r[o0]b[1li][o0]x\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -17624,6 +17844,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -17766,7 +17988,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?zoom(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?r[o0]b[1li][o0]x(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -17784,6 +18006,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -17926,7 +18150,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*sa[1li]esf[o0]rce\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)[1li]sc[o0]r(?:d|cl)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -17944,6 +18168,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -18086,7 +18312,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?salesforce(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:d|cl)[1li]sc[o0]r(?:d|cl)(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -18104,6 +18330,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -18246,7 +18474,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*s[1li]ack\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*z[o0][o0](?:m|rn)\\.us\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -18264,6 +18492,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -18406,7 +18636,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?slack(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?z[o0][o0](?:m|rn)(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -18424,6 +18654,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -18566,7 +18798,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)r[o0]pb[o0]x\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*sa[1li]esf[o0]rce\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -18584,6 +18816,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -18726,7 +18960,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?dropbox(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?sa[1li]esf[o0]rce(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -18744,6 +18978,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -18886,7 +19122,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*b[o0]x\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*s[1li]ack\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -18904,6 +19140,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -19046,7 +19284,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?box(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?s[1li]ack(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -19064,6 +19302,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -19206,7 +19446,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*n[o0]t[1li][o0]n\\.s[o0]\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)r[o0]pb[o0]x\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -19224,6 +19464,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -19366,7 +19608,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?notion(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:d|cl)r[o0]pb[o0]x(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -19384,6 +19626,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -19526,7 +19770,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*n[o0]t[1li][o0]n\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*b[o0]x\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -19544,6 +19788,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -19686,7 +19932,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?notion(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?b[o0]x(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -19704,6 +19950,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -19846,7 +20094,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*canva\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*n[o0]t[1li][o0]n\\.s[o0]\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -19864,6 +20112,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -20006,7 +20256,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?canva(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?n[o0]t[1li][o0]n(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -20024,6 +20274,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -20166,7 +20418,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*f[1li]g(?:m|rn)a\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*n[o0]t[1li][o0]n\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -20184,6 +20436,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -20326,7 +20580,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?figma(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?n[o0]t[1li][o0]n(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -20344,6 +20598,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -20486,7 +20742,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*at[1li]ass[1li]an\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*canva\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -20504,6 +20760,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -20646,7 +20904,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?atlassian(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?canva(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -20664,6 +20922,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -20806,7 +21066,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*tre[1li][1li][o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*f[1li]g(?:m|rn)a\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -20824,6 +21084,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -20966,7 +21228,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?trello(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?f[1li]g(?:m|rn)a(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -20984,6 +21246,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -21126,7 +21390,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:w|vv)[o0]r(?:d|cl)press\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*at[1li]ass[1li]an\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -21144,6 +21408,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -21286,7 +21552,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?wordpress(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?at[1li]ass[1li]an(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -21304,6 +21570,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -21446,7 +21714,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*tu(?:m|rn)b[1li]r\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*tre[1li][1li][o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -21464,6 +21732,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -21606,7 +21876,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?tumblr(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?tre[1li][1li][o0](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -21624,6 +21894,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -21766,7 +22038,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*g[o0](?:d|cl)a(?:d|cl)(?:d|cl)y\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:w|vv)[o0]r(?:d|cl)press\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -21784,6 +22056,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -21926,7 +22200,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?godaddy(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:w|vv)[o0]r(?:d|cl)press(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -21944,6 +22218,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -22086,7 +22362,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)[o0]u(?:d|cl)f[1li]are\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*tu(?:m|rn)b[1li]r\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -22104,6 +22380,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -22246,7 +22524,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?cloudflare(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?tu(?:m|rn)b[1li]r(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -22264,6 +22542,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -22406,7 +22686,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)[1li]g[1li]ta[1li][o0]cean\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*g[o0](?:d|cl)a(?:d|cl)(?:d|cl)y\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -22424,6 +22704,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -22566,7 +22848,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?digitalocean(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?g[o0](?:d|cl)a(?:d|cl)(?:d|cl)y(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -22584,6 +22866,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -22726,7 +23010,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[o0]ra(?:d|cl)e\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)[o0]u(?:d|cl)f[1li]are\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -22744,6 +23028,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -22886,7 +23172,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?oracle(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:d|cl)[o0]u(?:d|cl)f[1li]are(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -22904,6 +23190,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -23046,7 +23334,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]b(?:m|rn)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)[1li]g[1li]ta[1li][o0]cean\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -23064,6 +23352,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -23206,7 +23496,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?ibm(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:d|cl)[1li]g[1li]ta[1li][o0]cean(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -23224,6 +23514,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -23366,7 +23658,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*c[1li]sc[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[o0]ra(?:d|cl)e\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -23384,6 +23676,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -23526,7 +23820,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?cisco(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?[o0]ra(?:d|cl)e(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -23544,6 +23838,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -23686,7 +23982,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:w|vv)ebex\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]b(?:m|rn)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -23704,6 +24000,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -23846,7 +24144,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?webex(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?[1li]b(?:m|rn)(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -23864,6 +24162,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -24006,7 +24306,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)e[1li][1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*c[1li]sc[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -24024,6 +24324,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -24166,7 +24468,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?dell(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?c[1li]sc[o0](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -24184,6 +24486,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -24326,7 +24630,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*hp\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:w|vv)ebex\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -24344,6 +24648,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -24486,7 +24792,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?hp(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:w|vv)ebex(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -24504,6 +24810,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -24646,7 +24954,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]en[o0]v[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)e[1li][1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -24664,6 +24972,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -24806,7 +25116,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?lenovo(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:d|cl)e[1li][1li](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -24824,6 +25134,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -24966,7 +25278,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]nte[1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*hp\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -24984,6 +25296,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -25126,7 +25440,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?intel(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?hp(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -25144,6 +25458,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -25286,7 +25602,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*a(?:m|rn)(?:d|cl)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]en[o0]v[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -25304,6 +25620,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -25446,7 +25764,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?amd(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?[1li]en[o0]v[o0](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -25464,6 +25782,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -25606,7 +25926,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*nv[1li](?:d|cl)[1li]a\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]nte[1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -25624,6 +25944,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -25766,7 +26088,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?nvidia(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?[1li]nte[1li](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -25784,6 +26106,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -25926,7 +26250,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[o0]pena[1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*a(?:m|rn)(?:d|cl)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -25944,6 +26268,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -26086,7 +26412,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?openai(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?a(?:m|rn)(?:d|cl)(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -26104,6 +26430,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -26246,7 +26574,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*chatgpt\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*nv[1li](?:d|cl)[1li]a\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -26264,6 +26592,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -26406,7 +26736,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?chatgpt(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?nv[1li](?:d|cl)[1li]a(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -26424,6 +26754,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -26566,7 +26898,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*anthr[o0]p[1li]c\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[o0]pena[1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -26584,6 +26916,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -26726,7 +27060,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?anthropic(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?[o0]pena[1li](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -26744,6 +27078,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -26886,7 +27222,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)au(?:d|cl)e\\.a[1li]\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*chatgpt\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -26904,6 +27240,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -27046,7 +27384,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?claude(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?chatgpt(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -27064,6 +27402,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -27206,7 +27546,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*sp[o0]t[1li]fy\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*anthr[o0]p[1li]c\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -27224,6 +27564,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -27366,7 +27708,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?spotify(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?anthr[o0]p[1li]c(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -27384,6 +27726,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -27526,7 +27870,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*re(?:d|cl)(?:d|cl)[1li]t\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)au(?:d|cl)e\\.a[1li]\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -27544,6 +27888,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -27686,7 +28032,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?reddit(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:d|cl)au(?:d|cl)e(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -27704,6 +28050,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -27846,7 +28194,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*p[1li]nterest\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*sp[o0]t[1li]fy\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -27864,6 +28212,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -28006,7 +28356,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?pinterest(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?sp[o0]t[1li]fy(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -28024,6 +28374,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -28166,7 +28518,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*snap\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*re(?:d|cl)(?:d|cl)[1li]t\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -28184,6 +28536,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -28326,7 +28680,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?snap(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?re(?:d|cl)(?:d|cl)[1li]t(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -28344,6 +28698,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -28486,7 +28842,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*snapchat\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*p[1li]nterest\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -28504,6 +28860,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -28646,7 +29004,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?snapchat(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?p[1li]nterest(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -28664,6 +29022,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -28806,7 +29166,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*byte(?:d|cl)ance\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*snap\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -28824,6 +29184,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -28966,7 +29328,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?bytedance(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?snap(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -28984,6 +29346,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -29126,7 +29490,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*t[1li]kt[o0]k\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*snapchat\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -29144,6 +29508,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -29286,7 +29652,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?tiktok(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?snapchat(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -29304,6 +29670,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -29446,7 +29814,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*x\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*byte(?:d|cl)ance\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -29464,6 +29832,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -29606,7 +29976,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?x(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?byte(?:d|cl)ance(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -29624,6 +29994,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -29766,7 +30138,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*t(?:w|vv)[1li]tter\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*t[1li]kt[o0]k\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -29784,6 +30156,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -29926,7 +30300,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?twitter(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?t[1li]kt[o0]k(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -29944,6 +30318,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -30086,7 +30462,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*x\\.a[1li]\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*x\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -30104,6 +30480,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -30264,6 +30642,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -30406,7 +30786,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*qu[o0]ra\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*t(?:w|vv)[1li]tter\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -30424,6 +30804,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -30566,7 +30948,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?quora(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?t(?:w|vv)[1li]tter(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -30584,6 +30966,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -30726,7 +31110,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*yah[o0][o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*x\\.a[1li]\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -30744,6 +31128,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -30886,7 +31272,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?yahoo(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?x(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -30904,6 +31290,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -31046,7 +31434,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*pr[o0]t[o0]n\\.(?:m|rn)e\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*qu[o0]ra\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -31064,6 +31452,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -31206,7 +31596,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?proton(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?qu[o0]ra(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -31224,6 +31614,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -31366,7 +31758,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*pr[o0]t[o0]n(?:m|rn)a[1li][1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*yah[o0][o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -31384,6 +31776,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -31526,7 +31920,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?protonmail(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?yah[o0][o0](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -31544,6 +31938,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -31686,7 +32082,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*fast(?:m|rn)a[1li][1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*pr[o0]t[o0]n\\.(?:m|rn)e\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -31704,6 +32100,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -31846,7 +32244,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?fastmail(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?pr[o0]t[o0]n(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -31864,6 +32262,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -32006,7 +32406,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]pass(?:w|vv)[o0]r(?:d|cl)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*pr[o0]t[o0]n(?:m|rn)a[1li][1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -32024,6 +32424,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -32166,7 +32568,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?1password(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?pr[o0]t[o0]n(?:m|rn)a[1li][1li](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -32184,6 +32586,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -32326,7 +32730,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*b[1li]t(?:w|vv)ar(?:d|cl)en\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*fast(?:m|rn)a[1li][1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -32344,6 +32748,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -32486,7 +32892,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?bitwarden(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?fast(?:m|rn)a[1li][1li](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -32504,6 +32910,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -32646,7 +33054,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*n[o0]r(?:d|cl)secur[1li]ty\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]pass(?:w|vv)[o0]r(?:d|cl)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -32664,6 +33072,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -32806,7 +33216,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?nordsecurity(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?[1li]pass(?:w|vv)[o0]r(?:d|cl)(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -32824,6 +33234,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -32966,7 +33378,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*n[o0]r(?:d|cl)vpn\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*b[1li]t(?:w|vv)ar(?:d|cl)en\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -32984,6 +33396,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -33126,7 +33540,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?nordvpn(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?b[1li]t(?:w|vv)ar(?:d|cl)en(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -33144,6 +33558,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -33286,7 +33702,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*surfshark\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*n[o0]r(?:d|cl)secur[1li]ty\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -33304,6 +33720,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -33446,7 +33864,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?surfshark(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?n[o0]r(?:d|cl)secur[1li]ty(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -33464,6 +33882,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -33606,7 +34026,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]ntu[1li]t\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*n[o0]r(?:d|cl)vpn\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -33624,6 +34044,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -33766,7 +34188,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?intuit(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?n[o0]r(?:d|cl)vpn(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -33784,6 +34206,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -33926,7 +34350,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:m|rn)a[1li][1li]ch[1li](?:m|rn)p\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*surfshark\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -33944,6 +34368,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -34086,7 +34512,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?mailchimp(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?surfshark(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -34104,6 +34530,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -34246,7 +34674,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)[o0]cus[1li]gn\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]ntu[1li]t\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -34264,6 +34692,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -34406,7 +34836,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?docusign(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?[1li]ntu[1li]t(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -34424,6 +34854,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -34566,7 +34998,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*serv[1li]cen[o0](?:w|vv)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:m|rn)a[1li][1li]ch[1li](?:m|rn)p\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -34584,6 +35016,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -34726,7 +35160,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?servicenow(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:m|rn)a[1li][1li]ch[1li](?:m|rn)p(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -34744,6 +35178,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -34886,7 +35322,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*sap\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)[o0]cus[1li]gn\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -34904,6 +35340,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -35046,7 +35484,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?sap(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:d|cl)[o0]cus[1li]gn(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -35064,6 +35502,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -35206,7 +35646,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:w|vv)[o0]rk(?:d|cl)ay\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*serv[1li]cen[o0](?:w|vv)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -35224,6 +35664,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -35366,7 +35808,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?workday(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?serv[1li]cen[o0](?:w|vv)(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -35384,6 +35826,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -35526,7 +35970,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[o0]kta\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*sap\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -35544,6 +35988,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -35686,7 +36132,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?okta(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?sap(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -35704,6 +36150,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -35846,7 +36294,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*auth[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:w|vv)[o0]rk(?:d|cl)ay\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -35864,6 +36312,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -36006,7 +36456,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?auth0(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:w|vv)[o0]rk(?:d|cl)ay(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -36024,6 +36474,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -36166,7 +36618,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*t(?:w|vv)[1li][1li][1li][o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[o0]kta\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -36184,6 +36636,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -36326,7 +36780,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?twilio(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?[o0]kta(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -36344,6 +36798,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -36486,7 +36942,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*sen(?:d|cl)gr[1li](?:d|cl)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*auth[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -36504,6 +36960,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -36646,7 +37104,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?sendgrid(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?auth[o0](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -36664,6 +37122,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -36806,7 +37266,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*hubsp[o0]t\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*t(?:w|vv)[1li][1li][1li][o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -36824,6 +37284,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -36966,7 +37428,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?hubspot(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?t(?:w|vv)[1li][1li][1li][o0](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -36984,6 +37446,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -37126,7 +37590,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*zen(?:d|cl)esk\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*sen(?:d|cl)gr[1li](?:d|cl)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -37144,6 +37608,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -37286,7 +37752,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?zendesk(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?sen(?:d|cl)gr[1li](?:d|cl)(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -37304,6 +37770,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -37446,7 +37914,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*str[1li]pe\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*hubsp[o0]t\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -37464,6 +37932,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -37606,7 +38076,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?stripe(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?hubsp[o0]t(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -37624,6 +38094,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -37766,7 +38238,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*b[1li][o0]ck\\.xyz\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*zen(?:d|cl)esk\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -37784,6 +38256,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -37926,7 +38400,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?block(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?zen(?:d|cl)esk(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -37944,6 +38418,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -38086,7 +38562,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*squareup\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*str[1li]pe\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -38104,6 +38580,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -38246,7 +38724,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?squareup(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?str[1li]pe(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -38264,6 +38742,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -38406,7 +38886,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*cash\\.app\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*b[1li][o0]ck\\.xyz\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -38424,6 +38904,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -38566,7 +39048,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?cash(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?b[1li][o0]ck(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -38584,6 +39066,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -38726,7 +39210,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:w|vv)[1li]se\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*squareup\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -38744,6 +39228,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -38886,7 +39372,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?wise(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?squareup(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -38904,6 +39390,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -39046,7 +39534,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*rev[o0][1li]ut\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*cash\\.app\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -39064,6 +39552,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -39206,7 +39696,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?revolut(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?cash(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -39224,6 +39714,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -39366,7 +39858,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*c[o0][1li]nbase\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:w|vv)[1li]se\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -39384,6 +39876,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -39526,7 +40020,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?coinbase(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:w|vv)[1li]se(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -39544,6 +40038,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -39686,7 +40182,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*b[1li]nance\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*rev[o0][1li]ut\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -39704,6 +40200,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -39846,7 +40344,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?binance(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?rev[o0][1li]ut(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -39864,6 +40362,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -40006,7 +40506,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*kraken\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*c[o0][1li]nbase\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -40024,6 +40524,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -40166,7 +40668,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?kraken(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?c[o0][1li]nbase(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -40184,6 +40686,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -40326,7 +40830,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*r[o0]b[1li]nh[o0][o0](?:d|cl)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*b[1li]nance\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -40344,6 +40848,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -40486,7 +40992,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?robinhood(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?b[1li]nance(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -40504,6 +41010,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -40646,7 +41154,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*jp(?:m|rn)[o0]rganchase\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*kraken\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -40664,6 +41172,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -40806,7 +41316,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?jpmorganchase(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?kraken(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -40824,6 +41334,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -40966,7 +41478,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*chase\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*r[o0]b[1li]nh[o0][o0](?:d|cl)\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -40984,6 +41496,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -41126,7 +41640,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?chase(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?r[o0]b[1li]nh[o0][o0](?:d|cl)(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -41144,6 +41658,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -41286,7 +41802,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*bank[o0]fa(?:m|rn)er[1li]ca\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*jp(?:m|rn)[o0]rganchase\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -41304,6 +41820,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -41446,7 +41964,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?bankofamerica(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?jp(?:m|rn)[o0]rganchase(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -41464,6 +41982,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -41606,7 +42126,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:w|vv)e[1li][1li]sfarg[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*chase\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -41624,6 +42144,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -41766,7 +42288,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?wellsfargo(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?chase(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -41784,6 +42306,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -41926,7 +42450,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*c[1li]t[1li]gr[o0]up\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*bank[o0]fa(?:m|rn)er[1li]ca\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -41944,6 +42468,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -42086,7 +42612,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?citigroup(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?bank[o0]fa(?:m|rn)er[1li]ca(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -42104,6 +42630,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -42246,7 +42774,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*c[1li]t[1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:w|vv)e[1li][1li]sfarg[o0]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -42264,6 +42792,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -42406,7 +42936,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?citi(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:w|vv)e[1li][1li]sfarg[o0](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -42424,6 +42954,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -42566,7 +43098,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*a(?:m|rn)er[1li]canexpress\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*c[1li]t[1li]gr[o0]up\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -42584,6 +43116,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -42726,7 +43260,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?americanexpress(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?c[1li]t[1li]gr[o0]up(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -42744,6 +43278,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -42886,7 +43422,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*cap[1li]ta[1li][o0]ne\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*c[1li]t[1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -42904,6 +43440,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -43046,7 +43584,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?capitalone(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?c[1li]t[1li](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -43064,6 +43602,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -43206,7 +43746,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*hsbc\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*a(?:m|rn)er[1li]canexpress\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -43224,6 +43764,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -43366,7 +43908,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?hsbc(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?a(?:m|rn)er[1li]canexpress(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -43384,6 +43926,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -43526,7 +44070,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*bar(?:d|cl)ays\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*cap[1li]ta[1li][o0]ne\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -43544,6 +44088,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -43686,7 +44232,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?barclays(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?cap[1li]ta[1li][o0]ne(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -43704,6 +44250,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -43846,7 +44394,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*santan(?:d|cl)er\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*hsbc\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -43864,6 +44412,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -44006,7 +44556,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?santander(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?hsbc(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -44024,6 +44574,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -44166,7 +44718,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]ng\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*bar(?:d|cl)ays\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -44184,6 +44736,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -44326,7 +44880,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?ing(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?bar(?:d|cl)ays(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -44344,6 +44898,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -44486,7 +45042,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)h[1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*santan(?:d|cl)er\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -44504,6 +45060,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -44646,7 +45204,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?dhl(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?santan(?:d|cl)er(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -44664,6 +45222,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -44806,7 +45366,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*ups\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*[1li]ng\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -44824,6 +45384,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -44966,7 +45528,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?ups(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?[1li]ng(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -44984,6 +45546,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -45126,7 +45690,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*fe(?:d|cl)ex\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)h[1li]\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -45144,6 +45708,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -45286,7 +45852,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?fedex(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:d|cl)h[1li](-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -45304,6 +45870,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -45446,7 +46014,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:m|rn)aersk\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*ups\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -45464,6 +46032,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -45606,7 +46176,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?maersk(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?ups(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -45624,6 +46194,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -45766,7 +46338,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)e[1li]ta\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*fe(?:d|cl)ex\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -45784,6 +46356,8 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
@@ -45926,7 +46500,7 @@
       "type": "block"
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?delta(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?fe(?:d|cl)ex(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
       "isUrlFilterCaseSensitive": false,
       "resourceTypes": [
         "main_frame"
@@ -45944,6 +46518,656 @@
         "amazon.co.uk",
         "amazon.de",
         "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
+        "apple.com",
+        "icloud.com",
+        "facebook.com",
+        "instagram.com",
+        "whatsapp.com",
+        "mercari.com",
+        "mercari.jp",
+        "paypal.com",
+        "venmo.com",
+        "adobe.com",
+        "netflix.com",
+        "booking.com",
+        "agoda.com",
+        "priceline.com",
+        "expedia.com",
+        "hotels.com",
+        "vrbo.com",
+        "airbnb.com",
+        "uber.com",
+        "ubereats.com",
+        "lyft.com",
+        "ebay.com",
+        "alibaba.com",
+        "aliexpress.com",
+        "walmart.com",
+        "target.com",
+        "costco.com",
+        "bestbuy.com",
+        "etsy.com",
+        "shopify.com",
+        "mercadolibre.com",
+        "rakuten.com",
+        "rakuten.co.jp",
+        "samsung.com",
+        "sony.com",
+        "playstation.com",
+        "nintendo.com",
+        "ea.com",
+        "steampowered.com",
+        "steamcommunity.com",
+        "epicgames.com",
+        "roblox.com",
+        "discord.com",
+        "zoom.us",
+        "salesforce.com",
+        "slack.com",
+        "dropbox.com",
+        "box.com",
+        "notion.so",
+        "notion.com",
+        "canva.com",
+        "figma.com",
+        "atlassian.com",
+        "trello.com",
+        "wordpress.com",
+        "tumblr.com",
+        "godaddy.com",
+        "cloudflare.com",
+        "digitalocean.com",
+        "oracle.com",
+        "ibm.com",
+        "cisco.com",
+        "webex.com",
+        "dell.com",
+        "hp.com",
+        "lenovo.com",
+        "intel.com",
+        "amd.com",
+        "nvidia.com",
+        "openai.com",
+        "chatgpt.com",
+        "anthropic.com",
+        "claude.ai",
+        "spotify.com",
+        "reddit.com",
+        "pinterest.com",
+        "snap.com",
+        "snapchat.com",
+        "bytedance.com",
+        "tiktok.com",
+        "x.com",
+        "twitter.com",
+        "x.ai",
+        "quora.com",
+        "yahoo.com",
+        "proton.me",
+        "protonmail.com",
+        "fastmail.com",
+        "1password.com",
+        "bitwarden.com",
+        "nordsecurity.com",
+        "nordvpn.com",
+        "surfshark.com",
+        "intuit.com",
+        "mailchimp.com",
+        "docusign.com",
+        "servicenow.com",
+        "sap.com",
+        "workday.com",
+        "okta.com",
+        "auth0.com",
+        "twilio.com",
+        "sendgrid.com",
+        "hubspot.com",
+        "zendesk.com",
+        "stripe.com",
+        "block.xyz",
+        "squareup.com",
+        "cash.app",
+        "wise.com",
+        "revolut.com",
+        "coinbase.com",
+        "binance.com",
+        "kraken.com",
+        "robinhood.com",
+        "jpmorganchase.com",
+        "chase.com",
+        "bankofamerica.com",
+        "wellsfargo.com",
+        "citigroup.com",
+        "citi.com",
+        "americanexpress.com",
+        "capitalone.com",
+        "hsbc.com",
+        "barclays.com",
+        "santander.com",
+        "ing.com",
+        "dhl.com",
+        "ups.com",
+        "fedex.com",
+        "maersk.com",
+        "delta.com"
+      ]
+    }
+  },
+  {
+    "id": 1000288,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:m|rn)aersk\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame"
+      ],
+      "excludedRequestDomains": [
+        "microsoft.com",
+        "microsoftonline.com",
+        "live.com",
+        "outlook.com",
+        "linkedin.com",
+        "google.com",
+        "gmail.com",
+        "youtube.com",
+        "amazon.com",
+        "amazon.co.uk",
+        "amazon.de",
+        "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
+        "apple.com",
+        "icloud.com",
+        "facebook.com",
+        "instagram.com",
+        "whatsapp.com",
+        "mercari.com",
+        "mercari.jp",
+        "paypal.com",
+        "venmo.com",
+        "adobe.com",
+        "netflix.com",
+        "booking.com",
+        "agoda.com",
+        "priceline.com",
+        "expedia.com",
+        "hotels.com",
+        "vrbo.com",
+        "airbnb.com",
+        "uber.com",
+        "ubereats.com",
+        "lyft.com",
+        "ebay.com",
+        "alibaba.com",
+        "aliexpress.com",
+        "walmart.com",
+        "target.com",
+        "costco.com",
+        "bestbuy.com",
+        "etsy.com",
+        "shopify.com",
+        "mercadolibre.com",
+        "rakuten.com",
+        "rakuten.co.jp",
+        "samsung.com",
+        "sony.com",
+        "playstation.com",
+        "nintendo.com",
+        "ea.com",
+        "steampowered.com",
+        "steamcommunity.com",
+        "epicgames.com",
+        "roblox.com",
+        "discord.com",
+        "zoom.us",
+        "salesforce.com",
+        "slack.com",
+        "dropbox.com",
+        "box.com",
+        "notion.so",
+        "notion.com",
+        "canva.com",
+        "figma.com",
+        "atlassian.com",
+        "trello.com",
+        "wordpress.com",
+        "tumblr.com",
+        "godaddy.com",
+        "cloudflare.com",
+        "digitalocean.com",
+        "oracle.com",
+        "ibm.com",
+        "cisco.com",
+        "webex.com",
+        "dell.com",
+        "hp.com",
+        "lenovo.com",
+        "intel.com",
+        "amd.com",
+        "nvidia.com",
+        "openai.com",
+        "chatgpt.com",
+        "anthropic.com",
+        "claude.ai",
+        "spotify.com",
+        "reddit.com",
+        "pinterest.com",
+        "snap.com",
+        "snapchat.com",
+        "bytedance.com",
+        "tiktok.com",
+        "x.com",
+        "twitter.com",
+        "x.ai",
+        "quora.com",
+        "yahoo.com",
+        "proton.me",
+        "protonmail.com",
+        "fastmail.com",
+        "1password.com",
+        "bitwarden.com",
+        "nordsecurity.com",
+        "nordvpn.com",
+        "surfshark.com",
+        "intuit.com",
+        "mailchimp.com",
+        "docusign.com",
+        "servicenow.com",
+        "sap.com",
+        "workday.com",
+        "okta.com",
+        "auth0.com",
+        "twilio.com",
+        "sendgrid.com",
+        "hubspot.com",
+        "zendesk.com",
+        "stripe.com",
+        "block.xyz",
+        "squareup.com",
+        "cash.app",
+        "wise.com",
+        "revolut.com",
+        "coinbase.com",
+        "binance.com",
+        "kraken.com",
+        "robinhood.com",
+        "jpmorganchase.com",
+        "chase.com",
+        "bankofamerica.com",
+        "wellsfargo.com",
+        "citigroup.com",
+        "citi.com",
+        "americanexpress.com",
+        "capitalone.com",
+        "hsbc.com",
+        "barclays.com",
+        "santander.com",
+        "ing.com",
+        "dhl.com",
+        "ups.com",
+        "fedex.com",
+        "maersk.com",
+        "delta.com"
+      ]
+    }
+  },
+  {
+    "id": 1000289,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:m|rn)aersk(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame"
+      ],
+      "excludedRequestDomains": [
+        "microsoft.com",
+        "microsoftonline.com",
+        "live.com",
+        "outlook.com",
+        "linkedin.com",
+        "google.com",
+        "gmail.com",
+        "youtube.com",
+        "amazon.com",
+        "amazon.co.uk",
+        "amazon.de",
+        "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
+        "apple.com",
+        "icloud.com",
+        "facebook.com",
+        "instagram.com",
+        "whatsapp.com",
+        "mercari.com",
+        "mercari.jp",
+        "paypal.com",
+        "venmo.com",
+        "adobe.com",
+        "netflix.com",
+        "booking.com",
+        "agoda.com",
+        "priceline.com",
+        "expedia.com",
+        "hotels.com",
+        "vrbo.com",
+        "airbnb.com",
+        "uber.com",
+        "ubereats.com",
+        "lyft.com",
+        "ebay.com",
+        "alibaba.com",
+        "aliexpress.com",
+        "walmart.com",
+        "target.com",
+        "costco.com",
+        "bestbuy.com",
+        "etsy.com",
+        "shopify.com",
+        "mercadolibre.com",
+        "rakuten.com",
+        "rakuten.co.jp",
+        "samsung.com",
+        "sony.com",
+        "playstation.com",
+        "nintendo.com",
+        "ea.com",
+        "steampowered.com",
+        "steamcommunity.com",
+        "epicgames.com",
+        "roblox.com",
+        "discord.com",
+        "zoom.us",
+        "salesforce.com",
+        "slack.com",
+        "dropbox.com",
+        "box.com",
+        "notion.so",
+        "notion.com",
+        "canva.com",
+        "figma.com",
+        "atlassian.com",
+        "trello.com",
+        "wordpress.com",
+        "tumblr.com",
+        "godaddy.com",
+        "cloudflare.com",
+        "digitalocean.com",
+        "oracle.com",
+        "ibm.com",
+        "cisco.com",
+        "webex.com",
+        "dell.com",
+        "hp.com",
+        "lenovo.com",
+        "intel.com",
+        "amd.com",
+        "nvidia.com",
+        "openai.com",
+        "chatgpt.com",
+        "anthropic.com",
+        "claude.ai",
+        "spotify.com",
+        "reddit.com",
+        "pinterest.com",
+        "snap.com",
+        "snapchat.com",
+        "bytedance.com",
+        "tiktok.com",
+        "x.com",
+        "twitter.com",
+        "x.ai",
+        "quora.com",
+        "yahoo.com",
+        "proton.me",
+        "protonmail.com",
+        "fastmail.com",
+        "1password.com",
+        "bitwarden.com",
+        "nordsecurity.com",
+        "nordvpn.com",
+        "surfshark.com",
+        "intuit.com",
+        "mailchimp.com",
+        "docusign.com",
+        "servicenow.com",
+        "sap.com",
+        "workday.com",
+        "okta.com",
+        "auth0.com",
+        "twilio.com",
+        "sendgrid.com",
+        "hubspot.com",
+        "zendesk.com",
+        "stripe.com",
+        "block.xyz",
+        "squareup.com",
+        "cash.app",
+        "wise.com",
+        "revolut.com",
+        "coinbase.com",
+        "binance.com",
+        "kraken.com",
+        "robinhood.com",
+        "jpmorganchase.com",
+        "chase.com",
+        "bankofamerica.com",
+        "wellsfargo.com",
+        "citigroup.com",
+        "citi.com",
+        "americanexpress.com",
+        "capitalone.com",
+        "hsbc.com",
+        "barclays.com",
+        "santander.com",
+        "ing.com",
+        "dhl.com",
+        "ups.com",
+        "fedex.com",
+        "maersk.com",
+        "delta.com"
+      ]
+    }
+  },
+  {
+    "id": 1000290,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*(?:d|cl)e[1li]ta\\.c[o0](?:m|rn)\\.?(:[0-9]+)?([/?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame"
+      ],
+      "excludedRequestDomains": [
+        "microsoft.com",
+        "microsoftonline.com",
+        "live.com",
+        "outlook.com",
+        "linkedin.com",
+        "google.com",
+        "gmail.com",
+        "youtube.com",
+        "amazon.com",
+        "amazon.co.uk",
+        "amazon.de",
+        "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
+        "apple.com",
+        "icloud.com",
+        "facebook.com",
+        "instagram.com",
+        "whatsapp.com",
+        "mercari.com",
+        "mercari.jp",
+        "paypal.com",
+        "venmo.com",
+        "adobe.com",
+        "netflix.com",
+        "booking.com",
+        "agoda.com",
+        "priceline.com",
+        "expedia.com",
+        "hotels.com",
+        "vrbo.com",
+        "airbnb.com",
+        "uber.com",
+        "ubereats.com",
+        "lyft.com",
+        "ebay.com",
+        "alibaba.com",
+        "aliexpress.com",
+        "walmart.com",
+        "target.com",
+        "costco.com",
+        "bestbuy.com",
+        "etsy.com",
+        "shopify.com",
+        "mercadolibre.com",
+        "rakuten.com",
+        "rakuten.co.jp",
+        "samsung.com",
+        "sony.com",
+        "playstation.com",
+        "nintendo.com",
+        "ea.com",
+        "steampowered.com",
+        "steamcommunity.com",
+        "epicgames.com",
+        "roblox.com",
+        "discord.com",
+        "zoom.us",
+        "salesforce.com",
+        "slack.com",
+        "dropbox.com",
+        "box.com",
+        "notion.so",
+        "notion.com",
+        "canva.com",
+        "figma.com",
+        "atlassian.com",
+        "trello.com",
+        "wordpress.com",
+        "tumblr.com",
+        "godaddy.com",
+        "cloudflare.com",
+        "digitalocean.com",
+        "oracle.com",
+        "ibm.com",
+        "cisco.com",
+        "webex.com",
+        "dell.com",
+        "hp.com",
+        "lenovo.com",
+        "intel.com",
+        "amd.com",
+        "nvidia.com",
+        "openai.com",
+        "chatgpt.com",
+        "anthropic.com",
+        "claude.ai",
+        "spotify.com",
+        "reddit.com",
+        "pinterest.com",
+        "snap.com",
+        "snapchat.com",
+        "bytedance.com",
+        "tiktok.com",
+        "x.com",
+        "twitter.com",
+        "x.ai",
+        "quora.com",
+        "yahoo.com",
+        "proton.me",
+        "protonmail.com",
+        "fastmail.com",
+        "1password.com",
+        "bitwarden.com",
+        "nordsecurity.com",
+        "nordvpn.com",
+        "surfshark.com",
+        "intuit.com",
+        "mailchimp.com",
+        "docusign.com",
+        "servicenow.com",
+        "sap.com",
+        "workday.com",
+        "okta.com",
+        "auth0.com",
+        "twilio.com",
+        "sendgrid.com",
+        "hubspot.com",
+        "zendesk.com",
+        "stripe.com",
+        "block.xyz",
+        "squareup.com",
+        "cash.app",
+        "wise.com",
+        "revolut.com",
+        "coinbase.com",
+        "binance.com",
+        "kraken.com",
+        "robinhood.com",
+        "jpmorganchase.com",
+        "chase.com",
+        "bankofamerica.com",
+        "wellsfargo.com",
+        "citigroup.com",
+        "citi.com",
+        "americanexpress.com",
+        "capitalone.com",
+        "hsbc.com",
+        "barclays.com",
+        "santander.com",
+        "ing.com",
+        "dhl.com",
+        "ups.com",
+        "fedex.com",
+        "maersk.com",
+        "delta.com"
+      ]
+    }
+  },
+  {
+    "id": 1000291,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^https?://([^/?#@]*@)?([a-z0-9-]+\\.)*([a-z0-9-]*-)?(?:d|cl)e[1li]ta(-[a-z0-9-]*)?(\\.[a-z0-9-]+)+\\.?(:[0-9]+)?([/?#]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": [
+        "main_frame"
+      ],
+      "excludedRequestDomains": [
+        "microsoft.com",
+        "microsoftonline.com",
+        "live.com",
+        "outlook.com",
+        "linkedin.com",
+        "google.com",
+        "gmail.com",
+        "youtube.com",
+        "amazon.com",
+        "amazon.co.uk",
+        "amazon.de",
+        "amazon.co.jp",
+        "amazon.ca",
+        "amazon.fr",
         "apple.com",
         "icloud.com",
         "facebook.com",
