@@ -1,7 +1,7 @@
 # NoKiridding disclaimer and limitations
 
 Date: October 20, 2026  
-Version: 0.8.3
+Version: 0.8.4
 
 ## Purpose
 

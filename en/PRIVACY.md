@@ -1,7 +1,7 @@
 # NoKiridding privacy policy — draft
 
 Date: October 20, 2026  
-Version: 0.8.3
+Version: 0.8.4
 
 ## Information used
 

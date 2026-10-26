@@ -8,17 +8,18 @@ NoKiridding is a lookalike-character checker for desktop Chrome. It checks for C
 
 For example, it detects `аmazon`, where the first character is the Cyrillic `а` rather than the Latin `a` in `amazon`. It does not flag `amazen`, which uses only ordinary Latin letters. **It does not perform general spell-checking. The comparisons below cover five visual patterns and certain hyphen-separated name additions or suffix differences.**
 
-### Changes in 0.8.3
+### Changes in 0.8.4
 
-- Added `airbnb.jp` and `expedia.co.jp` to the bundled official-domain references so that `www.airbnb.jp` and `www.expedia.co.jp` no longer warn solely because of their regional suffixes.
-- Warnings for listed lookalike substitutions and hyphen-separated name additions remain in place.
-- Customized comparison lists are not updated automatically. If you saved a custom list, add `airbnb.jp` to Airbnb and `expedia.co.jp` to Expedia in settings.
+- Added 13 verified Japanese domains to the bundled references so that hosts such as `accounts.google.co.jp` no longer warn solely because their suffix differs.
+- Added domains: `google.co.jp`, `sony.co.jp`, `nintendo.co.jp`, `costco.co.jp`, `ebay.co.jp`, `alibaba.co.jp`, `intel.co.jp`, `hsbc.co.jp`, `zendesk.co.jp`, `dell.co.jp`, `servicenow.co.jp`, `apple.co.jp`, `yahoo.co.jp`.
+- This does not exempt all `.co.jp` domains. Warnings for listed lookalike substitutions and hyphen-separated name additions remain in place.
+- Customized comparison lists are not updated automatically. If you saved a custom list, add the required genuine domains to the existing company/service entries in settings, retaining their other domains.
 
-The detection code and blocking rules have been checked locally. This update has not yet been retested in an installed Chrome extension.
+All 61 relevant automated checks passed. This update has not yet been retested in an installed Chrome extension. Apple currently lists `apple.co.jp` in its official contact email; its website availability has not been confirmed. Yahoo! JAPAN is operated by LY Corporation in Japan; including `yahoo.co.jp` does not imply that it shares an operator with `yahoo.com`. Reference sources are listed in [PROTECTED-DOMAINS.csv](en/PROTECTED-DOMAINS.csv).
 
 ### Registered-domain comparisons
 
-Version 0.8.3 includes an editable initial list of 101 companies/services and 148 domains. These additional checks do not perform general spell-checking:
+Version 0.8.4 includes an editable initial list of 101 companies/services and 161 domains. These additional checks do not perform general spell-checking:
 
 - Five visual substitutions: `rn/m`, `0/o`, `1/l/i` (including an entered capital `I`), `vv/w`, and `cl/d`. Chrome lowercases hostnames, so `I` is compared as `i`.
 - Hyphen-separated additions around registered names, such as `support-mercari.com` and `amazon-support.com`. The same name with a different suffix is also compared. A name occurring only inside an unrelated word does not trigger this check.
@@ -29,7 +30,7 @@ The warning preserves the full entered hostname and highlights only differences 
 
 Registered official domains and their subdomains are excluded from these additional comparisons. The list does not cover every regional or service domain, so unregistered official domains and legitimate commentary sites can also trigger warnings. General spelling errors and all forms of impersonation are not covered.
 
-Open settings through the extension icon, then find **Domains targeted by phishing impersonation** to add, edit, remove or filter entries. Enter names and genuine domains verified on the official website, not fake domains. Separate multiple domains with commas or new lines. Limits: 200 companies/services and 400 domains. The list is stored only in this Chrome profile, without external transmission or synchronization. Custom lists survive updates; new bundled defaults are not automatically merged into them. If you customized an earlier list, add new domains such as airbnb.jp and expedia.co.jp manually when needed.
+Open settings through the extension icon, then find **Domains targeted by phishing impersonation** to add, edit, remove or filter entries. Enter names and genuine domains verified on the official website, not fake domains. Separate multiple domains with commas or new lines. Limits: 200 companies/services and 400 domains. The list is stored only in this Chrome profile, without external transmission or synchronization. Custom lists survive updates; new bundled defaults are not automatically merged into them. If you customized an earlier list, add new domains such as google.co.jp and sony.co.jp manually when needed.
 
 [Initial domains and official reference URLs](en/PROTECTED-DOMAINS.csv). This is a manually selected starting list, not a ranking or a measured coverage claim. Listing a domain does not establish the safety of every page below it.
 
@@ -49,23 +50,23 @@ Display example using the actual interface with the reserved hostname `аmazon.i
 
 **This does not block all phishing sites. No warning does not mean a site is safe.** Read the [disclaimer and limitations](en/DISCLAIMER.md) before use.
 
-[Download NoKiridding 0.8.3](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.3-en.zip)
+[Download NoKiridding 0.8.4](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.4-en.zip)
 
 This folder contains the English documentation and a complete copy of the extension. You do not need the Japanese folder.
 
-Version: 0.8.3. Requires desktop Chrome 120 or later. It does not run in mobile Chrome. The interface is Japanese when Chrome's UI language is Japanese, and English otherwise.
+Version: 0.8.4. Requires desktop Chrome 120 or later. It does not run in mobile Chrome. The interface is Japanese when Chrome's UI language is Japanese, and English otherwise.
 
 [English source files](https://github.com/46plus-gif/NoKiridding/tree/main/en)
 
 ### Install from a ZIP
 
-1. Download [NoKiridding-0.8.3-en.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.3-en.zip). Use this extension ZIP, rather than GitHub's automatically generated “Source code” archive.
+1. Download [NoKiridding-0.8.4-en.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.4-en.zip). Use this extension ZIP, rather than GitHub's automatically generated “Source code” archive.
 2. Extract the ZIP and place the extracted folder somewhere you will keep it.
 3. Enter `chrome://extensions` in Chrome's address bar.
 4. Turn on **Developer mode**.
 5. Select **Load unpacked**.
 6. Choose the extracted folder that directly contains `manifest.json`. Do not select only its `rules` or `icons` subfolder.
-7. Check that **NoKiridding** appears, its version is **0.8.3**, and its switch is on.
+7. Check that **NoKiridding** appears, its version is **0.8.4**, and its switch is on.
 
 Keep the extracted folder in place while using the extension. You may delete the downloaded ZIP. Organization-managed Chrome may prevent this installation method.
 
@@ -139,7 +140,7 @@ Unicode character data and Public Suffix List data have separate terms from the 
 - [Unicode confusables data](https://www.unicode.org/Public/security/latest/confusables.txt)
 - [Unicode confusable detection](https://www.unicode.org/reports/tr39/#Confusable_Detection)
 
-Version 0.8.3 bundles its character data. It does not query these sites or automatically update the data during use.
+Version 0.8.4 bundles its character data. It does not query these sites or automatically update the data during use.
 
 ## 日本語
 
@@ -147,17 +148,18 @@ NoKiriddingは、英字にそっくりな別の文字を見つける、パソコ
 
 例えば、`amazon` の先頭の英字 `a` をキリル文字 `а` に置き換えた `аmazon` は検出します。一方、`amazen` のように通常の英字だけで綴りを変えた名前には反応しません。**一般的なスペルミスは判定しません。下記の追加機能では、登録ドメインに対する5種類の見間違いと、ハイフンで名前を付け足すパターンなどを調べます。**
 
-### 0.8.3の修正
+### 0.8.4の修正
 
-- `airbnb.jp` と `expedia.co.jp` を正規ドメインの初期一覧に追加しました。`www.airbnb.jp` と `www.expedia.co.jp` が、末尾の違いを理由に警告される問題を修正しています。
-- 似た文字への置き換えや、名前に単語を付け足したドメインへの警告は維持しています。
-- 編集・保存済みの比較リストは自動更新しません。該当する場合は、設定画面のAirbnbに `airbnb.jp`、Expediaに `expedia.co.jp` を追加してください。
+- 正規利用を確認した日本向けドメイン13件を初期一覧に追加しました。`accounts.google.co.jp` などが末尾の違いを理由に警告される問題を修正しています。
+- 追加したドメイン：`google.co.jp`, `sony.co.jp`, `nintendo.co.jp`, `costco.co.jp`, `ebay.co.jp`, `alibaba.co.jp`, `intel.co.jp`, `hsbc.co.jp`, `zendesk.co.jp`, `dell.co.jp`, `servicenow.co.jp`, `apple.co.jp`, `yahoo.co.jp`。
+- `.co.jp` 全体を一括で許可する変更ではありません。似た文字への置き換えや、名前に単語を付け足したドメインへの警告は維持しています。
+- 編集・保存済みの比較リストは自動更新しません。該当する場合は、設定画面で必要な正規ドメインを既存の会社・サービスの項目に追加してください。既存の登録内容は残してください。
 
-この修正は、コード上の判定と遮断ルールを検証しています。実際のChromeでの再確認は未実施です。
+61項目の関連する自動検証に合格しました。実際のChromeでの今回の修正版の再確認は未実施です。`apple.co.jp` はApple公式の連絡先メールでの利用を確認していますが、Webサイトの到達性は未確認です。Yahoo! JAPANは国内ではLINEヤフーが運営しており、`yahoo.com` と運営会社が同じという意味ではありません。確認根拠は [PROTECTED-DOMAINS.csv](ja/PROTECTED-DOMAINS.csv) に記載しています。
 
 ### フィッシング詐欺に使われやすいドメインとの比較
 
-0.8.3には、編集可能な初期リスト101社・サービス、148ドメインを登録しています。一般的なスペルミスの判定ではなく、次の2種類の追加チェックを行います。
+0.8.4には、編集可能な初期リスト101社・サービス、161ドメインを登録しています。一般的なスペルミスの判定ではなく、次の2種類の追加チェックを行います。
 
 - `rn/m`・`0/o`・`1/l/i`（入力時の大文字 `I` を含む）・`vv/w`・`cl/d` の5種類の見間違い。Chromeはドメイン名を小文字にそろえるため、`I` は `i` として比較します。
 - `support-mercari.com` や `amazon-support.com` のように、登録した本物の名前の前後へハイフンで単語を付け足した名前。同じ名前で末尾だけが違う場合も比較します。名前が別の単語の一部として含まれるだけの場合は対象外です。
@@ -168,7 +170,7 @@ NoKiriddingは、英字にそっくりな別の文字を見つける、パソコ
 
 登録済みの公式ドメインとその配下は、この追加比較から除外します。全地域・全サービスのドメインを網羅した一覧ではないため、未登録の正規ドメインや紹介サイトでも警告する場合があります。一般的な綴り間違いや、すべてのなりすましを検出するものではありません。
 
-拡張機能のアイコンから設定画面の「フィッシング詐欺に使われやすいドメイン」を開くと、追加・編集・削除・絞り込みができます。会社・サービス名と、公式サイトで確認した本物のドメインを入力してください。偽サイトのドメインを登録する一覧ではありません。複数のドメインは改行かカンマで区切ります。上限は200件・合計400ドメインです。この端末のChromeプロフィール内だけに保存し、外部へ送信・同期しません。編集したリストは更新後も保持し、新しい初期リストを自動で混ぜることはありません。以前のリストを編集済みの場合、airbnb.jp・expedia.co.jpなど新しいドメインは必要に応じて自分で追加してください。
+拡張機能のアイコンから設定画面の「フィッシング詐欺に使われやすいドメイン」を開くと、追加・編集・削除・絞り込みができます。会社・サービス名と、公式サイトで確認した本物のドメインを入力してください。偽サイトのドメインを登録する一覧ではありません。複数のドメインは改行かカンマで区切ります。上限は200件・合計400ドメインです。この端末のChromeプロフィール内だけに保存し、外部へ送信・同期しません。編集したリストは更新後も保持し、新しい初期リストを自動で混ぜることはありません。以前のリストを編集済みの場合、google.co.jp・sony.co.jpなど新しいドメインは必要に応じて自分で追加してください。
 
 [初期ドメインと公式参照先の一覧](ja/PROTECTED-DOMAINS.csv)。手動で選定した開始用のリストで、順位や検出率を示すものではありません。登録されていることは、配下の全ページの安全性を保証しません。
 
@@ -192,9 +194,9 @@ NoKiriddingは、英字にそっくりな別の文字を見つける、パソコ
 
 Chromeの表示言語が日本語の場合は日本語、それ以外では英語で表示します。
 
-[NoKiridding 0.8.3をダウンロード](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/ja/NoKiridding-0.8.3-ja.zip)
+[NoKiridding 0.8.4をダウンロード](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/ja/NoKiridding-0.8.4-ja.zip)
 
-対象バージョン：0.8.3。Chrome 120以降が必要です。スマートフォン版Chromeでは動作しません。
+対象バージョン：0.8.4。Chrome 120以降が必要です。スマートフォン版Chromeでは動作しません。
 
 [日本語側のソース一式](https://github.com/46plus-gif/NoKiridding/tree/main/ja)
 
@@ -202,13 +204,13 @@ Chromeの表示言語が日本語の場合は日本語、それ以外では英�
 
 Chromeウェブストアを使わず、ZIPを展開して手動で導入します。
 
-1. [NoKiridding-0.8.3-ja.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/ja/NoKiridding-0.8.3-ja.zip)をダウンロードします。GitHubが自動で用意する「Source code」のZIPとは別です。
+1. [NoKiridding-0.8.4-ja.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/ja/NoKiridding-0.8.4-ja.zip)をダウンロードします。GitHubが自動で用意する「Source code」のZIPとは別です。
 2. ZIPを展開し、展開したフォルダを、今後も保管する場所に置きます。
 3. Chromeのアドレス欄に `chrome://extensions` と入力して開きます。
 4. 右上の「デベロッパー モード」をオンにします。
 5. 「パッケージ化されていない拡張機能を読み込む」を押します。
 6. 展開したフォルダを選びます。`manifest.json` が直接入っているフォルダです。`rules` や `icons` だけを選ばないでください。
-7. 一覧に「NoKiridding」が表示され、バージョンが `0.8.3`、スイッチがオンになっていることを確認します。
+7. 一覧に「NoKiridding」が表示され、バージョンが `0.8.4`、スイッチがオンになっていることを確認します。
 
 導入後も、このフォルダは移動・削除しないでください。ダウンロード用のZIPは削除して構いません。
 
@@ -274,7 +276,7 @@ Chromeが入力をGoogle検索として扱った場合も、検索内容全体�
 - [Unicode公式の見間違えやすい文字の対応表](https://www.unicode.org/Public/security/latest/confusables.txt)
 - [Unicodeの文字比較の仕組み](https://www.unicode.org/reports/tr39/#Confusable_Detection)
 
-0.8.3の判定用データは拡張機能に同梱されています。利用中にこれらのサイトへ照会したり、判定用データを自動更新したりすることはありません。
+0.8.4の判定用データは拡張機能に同梱されています。利用中にこれらのサイトへ照会したり、判定用データを自動更新したりすることはありません。
 
 ### ライセンス
 
