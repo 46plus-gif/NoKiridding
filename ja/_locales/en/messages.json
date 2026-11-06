@@ -294,7 +294,7 @@
     "message": "Optional features"
   },
   "optionalSettingsIntro": {
-    "message": "In addition to the basic feature above, this feature checks deceptive combinations of letters and digits, and names added around registered domain names. Because there are countless possible targets, 101 companies whose names may be impersonated in phishing are included. Add more using the fields below."
+    "message": "In addition to the basic feature above, this feature checks deceptive combinations of letters and digits, and names added around registered domain names. Because there are countless possible targets, 107 companies/services whose names may be impersonated in phishing are included. Add more using the fields below."
   },
   "protectionSectionTitle": {
     "message": "Domains targeted by phishing impersonation"

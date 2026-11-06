@@ -6,6 +6,8 @@
     ['Google','google.com google.co.jp gmail.com youtube.com'], ['Amazon','amazon.com amazon.co.uk amazon.de amazon.co.jp amazon.ca amazon.fr'],
     ['Apple','apple.com apple.co.jp icloud.com'], ['Meta','facebook.com instagram.com whatsapp.com'],
     ['Mercari','mercari.com mercari.jp'], ['PayPal','paypal.com venmo.com'], ['Adobe','adobe.com'], ['Netflix','netflix.com'],
+    ['VJA','vja.gr.jp vpass.ne.jp'], ['えきねっと','eki-net.com eki-net.biz'], ['ANA','ana.co.jp'],
+    ['セゾンカード','saisoncard.co.jp'], ['三井住友カード','smbc-card.com'], ['JCB','jcb.co.jp'],
     ['Booking Holdings','booking.com agoda.com priceline.com'], ['Expedia','expedia.com expedia.co.jp hotels.com vrbo.com'],
     ['Airbnb','airbnb.com airbnb.jp'], ['Uber','uber.com ubereats.com'], ['Lyft','lyft.com'],
     ['eBay','ebay.com ebay.co.jp'], ['Alibaba','alibaba.com alibaba.co.jp aliexpress.com'], ['Walmart','walmart.com'],
