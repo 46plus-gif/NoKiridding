@@ -12,7 +12,7 @@
     "message": "Check the characters — NoKiridding"
   },
   "warningHeading": {
-    "message": "Check these lookalike characters"
+    "message": "Please check the character differences.\nIs this the right address?"
   },
   "domainLabel": {
     "message": "Entered hostname"
@@ -198,7 +198,7 @@
     "message": "Compared registered domain"
   },
   "similarDomainReason": {
-    "message": "This hostname resembles a registered domain for $1 ($2). Similarity alone does not mean it is a fake site."
+    "message": "This hostname resembles a registered domain for $1 ($2).\nPlease check the address again."
   },
   "similarDifference": {
     "message": "“$1” resembles “$2”."
@@ -207,7 +207,7 @@
     "message": "Domains targeted by phishing impersonation"
   },
   "protectionIntro": {
-    "message": "Register genuine domains of companies and services whose impersonators you want to detect here. The 143 included domains are checked automatically without setup."
+    "message": "Register genuine domains of companies and services whose impersonators you want to detect here. The 169 included domains are checked automatically without setup."
   },
   "protectionPatterns": {
     "message": "The following substitutions are checked. These are illustrative examples of visual confusion, not reports of actual incidents. A warning appears when a destination resembles a registered genuine domain."
@@ -330,7 +330,7 @@
     "message": "About uppercase I: Chrome lowercases domain names, so an entered I is compared as i with the digit 1 and lowercase l. The visual resemblance depends on the font."
   },
   "brandDomainReason": {
-    "message": "This differs from a registered official domain for $1 ($2). This does not prove it is a phishing site."
+    "message": "This differs from a registered official domain for $1 ($2).\nPlease check the address again."
   },
   "brandDifference": {
     "message": "Added or different parts of the main name and its suffix are highlighted in red."

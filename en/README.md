@@ -4,6 +4,15 @@ NoKiridding is a lookalike-character checker for desktop Chrome. It checks for C
 
 For example, it detects `аmazon`, where the first character is the Cyrillic `а` rather than the Latin `a` in `amazon`. It does not flag `amazen`, which uses only ordinary Latin letters. **It does not perform general spell-checking. The comparisons below cover five visual patterns and certain hyphen-separated name additions or suffix differences.**
 
+## Changes in 0.8.6
+
+- Redesigned the warning page with a gray background, a white card, an orange input-style outline and a larger disconnected-plug illustration.
+- Japanese and English use the same layout. The registered-domain comparison stays inside the input field's width, while targeted differences remain red.
+- The heading asks users to check character differences and the address. Domain comparison explanations now say “Please check the address again.”
+- Blocking rules, registered domains, permissions, Continue and allowed-site storage are unchanged. Corrected a stale settings description from 143 to the actual 169 bundled domains.
+
+All 62 relevant automated checks passed, together with eight Japanese/English browser-rendering cases in an offline test harness. Reloading and checking the extension in the user's Chrome remains a separate verification step.
+
 ## Changes in 0.8.5
 
 - Added VJA, Eki-net, ANA, Saison Card, Sumitomo Mitsui Card and JCB as Japanese priority references, informed by JPCERT/CC's July–September 2026 dataset. The bundled list now includes 107 companies/services and 169 domains.
@@ -17,7 +26,7 @@ Reference: [JPCERT/CC's public dataset](https://github.com/JPCERTCC/phishurl-lis
 
 ## Registered-domain comparisons
 
-Version 0.8.5 includes an editable initial list of 107 companies/services and 169 domains. These additional checks do not perform general spell-checking:
+Version 0.8.6 includes an editable initial list of 107 companies/services and 169 domains. These additional checks do not perform general spell-checking:
 
 - Five visual substitutions: `rn/m`, `0/o`, `1/l/i` (including an entered capital `I`), `vv/w`, and `cl/d`. Chrome lowercases hostnames, so `I` is compared as `i`.
 - Hyphen-separated additions around registered names, such as `support-mercari.com` and `amazon-support.com`. The same name with a different suffix is also compared. A name occurring only inside an unrelated word does not trigger this check.
@@ -48,23 +57,23 @@ Display example using the actual interface with the reserved hostname `аmazon.i
 
 **This does not block all phishing sites. No warning does not mean a site is safe.** Read the [disclaimer and limitations](DISCLAIMER.md) before use.
 
-[Download NoKiridding 0.8.5](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.5-en.zip)
+[Download NoKiridding 0.8.6](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.6-en.zip)
 
 This folder contains the English documentation and a complete copy of the extension. You do not need the Japanese folder.
 
-Version: 0.8.5. Requires desktop Chrome 120 or later. It does not run in mobile Chrome. The interface is Japanese when Chrome's UI language is Japanese, and English otherwise.
+Version: 0.8.6. Requires desktop Chrome 120 or later. It does not run in mobile Chrome. The interface is Japanese when Chrome's UI language is Japanese, and English otherwise.
 
 [English source files](https://github.com/46plus-gif/NoKiridding/tree/main/en)
 
 ## Install from a ZIP
 
-1. Download [NoKiridding-0.8.5-en.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.5-en.zip). Use this extension ZIP, rather than GitHub's automatically generated “Source code” archive.
+1. Download [NoKiridding-0.8.6-en.zip](https://github.com/46plus-gif/NoKiridding/raw/refs/heads/main/en/NoKiridding-0.8.6-en.zip). Use this extension ZIP, rather than GitHub's automatically generated “Source code” archive.
 2. Extract the ZIP and place the extracted folder somewhere you will keep it.
 3. Enter `chrome://extensions` in Chrome's address bar.
 4. Turn on **Developer mode**.
 5. Select **Load unpacked**.
 6. Choose the extracted folder that directly contains `manifest.json`. Do not select only its `rules` or `icons` subfolder.
-7. Check that **NoKiridding** appears, its version is **0.8.5**, and its switch is on.
+7. Check that **NoKiridding** appears, its version is **0.8.6**, and its switch is on.
 
 Keep the extracted folder in place while using the extension. You may delete the downloaded ZIP. Organization-managed Chrome may prevent this installation method.
 
@@ -138,4 +147,4 @@ Unicode character data and Public Suffix List data have separate terms from the 
 - [Unicode confusables data](https://www.unicode.org/Public/security/latest/confusables.txt)
 - [Unicode confusable detection](https://www.unicode.org/reports/tr39/#Confusable_Detection)
 
-Version 0.8.5 bundles its character data. It does not query these sites or automatically update the data during use.
+Version 0.8.6 bundles its character data. It does not query these sites or automatically update the data during use.

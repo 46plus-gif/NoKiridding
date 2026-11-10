@@ -13,31 +13,48 @@
 </head>
 <body>
   <main>
-    <svg class="warning-icon" width="36" height="36" viewBox="0 0 36 36" aria-hidden="true">
-      <path d="M16.3 6.1a2 2 0 0 1 3.4 0l12 21a2 2 0 0 1-1.7 3H6a2 2 0 0 1-1.7-3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-      <path d="M18 13v8m0 4v1" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-    </svg>
-    <h1 data-i18n="warningHeading">文字の違いに注意してください</h1>
-    <p class="domain-label" data-i18n="domainLabel">入力した接続先</p>
-    <div id="hostname" class="hostname" dir="ltr" aria-label="注意する文字を含む接続先" data-i18n-aria="domainAria"></div>
-    <p id="full-hostname" class="domain-label" hidden></p>
-    <section id="comparison" hidden aria-labelledby="comparison-label">
-      <p id="comparison-label" class="domain-label" data-i18n="comparisonLabel">比較した正規ドメイン</p>
-      <div id="reference-hostname" class="hostname reference-hostname" dir="ltr"></div>
-      <p id="reference-name" class="domain-label"></p>
-    </section>
-    <ul id="reasons" class="reasons"></ul>
-    <p id="outcome" class="outcome"></p>
-    <form id="decision" hidden>
-      <label class="remember"><input id="remember" type="checkbox"><span data-i18n="remember">この接続先を今後も許可する</span></label>
-      <p class="permission-note" data-i18n="permissionNote">チェックしない場合は、このタブだけで許可します。</p>
-      <div class="actions">
-        <button id="close" type="button" data-i18n="closeTab">このタブを閉じる</button>
-        <button id="continue" class="secondary" type="submit" data-i18n="continueButton">続行</button>
+    <div class="content">
+      <div class="brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v5m8-5v5M6 8h12v3a6 6 0 0 1-12 0Zm6 9v4"/></svg>NoKiridding</div>
+      <header>
+        <div class="intro">
+          <h1 data-i18n="warningHeading">文字の違いに注意してください。
+このアドレス合っていますか？</h1>
+          <div class="status"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="m9 3-7 12a1.2 1.2 0 0 0 1 2h14a1.2 1.2 0 0 0 1-2L11 3a1.2 1.2 0 0 0-2 0Z"/><path d="M10 7v4m0 2v1"/></svg><p id="outcome" class="outcome" role="status"></p></div>
+        </div>
+        <svg class="plug" viewBox="0 0 210 140" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M0 106h17c16 0 26-12 26-28v-4" stroke="#d6ab7a"/>
+          <g transform="rotate(-13 67 65)"><rect x="32" y="44" width="48" height="43" rx="11" fill="#fbe3c7"/><path d="M80 55h17v5H80m0 13h17v5H80M42 44v43"/><path d="M32 65H21"/></g>
+          <path d="M210 27h-13c-15 0-28 12-28 27v5" stroke="#d6ab7a"/>
+          <g transform="rotate(-13 153 67)" stroke="#ae7a28"><rect x="135" y="45" width="45" height="43" rx="11" fill="#f8eacb"/><path d="M147 56v6m0 10v6M169 45v43M180 66h10"/></g>
+          <path d="m108 44 3-8m-2 61 4 7" stroke="#b5473c" stroke-width="1.8"/>
+        </svg>
+      </header>
+      <div class="comparison">
+        <div class="row">
+          <p id="domain-label" class="row-label domain-label" data-i18n="domainLabel">入力した接続先</p>
+          <div id="hostname" class="hostname entered-hostname" dir="ltr" role="textbox" aria-readonly="true" aria-label="注意する文字を含む接続先" data-i18n-aria="domainAria"></div>
+          <p id="full-hostname" class="row-label domain-label" hidden></p>
+        </div>
+        <section id="comparison" class="row" hidden aria-labelledby="comparison-label">
+          <p id="comparison-label" class="row-label domain-label" data-i18n="comparisonLabel">比較した正規ドメイン</p>
+          <div class="reference-line">
+            <div id="reference-hostname" class="hostname reference-hostname" dir="ltr"></div>
+            <p id="reference-name" class="domain-label"></p>
+          </div>
+        </section>
       </div>
-      <p id="action-error" class="action-error" role="status"></p>
-    </form>
-    <p class="product-name">NoKiridding · <a href="settings.html" target="_blank" rel="noopener" data-i18n="allowedSites">許可リスト</a></p>
+      <ul id="reasons" class="reasons"></ul>
+      <form id="decision" hidden>
+        <label class="remember"><input id="remember" type="checkbox"><span data-i18n="remember">この接続先を今後も許可する</span></label>
+        <p class="permission-note" data-i18n="permissionNote">チェックしない場合は、このタブだけで許可します。</p>
+        <div class="actions">
+          <button id="close" class="primary" type="button" data-i18n="closeTab">このタブを閉じる</button>
+          <button id="continue" class="secondary" type="submit" data-i18n="continueButton">続行</button>
+        </div>
+        <p id="action-error" class="action-error" role="status"></p>
+      </form>
+    </div>
+    <footer class="product-name"><span>NoKiridding</span><a href="settings.html" target="_blank" rel="noopener" data-i18n="allowedSites">許可リスト</a></footer>
   </main>
 </body>
 </html>
